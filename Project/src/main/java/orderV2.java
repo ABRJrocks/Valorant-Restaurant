@@ -428,8 +428,6 @@ public class orderV2 extends javax.swing.JFrame {
         );
 
         jPanel2.add(bevragesMenuSelectPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 300, 45));
-
-        jLabel62.setIcon(new javax.swing.ImageIcon("E:\\RJ Data\\BSCS\\2nd Semester\\OOP\\Semester Project\\Project Files\\Valorant-Restaurant\\Project\\src\\main\\java\\Images\\images_Billin_Menu.png")); // NOI18N
         jPanel2.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 200, 120));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 800));
@@ -977,20 +975,20 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel26.setText("HALWA PLATE");
         lunchMenu.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 170, 60));
 
-        jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setText("KARHAI(full)");
+        jLabel27.setText("CHICKEN ROLL");
         lunchMenu.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 150, 30));
 
         jLabel28.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel28.setText("PARATHA");
+        jLabel28.setText("SAMOSA");
         lunchMenu.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 140, 30));
 
         jLabel29.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel29.setText("NAAN");
-        lunchMenu.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 80, 40));
+        jLabel29.setText("SANDWICH");
+        lunchMenu.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 140, 40));
 
         jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
