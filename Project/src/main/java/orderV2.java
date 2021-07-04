@@ -198,43 +198,37 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel51 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
         beveragesMenu = new javax.swing.JPanel();
-        fryeggcheck4 = new javax.swing.JCheckBox();
-        parathacheck4 = new javax.swing.JCheckBox();
-        naancheck4 = new javax.swing.JCheckBox();
-        halwapuricheck4 = new javax.swing.JCheckBox();
-        ommlettecheck4 = new javax.swing.JCheckBox();
-        halwaplatecheck4 = new javax.swing.JCheckBox();
+        chocklateshakecheck = new javax.swing.JCheckBox();
+        bananashakecheck = new javax.swing.JCheckBox();
+        mangoslushcheck = new javax.swing.JCheckBox();
+        mangoshakecheck = new javax.swing.JCheckBox();
         niharicheck4 = new javax.swing.JCheckBox();
         jScrollPane47 = new javax.swing.JScrollPane();
-        fryeggqty4 = new javax.swing.JTextArea();
+        chocklateshakeqty = new javax.swing.JTextArea();
         jScrollPane48 = new javax.swing.JScrollPane();
-        parathaqty4 = new javax.swing.JTextArea();
+        bananashakeqty = new javax.swing.JTextArea();
         jScrollPane49 = new javax.swing.JScrollPane();
-        ommletteqty4 = new javax.swing.JTextArea();
-        jScrollPane50 = new javax.swing.JScrollPane();
-        halwaplateqty4 = new javax.swing.JTextArea();
-        jScrollPane51 = new javax.swing.JScrollPane();
-        naanqty4 = new javax.swing.JTextArea();
+        mangoshakeqty = new javax.swing.JTextArea();
         jScrollPane52 = new javax.swing.JScrollPane();
-        halwapuriqty4 = new javax.swing.JTextArea();
+        mangoslushqty = new javax.swing.JTextArea();
         jScrollPane53 = new javax.swing.JScrollPane();
-        nihariqty4 = new javax.swing.JTextArea();
+        guavaslushqty = new javax.swing.JTextArea();
         Beverages = new javax.swing.JTextField();
         jScrollPane54 = new javax.swing.JScrollPane();
-        channyhalfqty4 = new javax.swing.JTextArea();
-        channyhalfcheck4 = new javax.swing.JCheckBox();
+        orangeslushqty = new javax.swing.JTextArea();
+        orangeslushcheck = new javax.swing.JCheckBox();
         jScrollPane55 = new javax.swing.JScrollPane();
-        channyfullqty4 = new javax.swing.JTextArea();
-        channyfullcheck4 = new javax.swing.JCheckBox();
-        jLabel53 = new javax.swing.JLabel();
+        strawberryslushqty = new javax.swing.JTextArea();
+        strawberryslushcheck = new javax.swing.JCheckBox();
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jLabel59 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
         Billing = new javax.swing.JPanel();
         jTextField10 = new javax.swing.JTextField();
         jScrollPane11 = new javax.swing.JScrollPane();
@@ -1612,54 +1606,37 @@ public class orderV2 extends javax.swing.JFrame {
         beveragesMenu.setPreferredSize(new java.awt.Dimension(400, 900));
         beveragesMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        fryeggcheck4.setBackground(new java.awt.Color(102, 8, 219));
-        fryeggcheck4.addActionListener(new java.awt.event.ActionListener() {
+        chocklateshakecheck.setBackground(new java.awt.Color(102, 8, 219));
+        chocklateshakecheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fryeggcheck4ActionPerformed(evt);
+                chocklateshakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(fryeggcheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
+        beveragesMenu.add(chocklateshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, -1, 30));
 
-        parathacheck4.setBackground(new java.awt.Color(102, 8, 219));
-        parathacheck4.addActionListener(new java.awt.event.ActionListener() {
+        bananashakecheck.setBackground(new java.awt.Color(102, 8, 219));
+        bananashakecheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                parathacheck4ActionPerformed(evt);
+                bananashakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(parathacheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
+        beveragesMenu.add(bananashakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, 30));
 
-        naancheck4.setBackground(new java.awt.Color(102, 8, 219));
-        naancheck4.addActionListener(new java.awt.event.ActionListener() {
+        mangoslushcheck.setBackground(new java.awt.Color(102, 8, 219));
+        mangoslushcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                naancheck4ActionPerformed(evt);
+                mangoslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(naancheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        beveragesMenu.add(mangoslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, -1, 30));
 
-        halwapuricheck4.setBackground(new java.awt.Color(102, 8, 219));
-        halwapuricheck4.addActionListener(new java.awt.event.ActionListener() {
+        mangoshakecheck.setBackground(new java.awt.Color(102, 8, 219));
+        mangoshakecheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                halwapuricheck4ActionPerformed(evt);
+                mangoshakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(halwapuricheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
-
-        ommlettecheck4.setBackground(new java.awt.Color(102, 8, 219));
-        ommlettecheck4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ommlettecheck4ActionPerformed(evt);
-            }
-        });
-        beveragesMenu.add(ommlettecheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
-
-        halwaplatecheck4.setBackground(new java.awt.Color(102, 8, 219));
-        halwaplatecheck4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        halwaplatecheck4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                halwaplatecheck4ActionPerformed(evt);
-            }
-        });
-        beveragesMenu.add(halwaplatecheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
+        beveragesMenu.add(mangoshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, 30));
 
         niharicheck4.setBackground(new java.awt.Color(102, 8, 219));
         niharicheck4.addActionListener(new java.awt.event.ActionListener() {
@@ -1667,132 +1644,98 @@ public class orderV2 extends javax.swing.JFrame {
                 niharicheck4ActionPerformed(evt);
             }
         });
-        beveragesMenu.add(niharicheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
+        beveragesMenu.add(niharicheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 610, -1, 20));
 
         jScrollPane47.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane47.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        fryeggqty4.setColumns(20);
-        fryeggqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        fryeggqty4.setRows(5);
-        fryeggqty4.setText("0");
-        fryeggqty4.setEnabled(false);
-        fryeggqty4.addKeyListener(new java.awt.event.KeyAdapter() {
+        chocklateshakeqty.setColumns(20);
+        chocklateshakeqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        chocklateshakeqty.setRows(5);
+        chocklateshakeqty.setText("0");
+        chocklateshakeqty.setEnabled(false);
+        chocklateshakeqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                fryeggqty4KeyTyped(evt);
+                chocklateshakeqtyKeyTyped(evt);
             }
         });
-        jScrollPane47.setViewportView(fryeggqty4);
+        jScrollPane47.setViewportView(chocklateshakeqty);
 
-        beveragesMenu.add(jScrollPane47, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 93, 31));
+        beveragesMenu.add(jScrollPane47, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 93, 31));
 
         jScrollPane48.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane48.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        parathaqty4.setColumns(20);
-        parathaqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        parathaqty4.setRows(5);
-        parathaqty4.setText("0");
-        parathaqty4.setEnabled(false);
-        parathaqty4.addKeyListener(new java.awt.event.KeyAdapter() {
+        bananashakeqty.setColumns(20);
+        bananashakeqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        bananashakeqty.setRows(5);
+        bananashakeqty.setText("0");
+        bananashakeqty.setEnabled(false);
+        bananashakeqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                parathaqty4KeyTyped(evt);
+                bananashakeqtyKeyTyped(evt);
             }
         });
-        jScrollPane48.setViewportView(parathaqty4);
+        jScrollPane48.setViewportView(bananashakeqty);
 
-        beveragesMenu.add(jScrollPane48, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 93, 31));
+        beveragesMenu.add(jScrollPane48, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 93, 31));
 
         jScrollPane49.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane49.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        ommletteqty4.setColumns(20);
-        ommletteqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        ommletteqty4.setRows(5);
-        ommletteqty4.setText("0");
-        ommletteqty4.setEnabled(false);
-        ommletteqty4.addKeyListener(new java.awt.event.KeyAdapter() {
+        mangoshakeqty.setColumns(20);
+        mangoshakeqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        mangoshakeqty.setRows(5);
+        mangoshakeqty.setText("0");
+        mangoshakeqty.setEnabled(false);
+        mangoshakeqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                ommletteqty4KeyTyped(evt);
+                mangoshakeqtyKeyTyped(evt);
             }
         });
-        jScrollPane49.setViewportView(ommletteqty4);
+        jScrollPane49.setViewportView(mangoshakeqty);
 
-        beveragesMenu.add(jScrollPane49, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 93, 31));
-
-        jScrollPane50.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane50.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        halwaplateqty4.setColumns(20);
-        halwaplateqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        halwaplateqty4.setRows(5);
-        halwaplateqty4.setText("0");
-        halwaplateqty4.setEnabled(false);
-        halwaplateqty4.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                halwaplateqty4KeyTyped(evt);
-            }
-        });
-        jScrollPane50.setViewportView(halwaplateqty4);
-
-        beveragesMenu.add(jScrollPane50, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 650, 93, 31));
-
-        jScrollPane51.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane51.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        naanqty4.setColumns(20);
-        naanqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        naanqty4.setRows(5);
-        naanqty4.setText("0");
-        naanqty4.setEnabled(false);
-        naanqty4.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                naanqty4KeyTyped(evt);
-            }
-        });
-        jScrollPane51.setViewportView(naanqty4);
-
-        beveragesMenu.add(jScrollPane51, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 93, 31));
+        beveragesMenu.add(jScrollPane49, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 93, 31));
 
         jScrollPane52.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane52.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        halwapuriqty4.setColumns(20);
-        halwapuriqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        halwapuriqty4.setRows(5);
-        halwapuriqty4.setText("0");
-        halwapuriqty4.setEnabled(false);
-        halwapuriqty4.addKeyListener(new java.awt.event.KeyAdapter() {
+        mangoslushqty.setColumns(20);
+        mangoslushqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        mangoslushqty.setRows(5);
+        mangoslushqty.setText("0");
+        mangoslushqty.setEnabled(false);
+        mangoslushqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                halwapuriqty4KeyTyped(evt);
+                mangoslushqtyKeyTyped(evt);
             }
         });
-        jScrollPane52.setViewportView(halwapuriqty4);
+        jScrollPane52.setViewportView(mangoslushqty);
 
-        beveragesMenu.add(jScrollPane52, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 93, 31));
+        beveragesMenu.add(jScrollPane52, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 93, 31));
 
         jScrollPane53.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane53.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        nihariqty4.setColumns(20);
-        nihariqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        nihariqty4.setRows(5);
-        nihariqty4.setText("0");
-        nihariqty4.setEnabled(false);
-        nihariqty4.addKeyListener(new java.awt.event.KeyAdapter() {
+        guavaslushqty.setColumns(20);
+        guavaslushqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        guavaslushqty.setRows(5);
+        guavaslushqty.setText("0");
+        guavaslushqty.setEnabled(false);
+        guavaslushqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                nihariqty4KeyTyped(evt);
+                guavaslushqtyKeyTyped(evt);
             }
         });
-        jScrollPane53.setViewportView(nihariqty4);
+        jScrollPane53.setViewportView(guavaslushqty);
 
-        beveragesMenu.add(jScrollPane53, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, 93, 31));
+        beveragesMenu.add(jScrollPane53, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 610, 93, 31));
 
         Beverages.setEditable(false);
         Beverages.setBackground(new java.awt.Color(255, 255, 255));
         Beverages.setFont(new java.awt.Font("Bahamas Bold", 0, 36)); // NOI18N
         Beverages.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Beverages.setText("Breakfast");
+        Beverages.setText("Beverages");
         Beverages.setBorder(null);
         Beverages.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1804,97 +1747,97 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane54.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane54.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        channyhalfqty4.setColumns(20);
-        channyhalfqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        channyhalfqty4.setRows(5);
-        channyhalfqty4.setText("0");
-        channyhalfqty4.setEnabled(false);
-        channyhalfqty4.addKeyListener(new java.awt.event.KeyAdapter() {
+        orangeslushqty.setColumns(20);
+        orangeslushqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        orangeslushqty.setRows(5);
+        orangeslushqty.setText("0");
+        orangeslushqty.setEnabled(false);
+        orangeslushqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                channyhalfqty4KeyTyped(evt);
+                orangeslushqtyKeyTyped(evt);
             }
         });
-        jScrollPane54.setViewportView(channyhalfqty4);
+        jScrollPane54.setViewportView(orangeslushqty);
 
-        beveragesMenu.add(jScrollPane54, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, 93, 31));
+        beveragesMenu.add(jScrollPane54, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 550, 93, 31));
 
-        channyhalfcheck4.setBackground(new java.awt.Color(102, 8, 219));
-        channyhalfcheck4.addActionListener(new java.awt.event.ActionListener() {
+        orangeslushcheck.setBackground(new java.awt.Color(102, 8, 219));
+        orangeslushcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                channyhalfcheck4ActionPerformed(evt);
+                orangeslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(channyhalfcheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
+        beveragesMenu.add(orangeslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, -1, -1));
 
         jScrollPane55.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane55.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        channyfullqty4.setColumns(20);
-        channyfullqty4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        channyfullqty4.setRows(5);
-        channyfullqty4.setText("0");
-        channyfullqty4.setEnabled(false);
-        channyfullqty4.addKeyListener(new java.awt.event.KeyAdapter() {
+        strawberryslushqty.setColumns(20);
+        strawberryslushqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        strawberryslushqty.setRows(5);
+        strawberryslushqty.setText("0");
+        strawberryslushqty.setEnabled(false);
+        strawberryslushqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                channyfullqty4KeyTyped(evt);
+                strawberryslushqtyKeyTyped(evt);
             }
         });
-        jScrollPane55.setViewportView(channyfullqty4);
+        jScrollPane55.setViewportView(strawberryslushqty);
 
-        beveragesMenu.add(jScrollPane55, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 93, 31));
+        beveragesMenu.add(jScrollPane55, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, 93, 31));
 
-        channyfullcheck4.setBackground(new java.awt.Color(102, 8, 219));
-        channyfullcheck4.addActionListener(new java.awt.event.ActionListener() {
+        strawberryslushcheck.setBackground(new java.awt.Color(102, 8, 219));
+        strawberryslushcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                channyfullcheck4ActionPerformed(evt);
+                strawberryslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(channyfullcheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
+        beveragesMenu.add(strawberryslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, -1, -1));
 
-        jLabel53.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 21)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel53.setText("HALWA PLATE");
-        beveragesMenu.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 170, 60));
-
-        jLabel54.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel54.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel54.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel54.setText("OMMLETTE");
-        beveragesMenu.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 140, 30));
+        jLabel54.setText("Mango Shake");
+        beveragesMenu.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 150, 30));
 
-        jLabel55.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel55.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel55.setText("PARATHA");
-        beveragesMenu.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 140, 30));
+        jLabel55.setText("Banana Shake");
+        beveragesMenu.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 150, 30));
 
-        jLabel56.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel56.setText("NAAN");
-        beveragesMenu.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 80, 40));
-
-        jLabel57.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel57.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel57.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel57.setText("HALWA PURI");
-        beveragesMenu.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 160, 70));
+        jLabel57.setText("Mango Slush");
+        beveragesMenu.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 160, 70));
 
-        jLabel58.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel58.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel58.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel58.setText("CHANNY(full)");
-        beveragesMenu.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 40));
+        jLabel58.setText("Strawberry Slush");
+        beveragesMenu.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 480, 160, 40));
 
-        jLabel59.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel59.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel59.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel59.setText("CHANNY(half)");
-        beveragesMenu.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 520, 160, 40));
+        jLabel59.setText("Orange Slush");
+        beveragesMenu.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 540, 160, 40));
 
-        jLabel60.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel60.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel60.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel60.setText("NIHARI");
-        beveragesMenu.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 90, 40));
+        jLabel60.setText("Guava Slush");
+        beveragesMenu.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 600, 120, 40));
 
         jLabel61.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel61.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel61.setText("FRY EGG");
-        beveragesMenu.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 110, 30));
+        jLabel61.setText("Slush");
+        beveragesMenu.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, -1, 30));
+
+        jLabel63.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel63.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel63.setText("Chocalate Shake");
+        beveragesMenu.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, 30));
+
+        jLabel64.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel64.setText("Milk Shakes");
+        beveragesMenu.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, 30));
 
         jPanel4.add(beveragesMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -2978,83 +2921,67 @@ public class orderV2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_calzonecheckActionPerformed
 
-    private void fryeggcheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fryeggcheck4ActionPerformed
+    private void chocklateshakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chocklateshakecheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fryeggcheck4ActionPerformed
+    }//GEN-LAST:event_chocklateshakecheckActionPerformed
 
-    private void parathacheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parathacheck4ActionPerformed
+    private void bananashakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bananashakecheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_parathacheck4ActionPerformed
+    }//GEN-LAST:event_bananashakecheckActionPerformed
 
-    private void naancheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_naancheck4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_naancheck4ActionPerformed
-
-    private void halwapuricheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwapuricheck4ActionPerformed
+    private void mangoslushcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mangoslushcheckActionPerformed
         // TODO add your handling code here:
         // my name is fahad 
         
-    }//GEN-LAST:event_halwapuricheck4ActionPerformed
+    }//GEN-LAST:event_mangoslushcheckActionPerformed
 
-    private void ommlettecheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ommlettecheck4ActionPerformed
+    private void mangoshakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mangoshakecheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ommlettecheck4ActionPerformed
-
-    private void halwaplatecheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwaplatecheck4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_halwaplatecheck4ActionPerformed
+    }//GEN-LAST:event_mangoshakecheckActionPerformed
 
     private void niharicheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_niharicheck4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_niharicheck4ActionPerformed
 
-    private void fryeggqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fryeggqty4KeyTyped
+    private void chocklateshakeqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chocklateshakeqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_fryeggqty4KeyTyped
+    }//GEN-LAST:event_chocklateshakeqtyKeyTyped
 
-    private void parathaqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_parathaqty4KeyTyped
+    private void bananashakeqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bananashakeqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_parathaqty4KeyTyped
+    }//GEN-LAST:event_bananashakeqtyKeyTyped
 
-    private void ommletteqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ommletteqty4KeyTyped
+    private void mangoshakeqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_mangoshakeqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_ommletteqty4KeyTyped
+    }//GEN-LAST:event_mangoshakeqtyKeyTyped
 
-    private void halwaplateqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_halwaplateqty4KeyTyped
+    private void mangoslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_mangoslushqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwaplateqty4KeyTyped
+    }//GEN-LAST:event_mangoslushqtyKeyTyped
 
-    private void naanqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_naanqty4KeyTyped
+    private void guavaslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_guavaslushqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_naanqty4KeyTyped
-
-    private void halwapuriqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_halwapuriqty4KeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_halwapuriqty4KeyTyped
-
-    private void nihariqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nihariqty4KeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nihariqty4KeyTyped
+    }//GEN-LAST:event_guavaslushqtyKeyTyped
 
     private void BeveragesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BeveragesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BeveragesActionPerformed
 
-    private void channyhalfqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_channyhalfqty4KeyTyped
+    private void orangeslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_orangeslushqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyhalfqty4KeyTyped
+    }//GEN-LAST:event_orangeslushqtyKeyTyped
 
-    private void channyhalfcheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_channyhalfcheck4ActionPerformed
+    private void orangeslushcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orangeslushcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyhalfcheck4ActionPerformed
+    }//GEN-LAST:event_orangeslushcheckActionPerformed
 
-    private void channyfullqty4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_channyfullqty4KeyTyped
+    private void strawberryslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_strawberryslushqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyfullqty4KeyTyped
+    }//GEN-LAST:event_strawberryslushqtyKeyTyped
 
-    private void channyfullcheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_channyfullcheck4ActionPerformed
+    private void strawberryslushcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_strawberryslushcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyfullcheck4ActionPerformed
+    }//GEN-LAST:event_strawberryslushcheckActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3094,6 +3021,8 @@ public class orderV2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Beverages;
     private javax.swing.JPanel Billing;
+    private javax.swing.JCheckBox bananashakecheck;
+    private javax.swing.JTextArea bananashakeqty;
     private javax.swing.JPanel beveragesMenu;
     private javax.swing.JPanel bevragesMenuSelectPanel;
     private javax.swing.JCheckBox biryanicheck;
@@ -3106,25 +3035,23 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JCheckBox channyfullcheck;
     private javax.swing.JCheckBox channyfullcheck1;
     private javax.swing.JCheckBox channyfullcheck2;
-    private javax.swing.JCheckBox channyfullcheck4;
     private javax.swing.JTextArea channyfullqty;
     private javax.swing.JTextArea channyfullqty1;
     private javax.swing.JTextArea channyfullqty2;
-    private javax.swing.JTextArea channyfullqty4;
     private javax.swing.JCheckBox channyhalfcheck;
     private javax.swing.JCheckBox channyhalfcheck1;
     private javax.swing.JCheckBox channyhalfcheck2;
-    private javax.swing.JCheckBox channyhalfcheck4;
     private javax.swing.JTextArea channyhalfqty;
     private javax.swing.JTextArea channyhalfqty1;
     private javax.swing.JTextArea channyhalfqty2;
-    private javax.swing.JTextArea channyhalfqty4;
     private javax.swing.JCheckBox chickenburgercheck;
     private javax.swing.JTextArea chickenburgerqty;
     private javax.swing.JCheckBox chickenchipscheck;
     private javax.swing.JTextArea chickenchipsqty;
     private javax.swing.JCheckBox chickenshwarmacheck;
     private javax.swing.JTextArea chickenshwarmaqty;
+    private javax.swing.JCheckBox chocklateshakecheck;
+    private javax.swing.JTextArea chocklateshakeqty;
     private javax.swing.JCheckBox coffeecheck;
     private javax.swing.JTextArea coffeeqty;
     private javax.swing.JCheckBox colacheck;
@@ -3134,27 +3061,22 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JPanel fastfoodMenu;
     private javax.swing.JPanel fastfoodMenuSelectPanel;
     private javax.swing.JCheckBox fryeggcheck;
-    private javax.swing.JCheckBox fryeggcheck4;
     private javax.swing.JTextArea fryeggqty;
-    private javax.swing.JTextArea fryeggqty4;
     private javax.swing.JCheckBox grilledsandwitchcheck;
     private javax.swing.JTextArea grilledsandwitchqty;
+    private javax.swing.JTextArea guavaslushqty;
     private javax.swing.JCheckBox halwaplatecheck;
     private javax.swing.JCheckBox halwaplatecheck1;
     private javax.swing.JCheckBox halwaplatecheck2;
-    private javax.swing.JCheckBox halwaplatecheck4;
     private javax.swing.JTextArea halwaplateqty;
     private javax.swing.JTextArea halwaplateqty1;
     private javax.swing.JTextArea halwaplateqty2;
-    private javax.swing.JTextArea halwaplateqty4;
     private javax.swing.JCheckBox halwapuricheck;
     private javax.swing.JCheckBox halwapuricheck1;
     private javax.swing.JCheckBox halwapuricheck2;
-    private javax.swing.JCheckBox halwapuricheck4;
     private javax.swing.JTextArea halwapuriqty;
     private javax.swing.JTextArea halwapuriqty1;
     private javax.swing.JTextArea halwapuriqty2;
-    private javax.swing.JTextArea halwapuriqty4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -3203,10 +3125,8 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
@@ -3214,6 +3134,8 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -3266,8 +3188,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane48;
     private javax.swing.JScrollPane jScrollPane49;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane50;
-    private javax.swing.JScrollPane jScrollPane51;
     private javax.swing.JScrollPane jScrollPane52;
     private javax.swing.JScrollPane jScrollPane53;
     private javax.swing.JScrollPane jScrollPane54;
@@ -3292,15 +3212,17 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JPanel lunchMenuSelectPanel;
     private javax.swing.JCheckBox malaiboticheck;
     private javax.swing.JTextArea malaibotiqty;
+    private javax.swing.JCheckBox mangoshakecheck;
+    private javax.swing.JTextArea mangoshakeqty;
+    private javax.swing.JCheckBox mangoslushcheck;
+    private javax.swing.JTextArea mangoslushqty;
     private javax.swing.JTextArea moneyInput;
     private javax.swing.JCheckBox naancheck;
     private javax.swing.JCheckBox naancheck1;
     private javax.swing.JCheckBox naancheck2;
-    private javax.swing.JCheckBox naancheck4;
     private javax.swing.JTextArea naanqty;
     private javax.swing.JTextArea naanqty1;
     private javax.swing.JTextArea naanqty2;
-    private javax.swing.JTextArea naanqty4;
     private javax.swing.JCheckBox niharicheck;
     private javax.swing.JCheckBox niharicheck1;
     private javax.swing.JCheckBox niharicheck2;
@@ -3308,25 +3230,24 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea nihariqty;
     private javax.swing.JTextArea nihariqty1;
     private javax.swing.JTextArea nihariqty2;
-    private javax.swing.JTextArea nihariqty4;
     private javax.swing.JCheckBox ommlettecheck;
     private javax.swing.JCheckBox ommlettecheck2;
-    private javax.swing.JCheckBox ommlettecheck4;
     private javax.swing.JTextArea ommletteqty;
     private javax.swing.JTextArea ommletteqty2;
-    private javax.swing.JTextArea ommletteqty4;
+    private javax.swing.JCheckBox orangeslushcheck;
+    private javax.swing.JTextArea orangeslushqty;
     private javax.swing.JCheckBox parathacheck;
     private javax.swing.JCheckBox parathacheck1;
     private javax.swing.JCheckBox parathacheck2;
-    private javax.swing.JCheckBox parathacheck4;
     private javax.swing.JTextArea parathaqty;
     private javax.swing.JTextArea parathaqty1;
     private javax.swing.JTextArea parathaqty2;
-    private javax.swing.JTextArea parathaqty4;
     private javax.swing.JComboBox<String> paymentSelection;
     private javax.swing.JButton resetButton;
     private javax.swing.JCheckBox spritecheck;
     private javax.swing.JTextArea spriteqty;
+    private javax.swing.JCheckBox strawberryslushcheck;
+    private javax.swing.JTextArea strawberryslushqty;
     private javax.swing.JTextArea subTotal;
     private javax.swing.JTextArea tax;
     private javax.swing.JCheckBox teacheck;
