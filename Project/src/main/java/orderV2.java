@@ -20,7 +20,7 @@ public class orderV2 extends javax.swing.JFrame {
     public orderV2() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -165,22 +165,16 @@ public class orderV2 extends javax.swing.JFrame {
         zingershwarmacheck = new javax.swing.JCheckBox();
         valopizzacheck = new javax.swing.JCheckBox();
         zingerburgercheck = new javax.swing.JCheckBox();
-        loadedfriescheck = new javax.swing.JCheckBox();
-        grilledsandwitchcheck = new javax.swing.JCheckBox();
         jScrollPane38 = new javax.swing.JScrollPane();
         chickenburgerqty = new javax.swing.JTextArea();
         jScrollPane39 = new javax.swing.JScrollPane();
         chickenshwarmaqty = new javax.swing.JTextArea();
         jScrollPane40 = new javax.swing.JScrollPane();
         zingerburgerqty = new javax.swing.JTextArea();
-        jScrollPane41 = new javax.swing.JScrollPane();
-        loadedfriesqty = new javax.swing.JTextArea();
         jScrollPane42 = new javax.swing.JScrollPane();
         zingershwarmaqty = new javax.swing.JTextArea();
         jScrollPane43 = new javax.swing.JScrollPane();
         valopizzaqty = new javax.swing.JTextArea();
-        jScrollPane44 = new javax.swing.JScrollPane();
-        grilledsandwitchqty = new javax.swing.JTextArea();
         jTextField14 = new javax.swing.JTextField();
         jScrollPane45 = new javax.swing.JScrollPane();
         chickenchipsqty = new javax.swing.JTextArea();
@@ -188,21 +182,18 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane46 = new javax.swing.JScrollPane();
         calzoneqty = new javax.swing.JTextArea();
         calzonecheck = new javax.swing.JCheckBox();
-        jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
         beveragesMenu = new javax.swing.JPanel();
         chocklateshakecheck = new javax.swing.JCheckBox();
         bananashakecheck = new javax.swing.JCheckBox();
         mangoslushcheck = new javax.swing.JCheckBox();
         mangoshakecheck = new javax.swing.JCheckBox();
-        niharicheck4 = new javax.swing.JCheckBox();
         jScrollPane47 = new javax.swing.JScrollPane();
         chocklateshakeqty = new javax.swing.JTextArea();
         jScrollPane48 = new javax.swing.JScrollPane();
@@ -211,8 +202,6 @@ public class orderV2 extends javax.swing.JFrame {
         mangoshakeqty = new javax.swing.JTextArea();
         jScrollPane52 = new javax.swing.JScrollPane();
         mangoslushqty = new javax.swing.JTextArea();
-        jScrollPane53 = new javax.swing.JScrollPane();
-        guavaslushqty = new javax.swing.JTextArea();
         Beverages = new javax.swing.JTextField();
         jScrollPane54 = new javax.swing.JScrollPane();
         orangeslushqty = new javax.swing.JTextArea();
@@ -225,7 +214,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
@@ -1313,6 +1301,11 @@ public class orderV2 extends javax.swing.JFrame {
                 chickenburgercheckActionPerformed(evt);
             }
         });
+        chickenburgercheck.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                chickenburgercheckKeyTyped(evt);
+            }
+        });
         fastfoodMenu.add(chickenburgercheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
 
         chickenshwarmacheck.setBackground(new java.awt.Color(102, 8, 219));
@@ -1329,7 +1322,7 @@ public class orderV2 extends javax.swing.JFrame {
                 zingershwarmacheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(zingershwarmacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        fastfoodMenu.add(zingershwarmacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, -1, -1));
 
         valopizzacheck.setBackground(new java.awt.Color(102, 8, 219));
         valopizzacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1337,7 +1330,7 @@ public class orderV2 extends javax.swing.JFrame {
                 valopizzacheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(valopizzacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
+        fastfoodMenu.add(valopizzacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, -1, 30));
 
         zingerburgercheck.setBackground(new java.awt.Color(102, 8, 219));
         zingerburgercheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1346,23 +1339,6 @@ public class orderV2 extends javax.swing.JFrame {
             }
         });
         fastfoodMenu.add(zingerburgercheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
-
-        loadedfriescheck.setBackground(new java.awt.Color(102, 8, 219));
-        loadedfriescheck.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        loadedfriescheck.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loadedfriescheckActionPerformed(evt);
-            }
-        });
-        fastfoodMenu.add(loadedfriescheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
-
-        grilledsandwitchcheck.setBackground(new java.awt.Color(102, 8, 219));
-        grilledsandwitchcheck.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                grilledsandwitchcheckActionPerformed(evt);
-            }
-        });
-        fastfoodMenu.add(grilledsandwitchcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
 
         jScrollPane38.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane38.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1415,23 +1391,6 @@ public class orderV2 extends javax.swing.JFrame {
 
         fastfoodMenu.add(jScrollPane40, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 93, 31));
 
-        jScrollPane41.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane41.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        loadedfriesqty.setColumns(20);
-        loadedfriesqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        loadedfriesqty.setRows(5);
-        loadedfriesqty.setText("0");
-        loadedfriesqty.setEnabled(false);
-        loadedfriesqty.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                loadedfriesqtyKeyTyped(evt);
-            }
-        });
-        jScrollPane41.setViewportView(loadedfriesqty);
-
-        fastfoodMenu.add(jScrollPane41, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 650, 93, 31));
-
         jScrollPane42.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane42.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
@@ -1447,7 +1406,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane42.setViewportView(zingershwarmaqty);
 
-        fastfoodMenu.add(jScrollPane42, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 93, 31));
+        fastfoodMenu.add(jScrollPane42, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 93, 31));
 
         jScrollPane43.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane43.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1464,24 +1423,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane43.setViewportView(valopizzaqty);
 
-        fastfoodMenu.add(jScrollPane43, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 93, 31));
-
-        jScrollPane44.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane44.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        grilledsandwitchqty.setColumns(20);
-        grilledsandwitchqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        grilledsandwitchqty.setRows(5);
-        grilledsandwitchqty.setText("0");
-        grilledsandwitchqty.setEnabled(false);
-        grilledsandwitchqty.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                grilledsandwitchqtyKeyTyped(evt);
-            }
-        });
-        jScrollPane44.setViewportView(grilledsandwitchqty);
-
-        fastfoodMenu.add(jScrollPane44, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 590, 93, 31));
+        fastfoodMenu.add(jScrollPane43, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 93, 31));
 
         jTextField14.setEditable(false);
         jTextField14.setBackground(new java.awt.Color(255, 255, 255));
@@ -1511,7 +1453,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane45.setViewportView(chickenchipsqty);
 
-        fastfoodMenu.add(jScrollPane45, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 530, 93, 31));
+        fastfoodMenu.add(jScrollPane45, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, 93, 31));
 
         chickenchipscheck.setBackground(new java.awt.Color(102, 8, 219));
         chickenchipscheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1519,7 +1461,7 @@ public class orderV2 extends javax.swing.JFrame {
                 chickenchipscheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(chickenchipscheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
+        fastfoodMenu.add(chickenchipscheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 560, -1, -1));
 
         jScrollPane46.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane46.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1536,7 +1478,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane46.setViewportView(calzoneqty);
 
-        fastfoodMenu.add(jScrollPane46, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, 93, 31));
+        fastfoodMenu.add(jScrollPane46, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, 93, 31));
 
         calzonecheck.setBackground(new java.awt.Color(102, 8, 219));
         calzonecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1544,13 +1486,7 @@ public class orderV2 extends javax.swing.JFrame {
                 calzonecheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(calzonecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
-
-        jLabel44.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel44.setText("Loaded Fries");
-        jLabel44.setToolTipText("");
-        fastfoodMenu.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 170, 60));
+        fastfoodMenu.add(calzonecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, -1, -1));
 
         jLabel45.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(255, 255, 255));
@@ -1568,31 +1504,25 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel47.setForeground(new java.awt.Color(255, 255, 255));
         jLabel47.setText("Zinger Shwarma");
         jLabel47.setToolTipText("");
-        fastfoodMenu.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 160, 40));
+        fastfoodMenu.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 160, 40));
 
         jLabel48.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel48.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel48.setText("Valorant Pizza");
+        jLabel48.setText("Valorant Pizza 13\"");
         jLabel48.setToolTipText("");
-        fastfoodMenu.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 160, 70));
+        fastfoodMenu.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 170, 70));
 
         jLabel49.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel49.setForeground(new java.awt.Color(255, 255, 255));
         jLabel49.setText("Calzone");
         jLabel49.setToolTipText("");
-        fastfoodMenu.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 40));
+        fastfoodMenu.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, 160, 40));
 
         jLabel50.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel50.setForeground(new java.awt.Color(255, 255, 255));
         jLabel50.setText("Chicken Chips");
         jLabel50.setToolTipText("");
-        fastfoodMenu.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 520, 160, 40));
-
-        jLabel51.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel51.setText("Grilled Sandwitch");
-        jLabel51.setToolTipText("");
-        fastfoodMenu.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 160, 40));
+        fastfoodMenu.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 160, 40));
 
         jLabel52.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel52.setForeground(new java.awt.Color(255, 255, 255));
@@ -1612,7 +1542,7 @@ public class orderV2 extends javax.swing.JFrame {
                 chocklateshakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(chocklateshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, -1, 30));
+        beveragesMenu.add(chocklateshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, 30));
 
         bananashakecheck.setBackground(new java.awt.Color(102, 8, 219));
         bananashakecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1620,7 +1550,7 @@ public class orderV2 extends javax.swing.JFrame {
                 bananashakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(bananashakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, 30));
+        beveragesMenu.add(bananashakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, -1, 30));
 
         mangoslushcheck.setBackground(new java.awt.Color(102, 8, 219));
         mangoslushcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1628,7 +1558,7 @@ public class orderV2 extends javax.swing.JFrame {
                 mangoslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(mangoslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, -1, 30));
+        beveragesMenu.add(mangoslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, -1, 30));
 
         mangoshakecheck.setBackground(new java.awt.Color(102, 8, 219));
         mangoshakecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1636,15 +1566,7 @@ public class orderV2 extends javax.swing.JFrame {
                 mangoshakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(mangoshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, 30));
-
-        niharicheck4.setBackground(new java.awt.Color(102, 8, 219));
-        niharicheck4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                niharicheck4ActionPerformed(evt);
-            }
-        });
-        beveragesMenu.add(niharicheck4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 610, -1, 20));
+        beveragesMenu.add(mangoshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, 30));
 
         jScrollPane47.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane47.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1661,7 +1583,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane47.setViewportView(chocklateshakeqty);
 
-        beveragesMenu.add(jScrollPane47, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 93, 31));
+        beveragesMenu.add(jScrollPane47, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 93, 31));
 
         jScrollPane48.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane48.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1678,7 +1600,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane48.setViewportView(bananashakeqty);
 
-        beveragesMenu.add(jScrollPane48, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 93, 31));
+        beveragesMenu.add(jScrollPane48, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 93, 31));
 
         jScrollPane49.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane49.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1695,7 +1617,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane49.setViewportView(mangoshakeqty);
 
-        beveragesMenu.add(jScrollPane49, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 93, 31));
+        beveragesMenu.add(jScrollPane49, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 93, 31));
 
         jScrollPane52.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane52.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1712,24 +1634,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane52.setViewportView(mangoslushqty);
 
-        beveragesMenu.add(jScrollPane52, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 93, 31));
-
-        jScrollPane53.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane53.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        guavaslushqty.setColumns(20);
-        guavaslushqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        guavaslushqty.setRows(5);
-        guavaslushqty.setText("0");
-        guavaslushqty.setEnabled(false);
-        guavaslushqty.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                guavaslushqtyKeyTyped(evt);
-            }
-        });
-        jScrollPane53.setViewportView(guavaslushqty);
-
-        beveragesMenu.add(jScrollPane53, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 610, 93, 31));
+        beveragesMenu.add(jScrollPane52, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 480, 93, 31));
 
         Beverages.setEditable(false);
         Beverages.setBackground(new java.awt.Color(255, 255, 255));
@@ -1759,7 +1664,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane54.setViewportView(orangeslushqty);
 
-        beveragesMenu.add(jScrollPane54, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 550, 93, 31));
+        beveragesMenu.add(jScrollPane54, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 600, 93, 31));
 
         orangeslushcheck.setBackground(new java.awt.Color(102, 8, 219));
         orangeslushcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1767,7 +1672,7 @@ public class orderV2 extends javax.swing.JFrame {
                 orangeslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(orangeslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, -1, -1));
+        beveragesMenu.add(orangeslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 600, -1, -1));
 
         jScrollPane55.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane55.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1784,7 +1689,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane55.setViewportView(strawberryslushqty);
 
-        beveragesMenu.add(jScrollPane55, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, 93, 31));
+        beveragesMenu.add(jScrollPane55, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 540, 93, 31));
 
         strawberryslushcheck.setBackground(new java.awt.Color(102, 8, 219));
         strawberryslushcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1792,52 +1697,49 @@ public class orderV2 extends javax.swing.JFrame {
                 strawberryslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(strawberryslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, -1, -1));
+        beveragesMenu.add(strawberryslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, -1, -1));
 
         jLabel54.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel54.setForeground(new java.awt.Color(255, 255, 255));
         jLabel54.setText("Mango Shake");
-        beveragesMenu.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 150, 30));
+        beveragesMenu.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 150, 30));
 
         jLabel55.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(255, 255, 255));
         jLabel55.setText("Banana Shake");
-        beveragesMenu.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 150, 30));
+        beveragesMenu.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 150, 30));
 
         jLabel57.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel57.setForeground(new java.awt.Color(255, 255, 255));
         jLabel57.setText("Mango Slush");
-        beveragesMenu.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 160, 70));
+        beveragesMenu.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 70));
 
         jLabel58.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel58.setForeground(new java.awt.Color(255, 255, 255));
         jLabel58.setText("Strawberry Slush");
-        beveragesMenu.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 480, 160, 40));
+        beveragesMenu.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 530, 160, 40));
 
         jLabel59.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel59.setForeground(new java.awt.Color(255, 255, 255));
         jLabel59.setText("Orange Slush");
-        beveragesMenu.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 540, 160, 40));
+        beveragesMenu.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 590, 160, 40));
 
-        jLabel60.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        jLabel60.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel60.setText("Guava Slush");
-        beveragesMenu.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 600, 120, 40));
-
-        jLabel61.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel61.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel61.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 36)); // NOI18N
         jLabel61.setForeground(new java.awt.Color(255, 255, 255));
         jLabel61.setText("Slush");
-        beveragesMenu.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, -1, 30));
+        beveragesMenu.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, -1, 30));
 
         jLabel63.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel63.setForeground(new java.awt.Color(255, 255, 255));
         jLabel63.setText("Chocalate Shake");
-        beveragesMenu.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, 30));
+        beveragesMenu.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, -1, 30));
 
-        jLabel64.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel64.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel64.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 36)); // NOI18N
         jLabel64.setForeground(new java.awt.Color(255, 255, 255));
         jLabel64.setText("Milk Shakes");
-        beveragesMenu.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, 30));
+        beveragesMenu.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, 30));
 
         jPanel4.add(beveragesMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -2327,8 +2229,27 @@ public class orderV2 extends javax.swing.JFrame {
         channyhalfqty.setText(null);
         nihariqty.setText(null);
         halwaplateqty.setText(null);
-        
+
         // Lunch
+
+        // Fast Food
+        chickenburgerqty.setText(null);
+        zingerburgerqty.setText(null);
+        chickenshwarmaqty.setText(null);
+        zingershwarmaqty.setText(null);
+        valopizzaqty.setText(null);
+        calzoneqty.setText(null);
+        chickenchipsqty.setText(null);
+
+        // Beverages
+
+        chocklateshakeqty.setText(null);
+        mangoshakeqty.setText(null);
+        bananashakeqty.setText(null);
+        mangoslushqty.setText(null);
+        strawberryslushqty.setText(null);
+        orangeslushqty.setText(null);
+
 
         //=====================
         teacheck.setSelected(false);
@@ -2347,7 +2268,25 @@ public class orderV2 extends javax.swing.JFrame {
         niharicheck.setSelected(false);
         halwaplatecheck.setSelected(false);
 
+        // Fast Food
+        zingerburgercheck.setSelected(false);
+        chickenburgercheck.setSelected(false);
+        zingershwarmacheck.setSelected(false);
+        chickenshwarmacheck.setSelected(false);
+        valopizzacheck.setSelected(false);
+        calzonecheck.setSelected(false);
+        chickenchipscheck.setSelected(false);
+
+        // Beverages
+        chocklateshakecheck.setSelected(false);
+        mangoshakecheck.setSelected(false);
+        bananashakecheck.setSelected(false);
+        mangoslushcheck.setSelected(false);
+        strawberryslushcheck.setSelected(false);
+        orangeslushcheck.setSelected(false);
+
         //========================
+
         teaqty.setEnabled(false);
         coffeeqty.setEnabled(false);
         lassiqty.setEnabled(false);
@@ -2363,7 +2302,27 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullqty.setEnabled(false);
         channyhalfqty.setEnabled(false);
         halwaplateqty.setEnabled(false);
+
+        //Fast Food
+        zingerburgerqty.setEnabled(false);
+        chickenburgerqty.setEnabled(false);
+        zingershwarmaqty.setEnabled(false);
+        chickenshwarmaqty.setEnabled(false);
+        valopizzaqty.setEnabled(false);
+        calzoneqty.setEnabled(false);
+        chickenchipsqty.setEnabled(false);
+
+        // Beverages
+
+        chocklateshakeqty.setEnabled(false);
+        mangoshakeqty.setEnabled(false);
+        bananashakeqty.setEnabled(false);
+        mangoslushqty.setEnabled(false);
+        strawberryslushqty.setEnabled(false);
+        orangeslushqty.setEnabled(false);
+
         //=======================
+
         teaqty.setText("0");
         coffeeqty.setText("0");
         lassiqty.setText("0");
@@ -2381,13 +2340,31 @@ public class orderV2 extends javax.swing.JFrame {
         nihariqty.setText("0");
         halwaplateqty.setText("0");
 
+        // Fast Food
+        zingerburgerqty.setText("0");
+        chickenburgerqty.setText("0");
+        zingershwarmaqty.setText("0");
+        chickenshwarmaqty.setText("0");
+        valopizzaqty.setText("0");
+        calzoneqty.setText("0");
+        chickenchipsqty.setText("0");
+
+        // Beverages
+
+        chocklateshakeqty.setText("0");
+        mangoshakeqty.setText("0");
+        bananashakeqty.setText("0");
+        mangoslushqty.setText("0");
+        strawberryslushqty.setText("0");
+        orangeslushqty.setText("0");
+
         //********************************
         //********************************
         //********************************
         // TODO add your handling code here:
     }//GEN-LAST:event_resetButtonActionPerformed
 
-    
+
     private void totalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_totalButtonActionPerformed
@@ -2846,142 +2823,241 @@ public class orderV2 extends javax.swing.JFrame {
     }//GEN-LAST:event_channyfullcheck2ActionPerformed
 
     private void chickenburgercheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenburgercheckActionPerformed
-        // TODO add your handling code here:
+        if (chickenburgercheck.isSelected()) {
+            chickenburgerqty.setEnabled(true);
+            chickenburgerqty.requestFocus();
+            chickenburgerqty.setText("");
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_chickenburgercheckActionPerformed
 
     private void chickenshwarmacheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenshwarmacheckActionPerformed
-        // TODO add your handling code here:
+        if (chickenshwarmacheck.isSelected()) {
+            chickenshwarmaqty.setEnabled(true);
+            chickenshwarmaqty.requestFocus();
+            chickenshwarmaqty.setText("");
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_chickenshwarmacheckActionPerformed
 
     private void zingershwarmacheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zingershwarmacheckActionPerformed
-        // TODO add your handling code here:
+        if (zingershwarmacheck.isSelected()) {
+            zingershwarmaqty.setEnabled(true);
+            zingershwarmaqty.requestFocus();
+            zingershwarmaqty.setText("");
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_zingershwarmacheckActionPerformed
 
     private void valopizzacheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valopizzacheckActionPerformed
-        // TODO add your handling code here:
+        if (valopizzacheck.isSelected()) {
+            valopizzaqty.setEnabled(true);
+            valopizzaqty.requestFocus();
+            valopizzaqty.setText("");
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_valopizzacheckActionPerformed
 
     private void zingerburgercheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zingerburgercheckActionPerformed
-        // TODO add your handling code here:
+        if (zingerburgercheck.isSelected()) {
+            zingerburgerqty.setEnabled(true);
+            zingerburgerqty.requestFocus();
+            zingerburgerqty.setText("");
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_zingerburgercheckActionPerformed
 
-    private void loadedfriescheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadedfriescheckActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_loadedfriescheckActionPerformed
-
-    private void grilledsandwitchcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grilledsandwitchcheckActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_grilledsandwitchcheckActionPerformed
-
     private void chickenburgerqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenburgerqtyKeyTyped
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_chickenburgerqtyKeyTyped
 
     private void chickenshwarmaqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenshwarmaqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_chickenshwarmaqtyKeyTyped
 
     private void zingerburgerqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_zingerburgerqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_zingerburgerqtyKeyTyped
 
-    private void loadedfriesqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loadedfriesqtyKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_loadedfriesqtyKeyTyped
-
     private void zingershwarmaqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_zingershwarmaqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_zingershwarmaqtyKeyTyped
 
     private void valopizzaqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_valopizzaqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_valopizzaqtyKeyTyped
-
-    private void grilledsandwitchqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_grilledsandwitchqtyKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_grilledsandwitchqtyKeyTyped
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField14ActionPerformed
 
     private void chickenchipsqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenchipsqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_chickenchipsqtyKeyTyped
 
     private void chickenchipscheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenchipscheckActionPerformed
-        // TODO add your handling code here:
+        if (chickenchipscheck.isSelected()) {
+            chickenchipsqty.setEnabled(true);
+            chickenchipsqty.requestFocus();
+            chickenchipsqty.setText("");
+        }          // TODO add your handling code here:
     }//GEN-LAST:event_chickenchipscheckActionPerformed
 
     private void calzoneqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_calzoneqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_calzoneqtyKeyTyped
 
     private void calzonecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calzonecheckActionPerformed
-        // TODO add your handling code here:
+        if (calzonecheck.isSelected()) {
+            calzoneqty.setEnabled(true);
+            calzoneqty.requestFocus();
+            calzoneqty.setText("");
+        }          // TODO add your handling code here:
     }//GEN-LAST:event_calzonecheckActionPerformed
 
     private void chocklateshakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chocklateshakecheckActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_chocklateshakecheckActionPerformed
+        if (chocklateshakecheck.isSelected()) {
+            chocklateshakeqty.setEnabled(true);
+            chocklateshakeqty.requestFocus();
+            chocklateshakeqty.setText("");
+        }
+      }//GEN-LAST:event_chocklateshakecheckActionPerformed
 
     private void bananashakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bananashakecheckActionPerformed
-        // TODO add your handling code here:
+        if (bananashakecheck.isSelected()) {
+            bananashakeqty.setEnabled(true);
+            bananashakeqty.requestFocus();
+            bananashakeqty.setText("");
+        }          // TODO add your handling code here:
     }//GEN-LAST:event_bananashakecheckActionPerformed
 
     private void mangoslushcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mangoslushcheckActionPerformed
         // TODO add your handling code here:
-        // my name is fahad 
-        
+
+                if (mangoslushcheck.isSelected()) {
+            mangoslushqty.setEnabled(true);
+            mangoslushqty.requestFocus();
+            mangoslushqty.setText("");
+        }
+
     }//GEN-LAST:event_mangoslushcheckActionPerformed
 
     private void mangoshakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mangoshakecheckActionPerformed
-        // TODO add your handling code here:
+               if (mangoshakecheck.isSelected()) {
+            mangoshakeqty.setEnabled(true);
+            mangoshakeqty.requestFocus();
+            mangoshakeqty.setText("");
+        }    // TODO add your handling code here:
     }//GEN-LAST:event_mangoshakecheckActionPerformed
 
-    private void niharicheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_niharicheck4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_niharicheck4ActionPerformed
-
     private void chocklateshakeqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chocklateshakeqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }         // TODO add your handling code here:
     }//GEN-LAST:event_chocklateshakeqtyKeyTyped
 
     private void bananashakeqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bananashakeqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }         // TODO add your handling code here:
     }//GEN-LAST:event_bananashakeqtyKeyTyped
 
     private void mangoshakeqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_mangoshakeqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }         // TODO add your handling code here:
     }//GEN-LAST:event_mangoshakeqtyKeyTyped
 
     private void mangoslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_mangoslushqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }         // TODO add your handling code here:
     }//GEN-LAST:event_mangoslushqtyKeyTyped
-
-    private void guavaslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_guavaslushqtyKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_guavaslushqtyKeyTyped
 
     private void BeveragesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BeveragesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BeveragesActionPerformed
 
     private void orangeslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_orangeslushqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }         // TODO add your handling code here:
     }//GEN-LAST:event_orangeslushqtyKeyTyped
 
     private void orangeslushcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orangeslushcheckActionPerformed
-        // TODO add your handling code here:
+        if (orangeslushcheck.isSelected()) {
+            orangeslushqty.setEnabled(true);
+            orangeslushqty.requestFocus();
+            orangeslushqty.setText("");
+        }          // TODO add your handling code here:
     }//GEN-LAST:event_orangeslushcheckActionPerformed
 
     private void strawberryslushqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_strawberryslushqtyKeyTyped
-        // TODO add your handling code here:
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE)) {
+            evt.consume();
+        }         // TODO add your handling code here:
     }//GEN-LAST:event_strawberryslushqtyKeyTyped
 
     private void strawberryslushcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_strawberryslushcheckActionPerformed
-        // TODO add your handling code here:
+        if (strawberryslushcheck.isSelected()) {
+            strawberryslushqty.setEnabled(true);
+            strawberryslushqty.requestFocus();
+            strawberryslushqty.setText("");
+        }          // TODO add your handling code here:
     }//GEN-LAST:event_strawberryslushcheckActionPerformed
+
+    private void chickenburgercheckKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenburgercheckKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_chickenburgercheckKeyTyped
 
     /**
      * @param args the command line arguments
@@ -3062,9 +3138,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JPanel fastfoodMenuSelectPanel;
     private javax.swing.JCheckBox fryeggcheck;
     private javax.swing.JTextArea fryeggqty;
-    private javax.swing.JCheckBox grilledsandwitchcheck;
-    private javax.swing.JTextArea grilledsandwitchqty;
-    private javax.swing.JTextArea guavaslushqty;
     private javax.swing.JCheckBox halwaplatecheck;
     private javax.swing.JCheckBox halwaplatecheck1;
     private javax.swing.JCheckBox halwaplatecheck2;
@@ -3115,7 +3188,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
@@ -3123,7 +3195,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
@@ -3131,7 +3202,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
@@ -3178,10 +3248,8 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane39;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane40;
-    private javax.swing.JScrollPane jScrollPane41;
     private javax.swing.JScrollPane jScrollPane42;
     private javax.swing.JScrollPane jScrollPane43;
-    private javax.swing.JScrollPane jScrollPane44;
     private javax.swing.JScrollPane jScrollPane45;
     private javax.swing.JScrollPane jScrollPane46;
     private javax.swing.JScrollPane jScrollPane47;
@@ -3189,7 +3257,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane49;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane52;
-    private javax.swing.JScrollPane jScrollPane53;
     private javax.swing.JScrollPane jScrollPane54;
     private javax.swing.JScrollPane jScrollPane55;
     private javax.swing.JScrollPane jScrollPane6;
@@ -3206,8 +3273,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea karhaifullqty;
     private javax.swing.JCheckBox lassicheck;
     private javax.swing.JTextArea lassiqty;
-    private javax.swing.JCheckBox loadedfriescheck;
-    private javax.swing.JTextArea loadedfriesqty;
     private javax.swing.JPanel lunchMenu;
     private javax.swing.JPanel lunchMenuSelectPanel;
     private javax.swing.JCheckBox malaiboticheck;
@@ -3226,7 +3291,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JCheckBox niharicheck;
     private javax.swing.JCheckBox niharicheck1;
     private javax.swing.JCheckBox niharicheck2;
-    private javax.swing.JCheckBox niharicheck4;
     private javax.swing.JTextArea nihariqty;
     private javax.swing.JTextArea nihariqty1;
     private javax.swing.JTextArea nihariqty2;
