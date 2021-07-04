@@ -122,7 +122,7 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         dinnerMenu = new javax.swing.JPanel();
-        fryeggcheck2 = new javax.swing.JCheckBox();
+        karhaicheck = new javax.swing.JCheckBox();
         parathacheck2 = new javax.swing.JCheckBox();
         naancheck2 = new javax.swing.JCheckBox();
         halwapuricheck2 = new javax.swing.JCheckBox();
@@ -130,7 +130,7 @@ public class orderV2 extends javax.swing.JFrame {
         halwaplatecheck2 = new javax.swing.JCheckBox();
         niharicheck2 = new javax.swing.JCheckBox();
         jScrollPane29 = new javax.swing.JScrollPane();
-        fryeggqty2 = new javax.swing.JTextArea();
+        karhaiqty = new javax.swing.JTextArea();
         jScrollPane30 = new javax.swing.JScrollPane();
         parathaqty2 = new javax.swing.JTextArea();
         jScrollPane31 = new javax.swing.JScrollPane();
@@ -429,7 +429,7 @@ public class orderV2 extends javax.swing.JFrame {
 
         jPanel2.add(bevragesMenuSelectPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 300, 45));
 
-        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/netbeansvisualapp/images_Billin_Menu.png"))); // NOI18N
+        jLabel62.setIcon(new javax.swing.ImageIcon("E:\\RJ Data\\BSCS\\2nd Semester\\OOP\\Semester Project\\Project Files\\Valorant-Restaurant\\Project\\src\\main\\java\\Images\\images_Billin_Menu.png")); // NOI18N
         jPanel2.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 200, 120));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 800));
@@ -1024,13 +1024,13 @@ public class orderV2 extends javax.swing.JFrame {
         dinnerMenu.setPreferredSize(new java.awt.Dimension(400, 900));
         dinnerMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        fryeggcheck2.setBackground(new java.awt.Color(102, 8, 219));
-        fryeggcheck2.addActionListener(new java.awt.event.ActionListener() {
+        karhaicheck.setBackground(new java.awt.Color(102, 8, 219));
+        karhaicheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fryeggcheck2ActionPerformed(evt);
+                karhaicheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(fryeggcheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
+        dinnerMenu.add(karhaicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
 
         parathacheck2.setBackground(new java.awt.Color(102, 8, 219));
         parathacheck2.addActionListener(new java.awt.event.ActionListener() {
@@ -1084,17 +1084,17 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane29.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane29.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        fryeggqty2.setColumns(20);
-        fryeggqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        fryeggqty2.setRows(5);
-        fryeggqty2.setText("0");
-        fryeggqty2.setEnabled(false);
-        fryeggqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        karhaiqty.setColumns(20);
+        karhaiqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        karhaiqty.setRows(5);
+        karhaiqty.setText("0");
+        karhaiqty.setEnabled(false);
+        karhaiqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                fryeggqty2KeyTyped(evt);
+                karhaiqtyKeyTyped(evt);
             }
         });
-        jScrollPane29.setViewportView(fryeggqty2);
+        jScrollPane29.setViewportView(karhaiqty);
 
         dinnerMenu.add(jScrollPane29, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 93, 31));
 
@@ -1305,7 +1305,7 @@ public class orderV2 extends javax.swing.JFrame {
 
         jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel43.setText("FRY EGG");
+        jLabel43.setText("KARHAI");
         dinnerMenu.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 110, 30));
 
         jPanel4.add(dinnerMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
@@ -2818,9 +2818,9 @@ public class orderV2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_channyfullcheck1ActionPerformed
 
-    private void fryeggcheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fryeggcheck2ActionPerformed
+    private void karhaicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_karhaicheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fryeggcheck2ActionPerformed
+    }//GEN-LAST:event_karhaicheckActionPerformed
 
     private void parathacheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parathacheck2ActionPerformed
         // TODO add your handling code here:
@@ -2846,9 +2846,9 @@ public class orderV2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_niharicheck2ActionPerformed
 
-    private void fryeggqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fryeggqty2KeyTyped
+    private void karhaiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_karhaiqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_fryeggqty2KeyTyped
+    }//GEN-LAST:event_karhaiqtyKeyTyped
 
     private void parathaqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_parathaqty2KeyTyped
         // TODO add your handling code here:
@@ -3120,11 +3120,9 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JPanel fastfoodMenu;
     private javax.swing.JPanel fastfoodMenuSelectPanel;
     private javax.swing.JCheckBox fryeggcheck;
-    private javax.swing.JCheckBox fryeggcheck2;
     private javax.swing.JCheckBox fryeggcheck3;
     private javax.swing.JCheckBox fryeggcheck4;
     private javax.swing.JTextArea fryeggqty;
-    private javax.swing.JTextArea fryeggqty2;
     private javax.swing.JTextArea fryeggqty3;
     private javax.swing.JTextArea fryeggqty4;
     private javax.swing.JCheckBox halwaplatecheck;
@@ -3274,6 +3272,8 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField21;
+    private javax.swing.JCheckBox karhaicheck;
+    private javax.swing.JTextArea karhaiqty;
     private javax.swing.JCheckBox lassicheck;
     private javax.swing.JTextArea lassiqty;
     private javax.swing.JPanel lunchMenu;

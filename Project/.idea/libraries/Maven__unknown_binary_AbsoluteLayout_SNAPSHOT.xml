@@ -2,8 +2,6 @@
   <library name="Maven: unknown.binary:AbsoluteLayout:SNAPSHOT">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/unknown/binary/AbsoluteLayout/SNAPSHOT/AbsoluteLayout-SNAPSHOT.jar!/" />
-      <root url="jar://E:/RJ Data/BSCS/2nd Semester/OOP/JAVA/jar_files/protobuf-java-3.11.4.jar!/" />
-      <root url="jar://E:/RJ Data/BSCS/2nd Semester/OOP/JAVA/jar_files/mysql-connector-java-8.0.25.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/unknown/binary/AbsoluteLayout/SNAPSHOT/AbsoluteLayout-SNAPSHOT-javadoc.jar!/" />

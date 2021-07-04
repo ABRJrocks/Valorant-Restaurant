@@ -77,7 +77,13 @@ public class MainMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void placeOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placeOrderActionPerformed
-        // TODO add your handling code here:
+
+                    setVisible(false);
+                    orderV2 window = new orderV2();
+                    window.setVisible(true);
+
+       
+     // TODO add your handling code here:
     }//GEN-LAST:event_placeOrderActionPerformed
 
     /**
