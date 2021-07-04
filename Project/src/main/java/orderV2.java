@@ -14,6 +14,31 @@ import javax.swing.JPanel;
  */
 public class orderV2 extends javax.swing.JFrame {
 
+
+    // Price list
+
+    // Fast food
+    int chickenburger = 200;
+    int zingerburger = 260;
+    int zingershwarma = 200;
+    int chickenshwarma = 150;
+    int valopizza = 1200;
+    int calzone = 350;
+    int chickenchips = 250;
+
+    // Beverages
+    int tea = 60;
+    int coffee = 150;
+    int lassi = 100;
+    int cola = 30;
+    int sprite = 30;
+    int chocalateshake = 200;
+    int mangoshake = 150;
+    int bananashake = 150;
+    int mangoslush = 60;
+    int strawberryslush = 60;
+    int orangeslush = 60;
+    
     /**
      * Creates new form orderV2
      */
@@ -189,6 +214,13 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
         beveragesMenu = new javax.swing.JPanel();
         chocklateshakecheck = new javax.swing.JCheckBox();
         bananashakecheck = new javax.swing.JCheckBox();
@@ -217,6 +249,12 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel61 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
         Billing = new javax.swing.JPanel();
         jTextField10 = new javax.swing.JTextField();
         jScrollPane11 = new javax.swing.JScrollPane();
@@ -259,6 +297,11 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1306,7 +1349,7 @@ public class orderV2 extends javax.swing.JFrame {
                 chickenburgercheckKeyTyped(evt);
             }
         });
-        fastfoodMenu.add(chickenburgercheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
+        fastfoodMenu.add(chickenburgercheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, 30));
 
         chickenshwarmacheck.setBackground(new java.awt.Color(102, 8, 219));
         chickenshwarmacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1314,7 +1357,7 @@ public class orderV2 extends javax.swing.JFrame {
                 chickenshwarmacheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(chickenshwarmacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
+        fastfoodMenu.add(chickenshwarmacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 30));
 
         zingershwarmacheck.setBackground(new java.awt.Color(102, 8, 219));
         zingershwarmacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1322,7 +1365,7 @@ public class orderV2 extends javax.swing.JFrame {
                 zingershwarmacheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(zingershwarmacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, -1, -1));
+        fastfoodMenu.add(zingershwarmacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, -1, -1));
 
         valopizzacheck.setBackground(new java.awt.Color(102, 8, 219));
         valopizzacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1330,7 +1373,7 @@ public class orderV2 extends javax.swing.JFrame {
                 valopizzacheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(valopizzacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, -1, 30));
+        fastfoodMenu.add(valopizzacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, 30));
 
         zingerburgercheck.setBackground(new java.awt.Color(102, 8, 219));
         zingerburgercheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1338,7 +1381,7 @@ public class orderV2 extends javax.swing.JFrame {
                 zingerburgercheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(zingerburgercheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
+        fastfoodMenu.add(zingerburgercheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 30));
 
         jScrollPane38.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane38.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1355,7 +1398,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane38.setViewportView(chickenburgerqty);
 
-        fastfoodMenu.add(jScrollPane38, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 93, 31));
+        fastfoodMenu.add(jScrollPane38, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 93, 31));
 
         jScrollPane39.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane39.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1372,7 +1415,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane39.setViewportView(chickenshwarmaqty);
 
-        fastfoodMenu.add(jScrollPane39, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 93, 31));
+        fastfoodMenu.add(jScrollPane39, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 93, 31));
 
         jScrollPane40.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane40.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1389,7 +1432,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane40.setViewportView(zingerburgerqty);
 
-        fastfoodMenu.add(jScrollPane40, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 93, 31));
+        fastfoodMenu.add(jScrollPane40, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 220, 93, 31));
 
         jScrollPane42.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane42.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1406,7 +1449,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane42.setViewportView(zingershwarmaqty);
 
-        fastfoodMenu.add(jScrollPane42, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 93, 31));
+        fastfoodMenu.add(jScrollPane42, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 93, 31));
 
         jScrollPane43.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane43.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1423,7 +1466,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane43.setViewportView(valopizzaqty);
 
-        fastfoodMenu.add(jScrollPane43, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 93, 31));
+        fastfoodMenu.add(jScrollPane43, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 430, 93, 31));
 
         jTextField14.setEditable(false);
         jTextField14.setBackground(new java.awt.Color(255, 255, 255));
@@ -1453,7 +1496,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane45.setViewportView(chickenchipsqty);
 
-        fastfoodMenu.add(jScrollPane45, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, 93, 31));
+        fastfoodMenu.add(jScrollPane45, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 560, 93, 31));
 
         chickenchipscheck.setBackground(new java.awt.Color(102, 8, 219));
         chickenchipscheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1461,7 +1504,7 @@ public class orderV2 extends javax.swing.JFrame {
                 chickenchipscheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(chickenchipscheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 560, -1, -1));
+        fastfoodMenu.add(chickenchipscheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, -1, -1));
 
         jScrollPane46.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane46.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1478,7 +1521,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane46.setViewportView(calzoneqty);
 
-        fastfoodMenu.add(jScrollPane46, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, 93, 31));
+        fastfoodMenu.add(jScrollPane46, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, 93, 31));
 
         calzonecheck.setBackground(new java.awt.Color(102, 8, 219));
         calzonecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1486,48 +1529,83 @@ public class orderV2 extends javax.swing.JFrame {
                 calzonecheckActionPerformed(evt);
             }
         });
-        fastfoodMenu.add(calzonecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, -1, -1));
+        fastfoodMenu.add(calzonecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, -1, -1));
 
         jLabel45.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(255, 255, 255));
         jLabel45.setText("Zinger Burger");
         jLabel45.setToolTipText("");
-        fastfoodMenu.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 140, 30));
+        fastfoodMenu.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 140, 30));
 
         jLabel46.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel46.setForeground(new java.awt.Color(255, 255, 255));
         jLabel46.setText("Chicken Shwarma");
         jLabel46.setToolTipText("");
-        fastfoodMenu.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 170, 30));
+        fastfoodMenu.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 170, 30));
 
         jLabel47.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(255, 255, 255));
         jLabel47.setText("Zinger Shwarma");
         jLabel47.setToolTipText("");
-        fastfoodMenu.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 160, 40));
+        fastfoodMenu.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 160, 40));
 
         jLabel48.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel48.setForeground(new java.awt.Color(255, 255, 255));
         jLabel48.setText("Valorant Pizza 13\"");
         jLabel48.setToolTipText("");
-        fastfoodMenu.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 170, 70));
+        fastfoodMenu.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 170, 70));
 
         jLabel49.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel49.setForeground(new java.awt.Color(255, 255, 255));
         jLabel49.setText("Calzone");
         jLabel49.setToolTipText("");
-        fastfoodMenu.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, 160, 40));
+        fastfoodMenu.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 160, 40));
 
         jLabel50.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel50.setForeground(new java.awt.Color(255, 255, 255));
         jLabel50.setText("Chicken Chips");
         jLabel50.setToolTipText("");
-        fastfoodMenu.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 160, 40));
+        fastfoodMenu.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, 160, 40));
 
-        jLabel52.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel52.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel52.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel52.setText("Chicken Burger");
-        fastfoodMenu.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 150, 30));
+        jLabel52.setText("260 Rs");
+        fastfoodMenu.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 60, 30));
+
+        jLabel53.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel53.setText("Chicken Burger");
+        fastfoodMenu.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 150, 30));
+
+        jLabel56.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel56.setText("150 Rs");
+        fastfoodMenu.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 60, 30));
+
+        jLabel60.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel60.setText("200 Rs");
+        fastfoodMenu.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 60, 30));
+
+        jLabel65.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel65.setText("1200 Rs");
+        fastfoodMenu.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 60, 30));
+
+        jLabel66.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel66.setText("350 Rs");
+        fastfoodMenu.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 60, 30));
+
+        jLabel67.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel67.setText("250 Rs");
+        fastfoodMenu.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 560, 60, 30));
+
+        jLabel68.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel68.setText("200 Rs");
+        fastfoodMenu.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 60, 30));
 
         jPanel4.add(fastfoodMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -1542,7 +1620,7 @@ public class orderV2 extends javax.swing.JFrame {
                 chocklateshakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(chocklateshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, 30));
+        beveragesMenu.add(chocklateshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, 30));
 
         bananashakecheck.setBackground(new java.awt.Color(102, 8, 219));
         bananashakecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1550,7 +1628,7 @@ public class orderV2 extends javax.swing.JFrame {
                 bananashakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(bananashakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, -1, 30));
+        beveragesMenu.add(bananashakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, 30));
 
         mangoslushcheck.setBackground(new java.awt.Color(102, 8, 219));
         mangoslushcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1558,7 +1636,7 @@ public class orderV2 extends javax.swing.JFrame {
                 mangoslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(mangoslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, -1, 30));
+        beveragesMenu.add(mangoslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, 30));
 
         mangoshakecheck.setBackground(new java.awt.Color(102, 8, 219));
         mangoshakecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1566,7 +1644,7 @@ public class orderV2 extends javax.swing.JFrame {
                 mangoshakecheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(mangoshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, 30));
+        beveragesMenu.add(mangoshakecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, 30));
 
         jScrollPane47.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane47.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1583,7 +1661,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane47.setViewportView(chocklateshakeqty);
 
-        beveragesMenu.add(jScrollPane47, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 93, 31));
+        beveragesMenu.add(jScrollPane47, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 93, 31));
 
         jScrollPane48.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane48.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1600,7 +1678,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane48.setViewportView(bananashakeqty);
 
-        beveragesMenu.add(jScrollPane48, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 93, 31));
+        beveragesMenu.add(jScrollPane48, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 93, 31));
 
         jScrollPane49.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane49.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1617,7 +1695,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane49.setViewportView(mangoshakeqty);
 
-        beveragesMenu.add(jScrollPane49, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 93, 31));
+        beveragesMenu.add(jScrollPane49, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 93, 31));
 
         jScrollPane52.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane52.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1634,7 +1712,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane52.setViewportView(mangoslushqty);
 
-        beveragesMenu.add(jScrollPane52, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 480, 93, 31));
+        beveragesMenu.add(jScrollPane52, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 93, 31));
 
         Beverages.setEditable(false);
         Beverages.setBackground(new java.awt.Color(255, 255, 255));
@@ -1664,7 +1742,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane54.setViewportView(orangeslushqty);
 
-        beveragesMenu.add(jScrollPane54, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 600, 93, 31));
+        beveragesMenu.add(jScrollPane54, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 600, 93, 31));
 
         orangeslushcheck.setBackground(new java.awt.Color(102, 8, 219));
         orangeslushcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1672,7 +1750,7 @@ public class orderV2 extends javax.swing.JFrame {
                 orangeslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(orangeslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 600, -1, -1));
+        beveragesMenu.add(orangeslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, -1));
 
         jScrollPane55.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane55.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1689,7 +1767,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane55.setViewportView(strawberryslushqty);
 
-        beveragesMenu.add(jScrollPane55, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 540, 93, 31));
+        beveragesMenu.add(jScrollPane55, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 540, 93, 31));
 
         strawberryslushcheck.setBackground(new java.awt.Color(102, 8, 219));
         strawberryslushcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1697,32 +1775,32 @@ public class orderV2 extends javax.swing.JFrame {
                 strawberryslushcheckActionPerformed(evt);
             }
         });
-        beveragesMenu.add(strawberryslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, -1, -1));
+        beveragesMenu.add(strawberryslushcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, -1, -1));
 
         jLabel54.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel54.setForeground(new java.awt.Color(255, 255, 255));
         jLabel54.setText("Mango Shake");
-        beveragesMenu.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 150, 30));
+        beveragesMenu.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 150, 30));
 
         jLabel55.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(255, 255, 255));
         jLabel55.setText("Banana Shake");
-        beveragesMenu.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 150, 30));
+        beveragesMenu.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 150, 30));
 
         jLabel57.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel57.setForeground(new java.awt.Color(255, 255, 255));
         jLabel57.setText("Mango Slush");
-        beveragesMenu.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 70));
+        beveragesMenu.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 160, 70));
 
         jLabel58.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel58.setForeground(new java.awt.Color(255, 255, 255));
         jLabel58.setText("Strawberry Slush");
-        beveragesMenu.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 530, 160, 40));
+        beveragesMenu.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, 160, 40));
 
         jLabel59.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel59.setForeground(new java.awt.Color(255, 255, 255));
         jLabel59.setText("Orange Slush");
-        beveragesMenu.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 590, 160, 40));
+        beveragesMenu.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 590, 160, 40));
 
         jLabel61.setBackground(new java.awt.Color(255, 255, 255));
         jLabel61.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 36)); // NOI18N
@@ -1733,13 +1811,43 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel63.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel63.setForeground(new java.awt.Color(255, 255, 255));
         jLabel63.setText("Chocalate Shake");
-        beveragesMenu.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, -1, 30));
+        beveragesMenu.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, 30));
 
         jLabel64.setBackground(new java.awt.Color(255, 255, 255));
         jLabel64.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 36)); // NOI18N
         jLabel64.setForeground(new java.awt.Color(255, 255, 255));
         jLabel64.setText("Milk Shakes");
         beveragesMenu.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, 30));
+
+        jLabel69.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel69.setText("200 Rs");
+        beveragesMenu.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 60, 30));
+
+        jLabel70.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel70.setText("150 Rs");
+        beveragesMenu.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 250, 60, 30));
+
+        jLabel71.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel71.setText("150 Rs");
+        beveragesMenu.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 60, 30));
+
+        jLabel73.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setText("60 Rs");
+        beveragesMenu.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 480, 60, 30));
+
+        jLabel74.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel74.setText("60 Rs");
+        beveragesMenu.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 540, 60, 30));
+
+        jLabel75.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel75.setText("60 Rs");
+        beveragesMenu.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 600, 60, 30));
 
         jPanel4.add(beveragesMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -1786,7 +1894,7 @@ public class orderV2 extends javax.swing.JFrame {
                 teacheckActionPerformed(evt);
             }
         });
-        Billing.add(teacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, 52));
+        Billing.add(teacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, 52));
 
         coffeecheck.setBackground(new java.awt.Color(102, 8, 219));
         coffeecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1794,7 +1902,7 @@ public class orderV2 extends javax.swing.JFrame {
                 coffeecheckActionPerformed(evt);
             }
         });
-        Billing.add(coffeecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, -1, 20));
+        Billing.add(coffeecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, 20));
 
         jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1840,7 +1948,7 @@ public class orderV2 extends javax.swing.JFrame {
                 lassicheckActionPerformed(evt);
             }
         });
-        Billing.add(lassicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, 20));
+        Billing.add(lassicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, 20));
 
         colacheck.setBackground(new java.awt.Color(102, 8, 219));
         colacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1848,7 +1956,7 @@ public class orderV2 extends javax.swing.JFrame {
                 colacheckActionPerformed(evt);
             }
         });
-        Billing.add(colacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 20));
+        Billing.add(colacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, 20));
 
         jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2029,12 +2137,12 @@ public class orderV2 extends javax.swing.JFrame {
                 spritecheckActionPerformed(evt);
             }
         });
-        Billing.add(spritecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, 20));
+        Billing.add(spritecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, -1, 20));
 
         jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("SPRITE");
-        Billing.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 110, 40));
+        Billing.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 110, 40));
 
         jLabel17.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
@@ -2044,22 +2152,22 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("COFFEE");
-        Billing.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 110, 40));
+        Billing.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 110, 40));
 
         jLabel19.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("LASSI");
-        Billing.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 110, 40));
+        Billing.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 110, 40));
 
         jLabel20.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("COLA");
-        Billing.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 110, 40));
+        Billing.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, 110, 40));
 
         jLabel21.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("TEA");
-        Billing.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 110, 40));
+        Billing.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 110, 40));
 
         jLabel22.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
@@ -2080,6 +2188,31 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("Sub Total");
         Billing.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 530, 90, 40));
+
+        jLabel72.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel72.setText("60 Rs");
+        Billing.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 60, 30));
+
+        jLabel76.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel76.setText("150 Rs");
+        Billing.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 60, 30));
+
+        jLabel77.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setText("100 Rs");
+        Billing.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 60, 30));
+
+        jLabel78.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel78.setText("30 Rs");
+        Billing.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 60, 30));
+
+        jLabel80.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel80.setText("30 Rs");
+        Billing.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 250, 60, 30));
 
         jPanel4.add(Billing, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 520, 820));
 
@@ -3423,23 +3556,11 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea calzoneqty;
     private javax.swing.JTextArea change;
     private javax.swing.JCheckBox channyfullcheck;
-    private javax.swing.JCheckBox channyfullcheck4;
     private javax.swing.JTextArea channyfullqty;
-    private javax.swing.JTextArea channyfullqty4;
     private javax.swing.JCheckBox channyhalfcheck;
-    private javax.swing.JCheckBox channyhalfcheck4;
     private javax.swing.JTextArea channyhalfqty;
-    private javax.swing.JTextArea channyhalfqty4;
     private javax.swing.JCheckBox cheesenaancheck;
     private javax.swing.JTextArea cheesenaanqty;
-    private javax.swing.JCheckBox channyfullcheck1;
-    private javax.swing.JCheckBox channyfullcheck2;
-    private javax.swing.JTextArea channyfullqty1;
-    private javax.swing.JTextArea channyfullqty2;
-    private javax.swing.JCheckBox channyhalfcheck1;
-    private javax.swing.JCheckBox channyhalfcheck2;
-    private javax.swing.JTextArea channyhalfqty1;
-    private javax.swing.JTextArea channyhalfqty2;
     private javax.swing.JCheckBox chickenburgercheck;
     private javax.swing.JTextArea chickenburgerqty;
     private javax.swing.JCheckBox chickenchipscheck;
@@ -3468,27 +3589,12 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea fruitchaatqty;
     private javax.swing.JCheckBox fryeggcheck;
     private javax.swing.JTextArea fryeggqty;
-    private javax.swing.JTextArea fryeggqty4;
-    private javax.swing.JCheckBox grilledsandwitchcheck;
-    private javax.swing.JTextArea grilledsandwitchqty;
     private javax.swing.JCheckBox haleemcheck;
     private javax.swing.JTextArea haleemqty;
     private javax.swing.JCheckBox halwaplatecheck;
-    private javax.swing.JCheckBox halwaplatecheck4;
     private javax.swing.JTextArea halwaplateqty;
-    private javax.swing.JTextArea halwaplateqty4;
     private javax.swing.JCheckBox halwapuricheck;
-    private javax.swing.JCheckBox halwapuricheck4;
     private javax.swing.JTextArea halwapuriqty;
-    private javax.swing.JTextArea halwapuriqty4;
-    private javax.swing.JCheckBox halwaplatecheck1;
-    private javax.swing.JCheckBox halwaplatecheck2;
-    private javax.swing.JTextArea halwaplateqty1;
-    private javax.swing.JTextArea halwaplateqty2;
-    private javax.swing.JCheckBox halwapuricheck1;
-    private javax.swing.JCheckBox halwapuricheck2;
-    private javax.swing.JTextArea halwapuriqty1;
-    private javax.swing.JTextArea halwapuriqty2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -3534,18 +3640,36 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -3623,37 +3747,15 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea mangoslushqty;
     private javax.swing.JTextArea moneyInput;
     private javax.swing.JCheckBox naancheck;
-    private javax.swing.JCheckBox naancheck4;
     private javax.swing.JTextArea naanqty;
-    private javax.swing.JTextArea naanqty4;
     private javax.swing.JCheckBox niharicheck;
-    private javax.swing.JCheckBox niharicheck4;
     private javax.swing.JTextArea nihariqty;
-    private javax.swing.JTextArea nihariqty4;
     private javax.swing.JCheckBox ommlettecheck;
-    private javax.swing.JCheckBox ommlettecheck4;
     private javax.swing.JTextArea ommletteqty;
-    private javax.swing.JTextArea ommletteqty4;
-    private javax.swing.JCheckBox parathacheck;
-    private javax.swing.JCheckBox parathacheck4;
-    private javax.swing.JTextArea parathaqty;
-    private javax.swing.JTextArea parathaqty4;
-    private javax.swing.JCheckBox naancheck1;
-    private javax.swing.JCheckBox naancheck2;
-    private javax.swing.JTextArea naanqty1;
-    private javax.swing.JTextArea naanqty2;
-    private javax.swing.JCheckBox niharicheck1;
-    private javax.swing.JCheckBox niharicheck2;
-    private javax.swing.JTextArea nihariqty1;
-    private javax.swing.JTextArea nihariqty2;
-    private javax.swing.JCheckBox ommlettecheck2;
-    private javax.swing.JTextArea ommletteqty2;
     private javax.swing.JCheckBox orangeslushcheck;
     private javax.swing.JTextArea orangeslushqty;
-    private javax.swing.JCheckBox parathacheck1;
-    private javax.swing.JCheckBox parathacheck2;
-    private javax.swing.JTextArea parathaqty1;
-    private javax.swing.JTextArea parathaqty2;
+    private javax.swing.JCheckBox parathacheck;
+    private javax.swing.JTextArea parathaqty;
     private javax.swing.JComboBox<String> paymentSelection;
     private javax.swing.JButton resetButton;
     private javax.swing.JCheckBox roticheck;
