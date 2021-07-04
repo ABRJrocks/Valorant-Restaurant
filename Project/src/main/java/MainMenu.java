@@ -28,11 +28,8 @@ public class MainMenu extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        modifyOrder = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         placeOrder = new javax.swing.JButton();
-        updateMenu = new javax.swing.JButton();
-        addMenuItems = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,18 +40,6 @@ public class MainMenu extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon("E:\\RJ Data\\BSCS\\2nd Semester\\OOP\\Semester Project\\Project Files\\Project\\src\\main\\java\\Images\\valorantFinal_adobespark.png")); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 620, 315));
-
-        modifyOrder.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
-        modifyOrder.setForeground(new java.awt.Color(51, 51, 51));
-        modifyOrder.setText("Modify Order");
-        modifyOrder.setBorderPainted(false);
-        modifyOrder.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        modifyOrder.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modifyOrderActionPerformed(evt);
-            }
-        });
-        jPanel1.add(modifyOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 510, 170, 40));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -73,31 +58,7 @@ public class MainMenu extends javax.swing.JFrame {
                 placeOrderActionPerformed(evt);
             }
         });
-        jPanel1.add(placeOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 510, 160, 40));
-
-        updateMenu.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
-        updateMenu.setForeground(new java.awt.Color(51, 51, 51));
-        updateMenu.setText("Updae Menu");
-        updateMenu.setBorderPainted(false);
-        updateMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        updateMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                updateMenuActionPerformed(evt);
-            }
-        });
-        jPanel1.add(updateMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 510, 170, 40));
-
-        addMenuItems.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
-        addMenuItems.setForeground(new java.awt.Color(51, 51, 51));
-        addMenuItems.setText("Add Items");
-        addMenuItems.setBorderPainted(false);
-        addMenuItems.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        addMenuItems.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addMenuItemsActionPerformed(evt);
-            }
-        });
-        jPanel1.add(addMenuItems, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 160, 40));
+        jPanel1.add(placeOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 510, 160, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,22 +76,9 @@ public class MainMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void modifyOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modifyOrderActionPerformed
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_modifyOrderActionPerformed
-
     private void placeOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placeOrderActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_placeOrderActionPerformed
-
-    private void updateMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateMenuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_updateMenuActionPerformed
-
-    private void addMenuItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMenuItemsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addMenuItemsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,12 +116,9 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addMenuItems;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton modifyOrder;
     private javax.swing.JButton placeOrder;
-    private javax.swing.JButton updateMenu;
     // End of variables declaration//GEN-END:variables
 }
