@@ -13,6 +13,37 @@ import javax.swing.JPanel;
  * @author ABC
  */
 public class orderV2 extends javax.swing.JFrame {
+    //price list
+    //breakfast
+    int fryegg = 60;
+    int ommlette = 60;
+    int paratha = 50;
+    int naan = 15;
+    int halwapuri = 30;
+    int channyfull = 120;
+    int channyhalf = 80;
+    int nihari = 350;
+    int halwaplate = 150;
+    //lunch
+    int biryani = 200;
+    int chicken_roll = 50;
+    int samosa = 30;
+    int sandwich = 150;
+    int dahibhally = 80;
+    int fruitchaat = 100;
+    int macandcheese = 250;
+    int russiansalad = 150;
+    int freshsalad = 100;
+    //dinner 
+    int malaiboti = 150;
+    int seekhkabab = 80;
+    int sajji = 850;
+    int tawachicken = 250;
+    int haleem = 100;
+    int chickenkarhai = 1000;
+    int cheesenaan = 150;
+    int khmeeriroti = 20;
+    int roti = 10;
 
 
     // Price list
@@ -44,6 +75,7 @@ public class orderV2 extends javax.swing.JFrame {
      */
     public orderV2() {
         initComponents();
+        
     }
     
     /**
@@ -108,6 +140,15 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
         lunchMenu = new javax.swing.JPanel();
         biryanicheck = new javax.swing.JCheckBox();
         samosacheck = new javax.swing.JCheckBox();
@@ -146,6 +187,15 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
         dinnerMenu = new javax.swing.JPanel();
         malaiboticheck = new javax.swing.JCheckBox();
         sajjicheck = new javax.swing.JCheckBox();
@@ -184,6 +234,15 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
         fastfoodMenu = new javax.swing.JPanel();
         chickenburgercheck = new javax.swing.JCheckBox();
         chickenshwarmacheck = new javax.swing.JCheckBox();
@@ -471,7 +530,7 @@ public class orderV2 extends javax.swing.JFrame {
                 fryeggcheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(fryeggcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
+        breakfastMenu.add(fryeggcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, 30));
 
         parathacheck.setBackground(new java.awt.Color(102, 8, 219));
         parathacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -479,7 +538,7 @@ public class orderV2 extends javax.swing.JFrame {
                 parathacheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(parathacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
+        breakfastMenu.add(parathacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 30));
 
         naancheck.setBackground(new java.awt.Color(102, 8, 219));
         naancheck.addActionListener(new java.awt.event.ActionListener() {
@@ -487,7 +546,7 @@ public class orderV2 extends javax.swing.JFrame {
                 naancheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(naancheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        breakfastMenu.add(naancheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
 
         halwapuricheck.setBackground(new java.awt.Color(102, 8, 219));
         halwapuricheck.addActionListener(new java.awt.event.ActionListener() {
@@ -495,7 +554,7 @@ public class orderV2 extends javax.swing.JFrame {
                 halwapuricheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(halwapuricheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
+        breakfastMenu.add(halwapuricheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, 30));
 
         ommlettecheck.setBackground(new java.awt.Color(102, 8, 219));
         ommlettecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -503,7 +562,7 @@ public class orderV2 extends javax.swing.JFrame {
                 ommlettecheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(ommlettecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
+        breakfastMenu.add(ommlettecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 30));
 
         halwaplatecheck.setBackground(new java.awt.Color(102, 8, 219));
         halwaplatecheck.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -512,7 +571,7 @@ public class orderV2 extends javax.swing.JFrame {
                 halwaplatecheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(halwaplatecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
+        breakfastMenu.add(halwaplatecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, -1, 20));
 
         niharicheck.setBackground(new java.awt.Color(102, 8, 219));
         niharicheck.addActionListener(new java.awt.event.ActionListener() {
@@ -520,7 +579,7 @@ public class orderV2 extends javax.swing.JFrame {
                 niharicheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(niharicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
+        breakfastMenu.add(niharicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, -1, 20));
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -537,7 +596,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(fryeggqty);
 
-        breakfastMenu.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 93, 31));
+        breakfastMenu.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 93, 31));
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -554,7 +613,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(parathaqty);
 
-        breakfastMenu.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 93, 31));
+        breakfastMenu.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 93, 31));
 
         jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -571,7 +630,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(ommletteqty);
 
-        breakfastMenu.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 93, 31));
+        breakfastMenu.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 93, 31));
 
         jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -588,7 +647,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(halwaplateqty);
 
-        breakfastMenu.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 650, 93, 31));
+        breakfastMenu.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 640, 93, 31));
 
         jScrollPane5.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane5.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -605,7 +664,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane5.setViewportView(naanqty);
 
-        breakfastMenu.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 93, 31));
+        breakfastMenu.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 93, 31));
 
         jScrollPane6.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -622,7 +681,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane6.setViewportView(halwapuriqty);
 
-        breakfastMenu.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 93, 31));
+        breakfastMenu.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 93, 31));
 
         jScrollPane7.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane7.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -639,7 +698,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane7.setViewportView(nihariqty);
 
-        breakfastMenu.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, 93, 31));
+        breakfastMenu.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 580, 93, 31));
 
         jTextField11.setEditable(false);
         jTextField11.setBackground(new java.awt.Color(255, 255, 255));
@@ -669,7 +728,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane15.setViewportView(channyhalfqty);
 
-        breakfastMenu.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, 93, 31));
+        breakfastMenu.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 520, 93, 31));
 
         channyhalfcheck.setBackground(new java.awt.Color(102, 8, 219));
         channyhalfcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -677,7 +736,7 @@ public class orderV2 extends javax.swing.JFrame {
                 channyhalfcheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(channyhalfcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
+        breakfastMenu.add(channyhalfcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, -1, -1));
 
         jScrollPane16.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane16.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -694,7 +753,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane16.setViewportView(channyfullqty);
 
-        breakfastMenu.add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 93, 31));
+        breakfastMenu.add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 93, 31));
 
         channyfullcheck.setBackground(new java.awt.Color(102, 8, 219));
         channyfullcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -702,52 +761,97 @@ public class orderV2 extends javax.swing.JFrame {
                 channyfullcheckActionPerformed(evt);
             }
         });
-        breakfastMenu.add(channyfullcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
+        breakfastMenu.add(channyfullcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 21)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("HALWA PLATE");
-        breakfastMenu.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 170, 60));
+        breakfastMenu.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, 170, 60));
 
-        jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("OMMLETTE");
-        breakfastMenu.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 140, 30));
+        breakfastMenu.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 140, 30));
 
-        jLabel10.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("PARATHA");
-        breakfastMenu.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 140, 30));
+        breakfastMenu.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 140, 30));
 
-        jLabel11.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("NAAN");
-        breakfastMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 80, 40));
+        breakfastMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 80, 40));
 
-        jLabel12.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("HALWA PURI");
-        breakfastMenu.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 160, 70));
+        breakfastMenu.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 160, 70));
 
-        jLabel13.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("CHANNY(full)");
-        breakfastMenu.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 40));
+        breakfastMenu.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 160, 40));
 
-        jLabel14.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("CHANNY(half)");
-        breakfastMenu.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 520, 160, 40));
+        breakfastMenu.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 160, 40));
 
-        jLabel15.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("NIHARI");
-        breakfastMenu.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 90, 40));
+        breakfastMenu.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, 90, 40));
 
-        jLabel16.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("FRY EGG");
-        breakfastMenu.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 110, 30));
+        jLabel16.setText("FRY EGG  ");
+        breakfastMenu.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 130, 30));
+
+        jLabel35.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("150 Rs");
+        breakfastMenu.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 640, 70, 30));
+
+        jLabel44.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel44.setText("60 Rs");
+        breakfastMenu.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 70, 30));
+
+        jLabel51.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel51.setText("60 Rs");
+        breakfastMenu.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 70, 30));
+
+        jLabel53.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel53.setText("40 Rs");
+        breakfastMenu.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 70, 30));
+
+        jLabel56.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel56.setText("15 Rs");
+        breakfastMenu.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 70, 30));
+
+        jLabel60.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel60.setText("30 Rs");
+        breakfastMenu.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 70, 30));
+
+        jLabel65.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel65.setText("120 Rs");
+        breakfastMenu.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 460, 70, 30));
+
+        jLabel66.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel66.setText("80 Rs");
+        breakfastMenu.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 520, 70, 30));
+
+        jLabel67.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel67.setText("350 Rs");
+        breakfastMenu.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 580, 70, 30));
 
         jPanel4.add(breakfastMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -762,7 +866,7 @@ public class orderV2 extends javax.swing.JFrame {
                 biryanicheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(biryanicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
+        lunchMenu.add(biryanicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, 30));
 
         samosacheck.setBackground(new java.awt.Color(102, 8, 219));
         samosacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -770,7 +874,7 @@ public class orderV2 extends javax.swing.JFrame {
                 samosacheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(samosacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
+        lunchMenu.add(samosacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 30));
 
         sandwichcheck.setBackground(new java.awt.Color(102, 8, 219));
         sandwichcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -778,7 +882,7 @@ public class orderV2 extends javax.swing.JFrame {
                 sandwichcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(sandwichcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        lunchMenu.add(sandwichcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
 
         dahibhallycheck.setBackground(new java.awt.Color(102, 8, 219));
         dahibhallycheck.addActionListener(new java.awt.event.ActionListener() {
@@ -786,7 +890,7 @@ public class orderV2 extends javax.swing.JFrame {
                 dahibhallycheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(dahibhallycheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
+        lunchMenu.add(dahibhallycheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, 30));
 
         chickenrollcheck.setBackground(new java.awt.Color(102, 8, 219));
         chickenrollcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -794,7 +898,7 @@ public class orderV2 extends javax.swing.JFrame {
                 chickenrollcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(chickenrollcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
+        lunchMenu.add(chickenrollcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 30));
 
         freshsaladcheck.setBackground(new java.awt.Color(102, 8, 219));
         freshsaladcheck.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -803,7 +907,7 @@ public class orderV2 extends javax.swing.JFrame {
                 freshsaladcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(freshsaladcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
+        lunchMenu.add(freshsaladcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, -1, 20));
 
         russiansaladcheck.setBackground(new java.awt.Color(102, 8, 219));
         russiansaladcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -811,7 +915,7 @@ public class orderV2 extends javax.swing.JFrame {
                 russiansaladcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(russiansaladcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
+        lunchMenu.add(russiansaladcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, -1, 20));
 
         jScrollPane20.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane20.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -828,7 +932,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane20.setViewportView(biryaniqty);
 
-        lunchMenu.add(jScrollPane20, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 93, 31));
+        lunchMenu.add(jScrollPane20, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 93, 31));
 
         jScrollPane21.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane21.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -845,7 +949,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane21.setViewportView(samosaqty);
 
-        lunchMenu.add(jScrollPane21, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 93, 31));
+        lunchMenu.add(jScrollPane21, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 93, 31));
 
         jScrollPane22.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane22.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -862,7 +966,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane22.setViewportView(chickenrollqty);
 
-        lunchMenu.add(jScrollPane22, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 93, 31));
+        lunchMenu.add(jScrollPane22, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 93, 31));
 
         jScrollPane23.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane23.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -879,7 +983,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane23.setViewportView(freshsaladqty);
 
-        lunchMenu.add(jScrollPane23, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 650, 93, 31));
+        lunchMenu.add(jScrollPane23, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 650, 93, 31));
 
         jScrollPane24.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane24.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -896,7 +1000,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane24.setViewportView(sandwichqty);
 
-        lunchMenu.add(jScrollPane24, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 93, 31));
+        lunchMenu.add(jScrollPane24, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 93, 31));
 
         jScrollPane25.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane25.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -913,7 +1017,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane25.setViewportView(dahibhallyqty);
 
-        lunchMenu.add(jScrollPane25, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 93, 31));
+        lunchMenu.add(jScrollPane25, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, 93, 31));
 
         jScrollPane26.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane26.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -930,7 +1034,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane26.setViewportView(russiansaladqty);
 
-        lunchMenu.add(jScrollPane26, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, 93, 31));
+        lunchMenu.add(jScrollPane26, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 590, 93, 31));
 
         jTextField12.setEditable(false);
         jTextField12.setBackground(new java.awt.Color(255, 255, 255));
@@ -960,7 +1064,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane27.setViewportView(macandcheeseqty);
 
-        lunchMenu.add(jScrollPane27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, 93, 31));
+        lunchMenu.add(jScrollPane27, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 530, 93, 31));
 
         macandcheesecheck.setBackground(new java.awt.Color(102, 8, 219));
         macandcheesecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -968,7 +1072,7 @@ public class orderV2 extends javax.swing.JFrame {
                 macandcheesecheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(macandcheesecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
+        lunchMenu.add(macandcheesecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, -1, -1));
 
         jScrollPane28.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane28.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -985,7 +1089,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane28.setViewportView(fruitchaatqty);
 
-        lunchMenu.add(jScrollPane28, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 93, 31));
+        lunchMenu.add(jScrollPane28, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 470, 93, 31));
 
         fruitchaatcheck.setBackground(new java.awt.Color(102, 8, 219));
         fruitchaatcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -993,52 +1097,106 @@ public class orderV2 extends javax.swing.JFrame {
                 fruitchaatcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(fruitchaatcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
+        lunchMenu.add(fruitchaatcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 21)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("FRESH SALAD");
-        lunchMenu.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 170, 60));
+        lunchMenu.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, 170, 60));
 
         jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("CHICKEN ROLL");
-        lunchMenu.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 150, 30));
+        lunchMenu.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 150, 30));
 
-        jLabel28.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel28.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setText("SAMOSA");
-        lunchMenu.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 140, 30));
+        lunchMenu.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 140, 30));
 
-        jLabel29.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel29.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setText("SANDWICH");
-        lunchMenu.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 140, 40));
+        lunchMenu.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 140, 40));
 
-        jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("DAHI BHALLY");
-        lunchMenu.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 160, 70));
+        lunchMenu.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 160, 70));
 
-        jLabel31.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("FRUIT CHAAT");
-        lunchMenu.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 40));
+        lunchMenu.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 160, 40));
 
-        jLabel32.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
+        jLabel32.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("MAC & CHEESE");
-        lunchMenu.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 520, 160, 40));
+        lunchMenu.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 160, 40));
 
         jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setText("RUSSAIN SALAD");
-        lunchMenu.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 160, 40));
+        lunchMenu.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, 160, 40));
 
-        jLabel34.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel34.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
         jLabel34.setText("BIRYANI");
-        lunchMenu.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 110, 30));
+        lunchMenu.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 110, 30));
+
+        jLabel68.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel68.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel68.setText("200 Rs");
+        lunchMenu.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 70, 30));
+
+        jLabel71.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel71.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel71.setText("150 Rs");
+        lunchMenu.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 70, 30));
+
+        jLabel73.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel73.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setText(" 80 Rs");
+        lunchMenu.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 70, 30));
+
+        jLabel75.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel75.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel75.setText("100 Rs");
+        lunchMenu.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 70, 30));
+
+        jLabel77.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel77.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setText("250 Rs");
+        lunchMenu.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, 70, 30));
+
+        jLabel80.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel80.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel80.setText("150 Rs");
+        lunchMenu.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 70, 30));
+
+        jLabel81.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel81.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel81.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel81.setText("100 Rs");
+        lunchMenu.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 650, 70, 30));
+
+        jLabel83.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel83.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel83.setText(" 30 Rs");
+        lunchMenu.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 70, 30));
+
+        jLabel69.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel69.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel69.setText(" 50 Rs");
+        lunchMenu.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 70, 30));
 
         jPanel4.add(lunchMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -1053,7 +1211,7 @@ public class orderV2 extends javax.swing.JFrame {
                 malaiboticheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(malaiboticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
+        dinnerMenu.add(malaiboticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, 40));
 
         sajjicheck.setBackground(new java.awt.Color(102, 8, 219));
         sajjicheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1061,7 +1219,7 @@ public class orderV2 extends javax.swing.JFrame {
                 sajjicheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(sajjicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
+        dinnerMenu.add(sajjicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 30));
 
         tawachickencheck.setBackground(new java.awt.Color(102, 8, 219));
         tawachickencheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1069,7 +1227,7 @@ public class orderV2 extends javax.swing.JFrame {
                 tawachickencheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(tawachickencheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        dinnerMenu.add(tawachickencheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, 30));
 
         haleemcheck.setBackground(new java.awt.Color(102, 8, 219));
         haleemcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1077,7 +1235,7 @@ public class orderV2 extends javax.swing.JFrame {
                 haleemcheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(haleemcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
+        dinnerMenu.add(haleemcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, 40));
 
         seekhkababcheck.setBackground(new java.awt.Color(102, 8, 219));
         seekhkababcheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1085,7 +1243,7 @@ public class orderV2 extends javax.swing.JFrame {
                 seekhkababcheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(seekhkababcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
+        dinnerMenu.add(seekhkababcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 30));
 
         roticheck.setBackground(new java.awt.Color(102, 8, 219));
         roticheck.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -1094,7 +1252,7 @@ public class orderV2 extends javax.swing.JFrame {
                 roticheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(roticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
+        dinnerMenu.add(roticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, -1, 20));
 
         khmeeriroticheck.setBackground(new java.awt.Color(102, 8, 219));
         khmeeriroticheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1102,7 +1260,7 @@ public class orderV2 extends javax.swing.JFrame {
                 khmeeriroticheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(khmeeriroticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
+        dinnerMenu.add(khmeeriroticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, -1, 30));
 
         jScrollPane29.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane29.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1119,7 +1277,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane29.setViewportView(malaibotiqty);
 
-        dinnerMenu.add(jScrollPane29, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 93, 31));
+        dinnerMenu.add(jScrollPane29, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 93, 31));
 
         jScrollPane30.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane30.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1136,7 +1294,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane30.setViewportView(sajjiqty);
 
-        dinnerMenu.add(jScrollPane30, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 93, 31));
+        dinnerMenu.add(jScrollPane30, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 93, 31));
 
         jScrollPane31.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane31.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1153,7 +1311,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane31.setViewportView(seekhkababqty);
 
-        dinnerMenu.add(jScrollPane31, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 93, 31));
+        dinnerMenu.add(jScrollPane31, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 93, 31));
 
         jScrollPane32.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane32.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1170,7 +1328,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane32.setViewportView(rotti);
 
-        dinnerMenu.add(jScrollPane32, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 650, 93, 31));
+        dinnerMenu.add(jScrollPane32, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 650, 93, 31));
 
         jScrollPane33.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane33.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1187,7 +1345,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane33.setViewportView(tawachickenqty);
 
-        dinnerMenu.add(jScrollPane33, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 93, 31));
+        dinnerMenu.add(jScrollPane33, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 93, 31));
 
         jScrollPane34.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane34.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1204,7 +1362,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane34.setViewportView(haleemqty);
 
-        dinnerMenu.add(jScrollPane34, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 93, 31));
+        dinnerMenu.add(jScrollPane34, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, 93, 31));
 
         jScrollPane35.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane35.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1221,7 +1379,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane35.setViewportView(khmeerirotiqty);
 
-        dinnerMenu.add(jScrollPane35, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, 93, 31));
+        dinnerMenu.add(jScrollPane35, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 590, 93, 31));
 
         jTextField13.setEditable(false);
         jTextField13.setBackground(new java.awt.Color(255, 255, 255));
@@ -1251,7 +1409,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane36.setViewportView(cheesenaanqty);
 
-        dinnerMenu.add(jScrollPane36, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, 93, 31));
+        dinnerMenu.add(jScrollPane36, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 530, 93, 31));
 
         cheesenaancheck.setBackground(new java.awt.Color(102, 8, 219));
         cheesenaancheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1259,7 +1417,7 @@ public class orderV2 extends javax.swing.JFrame {
                 cheesenaancheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(cheesenaancheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
+        dinnerMenu.add(cheesenaancheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, -1, 30));
 
         jScrollPane37.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane37.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1276,7 +1434,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane37.setViewportView(chickenkarhaiqty);
 
-        dinnerMenu.add(jScrollPane37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 93, 31));
+        dinnerMenu.add(jScrollPane37, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 470, 93, 31));
 
         chickenkarhaicheck.setBackground(new java.awt.Color(102, 8, 219));
         chickenkarhaicheck.addActionListener(new java.awt.event.ActionListener() {
@@ -1284,52 +1442,97 @@ public class orderV2 extends javax.swing.JFrame {
                 chickenkarhaicheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(chickenkarhaicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
+        dinnerMenu.add(chickenkarhaicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, 30));
 
-        rotiqty.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 21)); // NOI18N
+        rotiqty.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         rotiqty.setForeground(new java.awt.Color(255, 255, 255));
         rotiqty.setText("ROTI");
-        dinnerMenu.add(rotiqty, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 60, 60));
+        dinnerMenu.add(rotiqty, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, 60, 60));
 
-        jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
+        jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setText("SEEKH KABAB");
-        dinnerMenu.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 150, 30));
+        dinnerMenu.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 150, 30));
 
-        jLabel37.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel37.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setText("SAJJI");
-        dinnerMenu.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 80, 30));
+        dinnerMenu.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 80, 30));
 
         jLabel38.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setText("TAWA CHICKEN");
-        dinnerMenu.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 160, 40));
+        dinnerMenu.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 160, 50));
 
-        jLabel39.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel39.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("HALEEM");
-        dinnerMenu.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 100, 70));
+        dinnerMenu.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 100, 80));
 
-        jLabel40.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 17)); // NOI18N
+        jLabel40.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(255, 255, 255));
         jLabel40.setText("CHICKEN KARHAI");
-        dinnerMenu.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 170, 40));
+        dinnerMenu.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 170, 50));
 
-        jLabel41.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
+        jLabel41.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(255, 255, 255));
         jLabel41.setText("CHEESE NAAN");
-        dinnerMenu.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 520, 160, 40));
+        dinnerMenu.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 160, 50));
 
         jLabel42.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
         jLabel42.setText("KHMEERI ROTI");
-        dinnerMenu.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 140, 40));
+        dinnerMenu.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, 140, 50));
 
-        jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
+        jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("MALAI BOTI");
-        dinnerMenu.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 130, 30));
+        dinnerMenu.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 130, 40));
+
+        jLabel70.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel70.setText(" 10 Rs");
+        dinnerMenu.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 650, 70, 30));
+
+        jLabel72.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel72.setText("120 Rs");
+        dinnerMenu.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 70, 30));
+
+        jLabel74.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel74.setText(" 80 Rs");
+        dinnerMenu.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 70, 30));
+
+        jLabel76.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel76.setText("850 Rs");
+        dinnerMenu.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 70, 30));
+
+        jLabel78.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel78.setText("350 Rs");
+        dinnerMenu.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 70, 30));
+
+        jLabel79.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel79.setText("100 Rs");
+        dinnerMenu.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 70, 30));
+
+        jLabel82.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel82.setText("1000 Rs");
+        dinnerMenu.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 70, 30));
+
+        jLabel84.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel84.setText("150 Rs");
+        dinnerMenu.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, 70, 30));
+
+        jLabel85.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel85.setText("20 Rs");
+        dinnerMenu.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 70, 30));
 
         jPanel4.add(dinnerMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -3623,6 +3826,7 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
@@ -3632,6 +3836,7 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
@@ -3639,6 +3844,7 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
@@ -3670,6 +3876,12 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel79;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

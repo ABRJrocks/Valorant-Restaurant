@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31868097-a0cc-461f-bc04-3885b4fc2201" name="Default Changelist" comment="debugged">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orderV2.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orderV2.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orderV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orderV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$100.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$100.class" afterDir="false" />
@@ -120,6 +122,8 @@
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$98.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$98.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$99.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$99.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
