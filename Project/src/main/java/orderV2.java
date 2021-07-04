@@ -122,7 +122,7 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         dinnerMenu = new javax.swing.JPanel();
-        karhaicheck = new javax.swing.JCheckBox();
+        malaiboticheck = new javax.swing.JCheckBox();
         parathacheck2 = new javax.swing.JCheckBox();
         naancheck2 = new javax.swing.JCheckBox();
         halwapuricheck2 = new javax.swing.JCheckBox();
@@ -130,7 +130,7 @@ public class orderV2 extends javax.swing.JFrame {
         halwaplatecheck2 = new javax.swing.JCheckBox();
         niharicheck2 = new javax.swing.JCheckBox();
         jScrollPane29 = new javax.swing.JScrollPane();
-        karhaiqty = new javax.swing.JTextArea();
+        malaibotiqty = new javax.swing.JTextArea();
         jScrollPane30 = new javax.swing.JScrollPane();
         parathaqty2 = new javax.swing.JTextArea();
         jScrollPane31 = new javax.swing.JScrollPane();
@@ -1024,13 +1024,13 @@ public class orderV2 extends javax.swing.JFrame {
         dinnerMenu.setPreferredSize(new java.awt.Dimension(400, 900));
         dinnerMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        karhaicheck.setBackground(new java.awt.Color(102, 8, 219));
-        karhaicheck.addActionListener(new java.awt.event.ActionListener() {
+        malaiboticheck.setBackground(new java.awt.Color(102, 8, 219));
+        malaiboticheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                karhaicheckActionPerformed(evt);
+                malaiboticheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(karhaicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
+        dinnerMenu.add(malaiboticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
 
         parathacheck2.setBackground(new java.awt.Color(102, 8, 219));
         parathacheck2.addActionListener(new java.awt.event.ActionListener() {
@@ -1084,17 +1084,17 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane29.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane29.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        karhaiqty.setColumns(20);
-        karhaiqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        karhaiqty.setRows(5);
-        karhaiqty.setText("0");
-        karhaiqty.setEnabled(false);
-        karhaiqty.addKeyListener(new java.awt.event.KeyAdapter() {
+        malaibotiqty.setColumns(20);
+        malaibotiqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        malaibotiqty.setRows(5);
+        malaibotiqty.setText("0");
+        malaibotiqty.setEnabled(false);
+        malaibotiqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                karhaiqtyKeyTyped(evt);
+                malaibotiqtyKeyTyped(evt);
             }
         });
-        jScrollPane29.setViewportView(karhaiqty);
+        jScrollPane29.setViewportView(malaibotiqty);
 
         dinnerMenu.add(jScrollPane29, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 93, 31));
 
@@ -1305,8 +1305,8 @@ public class orderV2 extends javax.swing.JFrame {
 
         jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel43.setText("KARHAI");
-        dinnerMenu.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 110, 30));
+        jLabel43.setText("Malai Boti");
+        dinnerMenu.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 130, 30));
 
         jPanel4.add(dinnerMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
@@ -2818,9 +2818,9 @@ public class orderV2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_channyfullcheck1ActionPerformed
 
-    private void karhaicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_karhaicheckActionPerformed
+    private void malaiboticheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_malaiboticheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_karhaicheckActionPerformed
+    }//GEN-LAST:event_malaiboticheckActionPerformed
 
     private void parathacheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parathacheck2ActionPerformed
         // TODO add your handling code here:
@@ -2846,9 +2846,9 @@ public class orderV2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_niharicheck2ActionPerformed
 
-    private void karhaiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_karhaiqtyKeyTyped
+    private void malaibotiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_malaibotiqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_karhaiqtyKeyTyped
+    }//GEN-LAST:event_malaibotiqtyKeyTyped
 
     private void parathaqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_parathaqty2KeyTyped
         // TODO add your handling code here:
@@ -3274,17 +3274,14 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField21;
-<<<<<<< HEAD
-    private javax.swing.JCheckBox karhaicheck;
-    private javax.swing.JTextArea karhaiqty;
-=======
     private javax.swing.JCheckBox karhaifullcheck;
     private javax.swing.JTextArea karhaifullqty;
->>>>>>> 862b680f7eeaeb18af0ba4dab626a5cccde6fa9c
     private javax.swing.JCheckBox lassicheck;
     private javax.swing.JTextArea lassiqty;
     private javax.swing.JPanel lunchMenu;
     private javax.swing.JPanel lunchMenuSelectPanel;
+    private javax.swing.JCheckBox malaiboticheck;
+    private javax.swing.JTextArea malaibotiqty;
     private javax.swing.JTextArea moneyInput;
     private javax.swing.JCheckBox naancheck;
     private javax.swing.JCheckBox naancheck1;
