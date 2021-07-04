@@ -2801,21 +2801,49 @@ public class orderV2 extends javax.swing.JFrame {
         calCost[43] = Double.parseDouble(orangeslushqty.getText());
 
         Double tax_rate = 0.17;
-        
-        for (int i = 0; i < 44; i++)
+        change = Double.parseDouble(moneyInputlabel.getText());
+
+        String paymentMethod = (String)paymentSelection.getSelectedItem();
+        if (paymentMethod == "Cash")
         {
-            subtotal += calCost[i];
+            for (int i = 0; i < 44; i++)
+            {
+                subtotal += calCost[i];
+            }
+            if (change >= subtotal) {
+                String addedAmmount = String.format("Rs%.2f", subtotal);
+                subTotallabel.setText(addedAmmount);
+
+                tax = (subtotal * tax_rate);
+                String totalTax = String.format("Rs %.2f", tax);
+                taxlabel.setText(totalTax);
+                total = subtotal + tax;
+                String totalBill = String.format("Rs %.2f", total);
+                totallabel.setText(totalBill);
+
+                String changeReturned = String.format("Rs %.2f", change- total);
+                changelabel.setText(changeReturned);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < 44; i++)
+            {
+                subtotal += calCost[i];
+            }
+
+
+            String addedAmmount = String.format("Rs%.2f", subtotal);
+            subTotallabel.setText(addedAmmount);
+
+            tax = (subtotal * tax_rate);
+            String totalTax = String.format("Rs %.2f", tax);
+            taxlabel.setText(totalTax);
+            String totalBill = String.format("Rs %.2f", subtotal + tax);
+            totallabel.setText(totalBill);
         }
 
 
-        String addedAmmount = String.format("Rs%.2f", subtotal);
-        subTotallabel.setText(addedAmmount);
-
-        tax = (subtotal * tax_rate);
-        String totalTax = String.format("Rs %.2f", tax);
-        taxlabel.setText(totalTax);
-        String totalBill = String.format("Rs %.2f", subtotal + tax);
-        totallabel.setText(totalBill);
 
 
     }//GEN-LAST:event_totalButtonActionPerformed
