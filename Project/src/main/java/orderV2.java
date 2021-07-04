@@ -2019,7 +2019,7 @@ public class orderV2 extends javax.swing.JFrame {
         Billing.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 93, 31));
 
         paymentSelection.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        paymentSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Debit Card", "Master Card", "Coupon" }));
+        paymentSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Debit Card", "Master Card", "" }));
         paymentSelection.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         paymentSelection.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2984,6 +2984,8 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void halwapuricheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwapuricheck4ActionPerformed
         // TODO add your handling code here:
+        // my name is fahad 
+        
     }//GEN-LAST:event_halwapuricheck4ActionPerformed
 
     private void ommlettecheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ommlettecheck4ActionPerformed
