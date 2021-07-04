@@ -88,7 +88,7 @@ public class orderV2 extends javax.swing.JFrame {
         parathacheck1 = new javax.swing.JCheckBox();
         naancheck1 = new javax.swing.JCheckBox();
         halwapuricheck1 = new javax.swing.JCheckBox();
-        ommlettecheck1 = new javax.swing.JCheckBox();
+        karhaifullcheck = new javax.swing.JCheckBox();
         halwaplatecheck1 = new javax.swing.JCheckBox();
         niharicheck1 = new javax.swing.JCheckBox();
         jScrollPane20 = new javax.swing.JScrollPane();
@@ -96,7 +96,7 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane21 = new javax.swing.JScrollPane();
         parathaqty1 = new javax.swing.JTextArea();
         jScrollPane22 = new javax.swing.JScrollPane();
-        ommletteqty1 = new javax.swing.JTextArea();
+        karhaifullqty = new javax.swing.JTextArea();
         jScrollPane23 = new javax.swing.JScrollPane();
         halwaplateqty1 = new javax.swing.JTextArea();
         jScrollPane24 = new javax.swing.JScrollPane();
@@ -765,13 +765,13 @@ public class orderV2 extends javax.swing.JFrame {
         });
         lunchMenu.add(halwapuricheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
 
-        ommlettecheck1.setBackground(new java.awt.Color(102, 8, 219));
-        ommlettecheck1.addActionListener(new java.awt.event.ActionListener() {
+        karhaifullcheck.setBackground(new java.awt.Color(102, 8, 219));
+        karhaifullcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ommlettecheck1ActionPerformed(evt);
+                karhaifullcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(ommlettecheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
+        lunchMenu.add(karhaifullcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
 
         halwaplatecheck1.setBackground(new java.awt.Color(102, 8, 219));
         halwaplatecheck1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -827,17 +827,17 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane22.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane22.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        ommletteqty1.setColumns(20);
-        ommletteqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        ommletteqty1.setRows(5);
-        ommletteqty1.setText("0");
-        ommletteqty1.setEnabled(false);
-        ommletteqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        karhaifullqty.setColumns(20);
+        karhaifullqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        karhaifullqty.setRows(5);
+        karhaifullqty.setText("0");
+        karhaifullqty.setEnabled(false);
+        karhaifullqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                ommletteqty1KeyTyped(evt);
+                karhaifullqtyKeyTyped(evt);
             }
         });
-        jScrollPane22.setViewportView(ommletteqty1);
+        jScrollPane22.setViewportView(karhaifullqty);
 
         lunchMenu.add(jScrollPane22, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 93, 31));
 
@@ -979,8 +979,8 @@ public class orderV2 extends javax.swing.JFrame {
 
         jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setText("OMMLETTE");
-        lunchMenu.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 140, 30));
+        jLabel27.setText("KARHAI(full)");
+        lunchMenu.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 150, 30));
 
         jLabel28.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
@@ -2019,7 +2019,7 @@ public class orderV2 extends javax.swing.JFrame {
         Billing.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 93, 31));
 
         paymentSelection.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        paymentSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Debit Card", "Master Card", "Coupon" }));
+        paymentSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Debit Card", "Master Card", "" }));
         paymentSelection.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         paymentSelection.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2758,9 +2758,9 @@ public class orderV2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_halwapuricheck1ActionPerformed
 
-    private void ommlettecheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ommlettecheck1ActionPerformed
+    private void karhaifullcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_karhaifullcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ommlettecheck1ActionPerformed
+    }//GEN-LAST:event_karhaifullcheckActionPerformed
 
     private void halwaplatecheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwaplatecheck1ActionPerformed
         // TODO add your handling code here:
@@ -2778,9 +2778,9 @@ public class orderV2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_parathaqty1KeyTyped
 
-    private void ommletteqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ommletteqty1KeyTyped
+    private void karhaifullqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_karhaifullqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_ommletteqty1KeyTyped
+    }//GEN-LAST:event_karhaifullqtyKeyTyped
 
     private void halwaplateqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_halwaplateqty1KeyTyped
         // TODO add your handling code here:
@@ -2984,6 +2984,8 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void halwapuricheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwapuricheck4ActionPerformed
         // TODO add your handling code here:
+        // my name is fahad 
+        
     }//GEN-LAST:event_halwapuricheck4ActionPerformed
 
     private void ommlettecheck4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ommlettecheck4ActionPerformed
@@ -3272,8 +3274,13 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField21;
+<<<<<<< HEAD
     private javax.swing.JCheckBox karhaicheck;
     private javax.swing.JTextArea karhaiqty;
+=======
+    private javax.swing.JCheckBox karhaifullcheck;
+    private javax.swing.JTextArea karhaifullqty;
+>>>>>>> 862b680f7eeaeb18af0ba4dab626a5cccde6fa9c
     private javax.swing.JCheckBox lassicheck;
     private javax.swing.JTextArea lassiqty;
     private javax.swing.JPanel lunchMenu;
@@ -3300,12 +3307,10 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea nihariqty3;
     private javax.swing.JTextArea nihariqty4;
     private javax.swing.JCheckBox ommlettecheck;
-    private javax.swing.JCheckBox ommlettecheck1;
     private javax.swing.JCheckBox ommlettecheck2;
     private javax.swing.JCheckBox ommlettecheck3;
     private javax.swing.JCheckBox ommlettecheck4;
     private javax.swing.JTextArea ommletteqty;
-    private javax.swing.JTextArea ommletteqty1;
     private javax.swing.JTextArea ommletteqty2;
     private javax.swing.JTextArea ommletteqty3;
     private javax.swing.JTextArea ommletteqty4;
