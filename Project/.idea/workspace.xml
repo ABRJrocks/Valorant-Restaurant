@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31868097-a0cc-461f-bc04-3885b4fc2201" name="Default Changelist" comment="debugged">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orderV2.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orderV2.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orderV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orderV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainMenu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$100.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$100.class" afterDir="false" />
@@ -23,8 +21,8 @@
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$108.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$108.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$109.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$109.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/orderV2$110.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$110.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/orderV2$111.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$111.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderV2$110.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderV2$111.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$12.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$13.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$14.class" afterDir="false" />
@@ -122,8 +120,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$98.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$98.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2$99.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2$99.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orderV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderV2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +157,7 @@
       <recent name="C:\Users\ABC\Documents\NetBeansProjects\NetBeansVisualApp\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.login">
+  <component name="RunManager" selected="Application.orderV2">
     <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainMenu" />
       <module name="NetBeansVisualApp" />
@@ -183,8 +179,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="orderV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="orderV2" />
+      <module name="NetBeansVisualApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.orderV2" />
         <item itemvalue="Application.login" />
         <item itemvalue="Application.MainMenu" />
         <item itemvalue="Application.PlaceOrder" />

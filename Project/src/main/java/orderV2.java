@@ -1,6 +1,8 @@
 
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import javax.swing.JPanel;
 
 /*
@@ -8,8 +10,8 @@ import javax.swing.JPanel;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 /**
- *
  * @author ABC
  */
 public class orderV2 extends javax.swing.JFrame {
@@ -69,19 +71,19 @@ public class orderV2 extends javax.swing.JFrame {
     int mangoslush = 60;
     int strawberryslush = 60;
     int orangeslush = 60;
-    
-    Double tax, total, subtotal, change, cost;
-    Double[] calCost = new Double [45];
-    
-    
+
+    Double tax = 0.0, total = 0.0, subtotal = 0.0, change = 0.0, cost = 0.0;
+    Double[] calCost = new Double[45];
+
+
     /**
      * Creates new form orderV2
      */
     public orderV2() {
         initComponents();
-        
+
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -206,7 +208,6 @@ public class orderV2 extends javax.swing.JFrame {
         tawachickencheck = new javax.swing.JCheckBox();
         haleemcheck = new javax.swing.JCheckBox();
         seekhkababcheck = new javax.swing.JCheckBox();
-        roticheck = new javax.swing.JCheckBox();
         khmeeriroticheck = new javax.swing.JCheckBox();
         jScrollPane29 = new javax.swing.JScrollPane();
         malaibotiqty = new javax.swing.JTextArea();
@@ -214,8 +215,6 @@ public class orderV2 extends javax.swing.JFrame {
         sajjiqty = new javax.swing.JTextArea();
         jScrollPane31 = new javax.swing.JScrollPane();
         seekhkababqty = new javax.swing.JTextArea();
-        jScrollPane32 = new javax.swing.JScrollPane();
-        rotti = new javax.swing.JTextArea();
         jScrollPane33 = new javax.swing.JScrollPane();
         tawachickenqty = new javax.swing.JTextArea();
         jScrollPane34 = new javax.swing.JScrollPane();
@@ -229,7 +228,6 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane37 = new javax.swing.JScrollPane();
         chickenkarhaiqty = new javax.swing.JTextArea();
         chickenkarhaicheck = new javax.swing.JCheckBox();
-        rotiqty = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
@@ -238,7 +236,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
@@ -1249,15 +1246,6 @@ public class orderV2 extends javax.swing.JFrame {
         });
         dinnerMenu.add(seekhkababcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 30));
 
-        roticheck.setBackground(new java.awt.Color(102, 8, 219));
-        roticheck.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        roticheck.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                roticheckActionPerformed(evt);
-            }
-        });
-        dinnerMenu.add(roticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, -1, 20));
-
         khmeeriroticheck.setBackground(new java.awt.Color(102, 8, 219));
         khmeeriroticheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1316,23 +1304,6 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane31.setViewportView(seekhkababqty);
 
         dinnerMenu.add(jScrollPane31, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 93, 31));
-
-        jScrollPane32.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane32.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        rotti.setColumns(20);
-        rotti.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        rotti.setRows(5);
-        rotti.setText("0");
-        rotti.setEnabled(false);
-        rotti.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                rottiKeyTyped(evt);
-            }
-        });
-        jScrollPane32.setViewportView(rotti);
-
-        dinnerMenu.add(jScrollPane32, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 650, 93, 31));
 
         jScrollPane33.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane33.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1448,11 +1419,6 @@ public class orderV2 extends javax.swing.JFrame {
         });
         dinnerMenu.add(chickenkarhaicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, 30));
 
-        rotiqty.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        rotiqty.setForeground(new java.awt.Color(255, 255, 255));
-        rotiqty.setText("ROTI");
-        dinnerMenu.add(rotiqty, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, 60, 60));
-
         jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setText("SEEKH KABAB");
@@ -1492,11 +1458,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("MALAI BOTI");
         dinnerMenu.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 130, 40));
-
-        jLabel70.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel70.setText(" 10 Rs");
-        dinnerMenu.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 650, 70, 30));
 
         jLabel72.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel72.setForeground(new java.awt.Color(255, 255, 255));
@@ -2234,7 +2195,6 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane13.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane13.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        moneyInputlabel.setEditable(false);
         moneyInputlabel.setColumns(20);
         moneyInputlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         moneyInputlabel.setRows(5);
@@ -2580,7 +2540,7 @@ public class orderV2 extends javax.swing.JFrame {
         macandcheeseqty.setText(null);
         russiansaladqty.setText(null);
         freshsaladqty.setText(null);
-        
+
         //Dinner
         malaibotiqty.setText(null);
         seekhkababqty.setText(null);
@@ -2590,8 +2550,7 @@ public class orderV2 extends javax.swing.JFrame {
         chickenkarhaiqty.setText(null);
         cheesenaanqty.setText(null);
         khmeerirotiqty.setText(null);
-        rotiqty.setText(null);
-        
+
 
         // Fast Food
         chickenburgerqty.setText(null);
@@ -2628,8 +2587,8 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullcheck.setSelected(false);
         niharicheck.setSelected(false);
         halwaplatecheck.setSelected(false);
-        
-        
+
+
         // Lunch
         biryanicheck.setSelected(false);
         chickenrollcheck.setSelected(false);
@@ -2640,7 +2599,7 @@ public class orderV2 extends javax.swing.JFrame {
         macandcheesecheck.setSelected(false);
         russiansaladcheck.setSelected(false);
         freshsaladcheck.setSelected(false);
-        
+
         //Dinner
         malaiboticheck.setSelected(false);
         seekhkababcheck.setSelected(false);
@@ -2650,8 +2609,7 @@ public class orderV2 extends javax.swing.JFrame {
         chickenkarhaicheck.setSelected(false);
         cheesenaancheck.setSelected(false);
         khmeeriroticheck.setSelected(false);
-        roticheck.setSelected(false);
-        
+
 
         // Fast Food
         zingerburgercheck.setSelected(false);
@@ -2687,8 +2645,8 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullqty.setEnabled(false);
         channyhalfqty.setEnabled(false);
         halwaplateqty.setEnabled(false);
-        
-        
+
+
         //lunch 
         biryaniqty.setEnabled(false);
         chickenrollqty.setEnabled(false);
@@ -2699,7 +2657,7 @@ public class orderV2 extends javax.swing.JFrame {
         macandcheeseqty.setEnabled(false);
         russiansaladqty.setEnabled(false);
         freshsaladqty.setEnabled(false);
-        
+
         //Dinner 
         malaibotiqty.setEnabled(false);
         seekhkababqty.setEnabled(false);
@@ -2709,8 +2667,7 @@ public class orderV2 extends javax.swing.JFrame {
         chickenkarhaiqty.setEnabled(false);
         cheesenaanqty.setEnabled(false);
         khmeerirotiqty.setEnabled(false);
-        rotiqty.setEnabled(false);
-        
+
 
         //Fast Food
         zingerburgerqty.setEnabled(false);
@@ -2721,8 +2678,7 @@ public class orderV2 extends javax.swing.JFrame {
         calzoneqty.setEnabled(false);
         chickenchipsqty.setEnabled(false);
 
-        // Beverages
-
+        // Beverage
         chocklateshakeqty.setEnabled(false);
         mangoshakeqty.setEnabled(false);
         bananashakeqty.setEnabled(false);
@@ -2748,7 +2704,7 @@ public class orderV2 extends javax.swing.JFrame {
         channyhalfqty.setText("0");
         nihariqty.setText("0");
         halwaplateqty.setText("0");
-        
+
         //lunch
         biryaniqty.setText("0");
         chickenrollqty.setText("0");
@@ -2759,7 +2715,7 @@ public class orderV2 extends javax.swing.JFrame {
         macandcheeseqty.setText("0");
         russiansaladqty.setText("0");
         freshsaladqty.setText("0");
-        
+
         //Dinner
         malaibotiqty.setText("0");
         seekhkababqty.setText("0");
@@ -2769,8 +2725,7 @@ public class orderV2 extends javax.swing.JFrame {
         chickenkarhaiqty.setText("0");
         cheesenaanqty.setText("0");
         khmeerirotiqty.setText("0");
-        rotiqty.setText("0");
-        
+
 
         // Fast Food
         zingerburgerqty.setText("0");
@@ -2799,6 +2754,70 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void totalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalButtonActionPerformed
         // TODO add your handling code here:
+
+        calCost[0] = Double.parseDouble(fryeggqty.getText());
+        calCost[1] = Double.parseDouble(ommletteqty.getText());
+        calCost[2] = Double.parseDouble(parathaqty.getText());
+        calCost[3] = Double.parseDouble(naanqty.getText());
+        calCost[4] = Double.parseDouble(halwapuriqty.getText());
+        calCost[5] = Double.parseDouble(channyfullqty.getText());
+        calCost[6] = Double.parseDouble(channyhalfqty.getText());
+        calCost[7] = Double.parseDouble(nihariqty.getText());
+        calCost[8] = Double.parseDouble(halwaplateqty.getText());
+        calCost[9] = Double.parseDouble(biryaniqty.getText());
+        calCost[10] = Double.parseDouble(chickenrollqty.getText());
+        calCost[11] = Double.parseDouble(samosaqty.getText());
+        calCost[12] = Double.parseDouble(sandwichqty.getText());
+        calCost[13] = Double.parseDouble(dahibhallyqty.getText());
+        calCost[14] = Double.parseDouble(fruitchaatqty.getText());
+        calCost[15] = Double.parseDouble(macandcheeseqty.getText());
+        calCost[16] = Double.parseDouble(russiansaladqty.getText());
+        calCost[17] = Double.parseDouble(freshsaladqty.getText());
+        calCost[18] = Double.parseDouble(malaibotiqty.getText());
+        calCost[19] = Double.parseDouble(seekhkababqty.getText());
+        calCost[20] = Double.parseDouble(sajjiqty.getText());
+        calCost[21] = Double.parseDouble(tawachickenqty.getText());
+        calCost[22] = Double.parseDouble(haleemqty.getText());
+        calCost[23] = Double.parseDouble(chickenkarhaiqty.getText());
+        calCost[24] = Double.parseDouble(cheesenaanqty.getText());
+        calCost[25] = Double.parseDouble(khmeerirotiqty.getText());
+        calCost[26] = Double.parseDouble(teaqty.getText());
+        calCost[27] = Double.parseDouble(coffeeqty.getText());
+        calCost[28] = Double.parseDouble(lassiqty.getText());
+        calCost[29] = Double.parseDouble(colaqty.getText());
+        calCost[30] = Double.parseDouble(spriteqty.getText());
+        calCost[31] = Double.parseDouble(chickenburgerqty.getText());
+        calCost[32] = Double.parseDouble(zingerburgerqty.getText());
+        calCost[33] = Double.parseDouble(chickenshwarmaqty.getText());
+        calCost[34] = Double.parseDouble(zingershwarmaqty.getText());
+        calCost[35] = Double.parseDouble(valopizzaqty.getText());
+        calCost[36] = Double.parseDouble(calzoneqty.getText());
+        calCost[37] = Double.parseDouble(chickenchipsqty.getText());
+        calCost[38] = Double.parseDouble(mangoshakeqty.getText());
+        calCost[39] = Double.parseDouble(bananashakeqty.getText());
+        calCost[40] = Double.parseDouble(chocklateshakeqty.getText());
+        calCost[41] = Double.parseDouble(mangoslushqty.getText());
+        calCost[42] = Double.parseDouble(strawberryslushqty.getText());
+        calCost[43] = Double.parseDouble(orangeslushqty.getText());
+
+        Double tax_rate = 0.17;
+        
+        for (int i = 0; i < 44; i++)
+        {
+            subtotal += calCost[i];
+        }
+
+
+        String addedAmmount = String.format("Rs%.2f", subtotal);
+        subTotallabel.setText(addedAmmount);
+
+        tax = (subtotal * tax_rate);
+        String totalTax = String.format("Rs %.2f", tax);
+        taxlabel.setText(totalTax);
+        String totalBill = String.format("Rs %.2f", subtotal + tax);
+        totallabel.setText(totalBill);
+
+
     }//GEN-LAST:event_totalButtonActionPerformed
 
     private void moneyInputlabelKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moneyInputlabelKeyTyped
@@ -3104,8 +3123,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void biryanicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biryanicheckActionPerformed
         // TODO add your handling code here:
-         if (biryanicheck.isSelected())
-        {
+        if (biryanicheck.isSelected()) {
             biryaniqty.setEnabled(true);
             biryaniqty.requestFocus();
             biryaniqty.setText("");
@@ -3114,8 +3132,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void samosacheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_samosacheckActionPerformed
         // TODO add your handling code here:
-        if (samosacheck.isSelected())
-        {
+        if (samosacheck.isSelected()) {
             samosaqty.setEnabled(true);
             samosaqty.requestFocus();
             samosaqty.setText("");
@@ -3124,8 +3141,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void sandwichcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwichcheckActionPerformed
         // TODO add your handling code here:
-        if (sandwichcheck.isSelected())
-        {
+        if (sandwichcheck.isSelected()) {
             sandwichqty.setEnabled(true);
             sandwichqty.requestFocus();
             sandwichqty.setText("");
@@ -3134,8 +3150,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void dahibhallycheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dahibhallycheckActionPerformed
         // TODO add your handling code here:
-         if (dahibhallycheck.isSelected())
-        {
+        if (dahibhallycheck.isSelected()) {
             dahibhallyqty.setEnabled(true);
             dahibhallyqty.requestFocus();
             dahibhallyqty.setText("");
@@ -3144,8 +3159,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void chickenrollcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenrollcheckActionPerformed
         // TODO add your handling code here:
-        if (chickenrollcheck.isSelected())
-        {
+        if (chickenrollcheck.isSelected()) {
             chickenrollqty.setEnabled(true);
             chickenrollqty.requestFocus();
             chickenrollqty.setText("");
@@ -3154,94 +3168,92 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void freshsaladcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_freshsaladcheckActionPerformed
         // TODO add your handling code here:
-         if (freshsaladcheck.isSelected())
-        {
+        if (freshsaladcheck.isSelected()) {
             freshsaladqty.setEnabled(true);
             freshsaladqty.requestFocus();
             freshsaladqty.setText("");
         }
-        
+
     }//GEN-LAST:event_freshsaladcheckActionPerformed
 
     private void russiansaladcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_russiansaladcheckActionPerformed
         // TODO add your handling code here:
-         if (russiansaladcheck.isSelected())
-        {
+        if (russiansaladcheck.isSelected()) {
             russiansaladqty.setEnabled(true);
             russiansaladqty.requestFocus();
             russiansaladqty.setText("");
         }
-        
+
     }//GEN-LAST:event_russiansaladcheckActionPerformed
 
     private void biryaniqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_biryaniqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_biryaniqtyKeyTyped
 
     private void samosaqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_samosaqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_samosaqtyKeyTyped
 
     private void chickenrollqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenrollqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_chickenrollqtyKeyTyped
 
     private void freshsaladqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_freshsaladqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_freshsaladqtyKeyTyped
 
     private void sandwichqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sandwichqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_sandwichqtyKeyTyped
 
     private void dahibhallyqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_dahibhallyqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_dahibhallyqtyKeyTyped
 
     private void russiansaladqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_russiansaladqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_russiansaladqtyKeyTyped
 
     private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
@@ -3250,50 +3262,47 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void macandcheeseqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_macandcheeseqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_macandcheeseqtyKeyTyped
 
     private void macandcheesecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_macandcheesecheckActionPerformed
         // TODO add your handling code here:
-         if (macandcheesecheck.isSelected())
-        {
+        if (macandcheesecheck.isSelected()) {
             macandcheeseqty.setEnabled(true);
             macandcheeseqty.requestFocus();
             macandcheeseqty.setText("");
         }
-        
+
     }//GEN-LAST:event_macandcheesecheckActionPerformed
 
     private void fruitchaatqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fruitchaatqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_fruitchaatqtyKeyTyped
 
     private void fruitchaatcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fruitchaatcheckActionPerformed
         // TODO add your handling code here:
-        if (fruitchaatcheck.isSelected())
-        {
+        if (fruitchaatcheck.isSelected()) {
             fruitchaatqty.setEnabled(true);
             fruitchaatqty.requestFocus();
             fruitchaatqty.setText("");
         }
-        
+
     }//GEN-LAST:event_fruitchaatcheckActionPerformed
 
     private void malaiboticheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_malaiboticheckActionPerformed
         // TODO add your handling code here:
-         if (malaiboticheck.isSelected())
-        {
+        if (malaiboticheck.isSelected()) {
             malaibotiqty.setEnabled(true);
             malaibotiqty.requestFocus();
             malaibotiqty.setText("");
@@ -3302,8 +3311,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void sajjicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sajjicheckActionPerformed
         // TODO add your handling code here:
-         if (sajjicheck.isSelected())
-        {
+        if (sajjicheck.isSelected()) {
             sajjiqty.setEnabled(true);
             sajjiqty.requestFocus();
             sajjiqty.setText("");
@@ -3312,8 +3320,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void tawachickencheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tawachickencheckActionPerformed
         // TODO add your handling code here:
-         if (tawachickencheck.isSelected())
-        {
+        if (tawachickencheck.isSelected()) {
             tawachickenqty.setEnabled(true);
             tawachickenqty.requestFocus();
             tawachickenqty.setText("");
@@ -3322,8 +3329,7 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void haleemcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_haleemcheckActionPerformed
         // TODO add your handling code here:
-        if (haleemcheck.isSelected())
-        {
+        if (haleemcheck.isSelected()) {
             haleemqty.setEnabled(true);
             haleemqty.requestFocus();
             haleemqty.setText("");
@@ -3332,28 +3338,16 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void seekhkababcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seekhkababcheckActionPerformed
         // TODO add your handling code here:
-         if (seekhkababcheck.isSelected())
-        {
+        if (seekhkababcheck.isSelected()) {
             seekhkababqty.setEnabled(true);
             seekhkababqty.requestFocus();
             seekhkababqty.setText("");
         }
     }//GEN-LAST:event_seekhkababcheckActionPerformed
 
-    private void roticheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roticheckActionPerformed
-        // TODO add your handling code here:
-        if (roticheck.isSelected())
-        {
-            rotti.setEnabled(true);
-            rotti.requestFocus();
-            rotti.setText("");
-        }
-    }//GEN-LAST:event_roticheckActionPerformed
-
     private void khmeeriroticheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_khmeeriroticheckActionPerformed
         // TODO add your handling code here:
-        if (khmeeriroticheck.isSelected())
-        {
+        if (khmeeriroticheck.isSelected()) {
             khmeerirotiqty.setEnabled(true);
             khmeerirotiqty.requestFocus();
             khmeerirotiqty.setText("");
@@ -3362,74 +3356,63 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void malaibotiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_malaibotiqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
+
     }//GEN-LAST:event_malaibotiqtyKeyTyped
 
     private void sajjiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sajjiqtyKeyTyped
         // TODO add your handling code here:\
         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_sajjiqtyKeyTyped
 
     private void seekhkababqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_seekhkababqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
-    }//GEN-LAST:event_seekhkababqtyKeyTyped
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
 
-    private void rottiKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rottiKeyTyped
-        // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
-        
-    }//GEN-LAST:event_rottiKeyTyped
+    }//GEN-LAST:event_seekhkababqtyKeyTyped
 
     private void tawachickenqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tawachickenqtyKeyTyped
         // TODO add your handling code here:
         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_tawachickenqtyKeyTyped
 
     private void haleemqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_haleemqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_haleemqtyKeyTyped
 
     private void khmeerirotiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_khmeerirotiqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_khmeerirotiqtyKeyTyped
 
     private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
@@ -3438,18 +3421,17 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void cheesenaanqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cheesenaanqtyKeyTyped
         // TODO add your handling code here:
-         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        char numberVal = evt.getKeyChar();
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_cheesenaanqtyKeyTyped
 
     private void cheesenaancheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheesenaancheckActionPerformed
         // TODO add your handling code here:
-        if (cheesenaancheck.isSelected())
-        {
+        if (cheesenaancheck.isSelected()) {
             cheesenaanqty.setEnabled(true);
             cheesenaanqty.requestFocus();
             cheesenaanqty.setText("");
@@ -3459,17 +3441,16 @@ public class orderV2 extends javax.swing.JFrame {
     private void chickenkarhaiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenkarhaiqtyKeyTyped
         // TODO add your handling code here:
         char numberVal = evt.getKeyChar();
-        if(!(Character.isDigit(numberVal))
-            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
-            ||(numberVal ==KeyEvent.VK_DELETE))
-        evt.consume();
-        
+        if (!(Character.isDigit(numberVal))
+                || (numberVal == KeyEvent.VK_BACK_SPACE)
+                || (numberVal == KeyEvent.VK_DELETE))
+            evt.consume();
+
     }//GEN-LAST:event_chickenkarhaiqtyKeyTyped
 
     private void chickenkarhaicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenkarhaicheckActionPerformed
         // TODO add your handling code here:
-        if (chickenkarhaicheck.isSelected())
-        {
+        if (chickenkarhaicheck.isSelected()) {
             chickenkarhaiqty.setEnabled(true);
             chickenkarhaiqty.requestFocus();
             chickenkarhaiqty.setText("");
@@ -3606,7 +3587,7 @@ public class orderV2 extends javax.swing.JFrame {
             chocklateshakeqty.requestFocus();
             chocklateshakeqty.setText("");
         }
-      }//GEN-LAST:event_chocklateshakecheckActionPerformed
+    }//GEN-LAST:event_chocklateshakecheckActionPerformed
 
     private void bananashakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bananashakecheckActionPerformed
         if (bananashakecheck.isSelected()) {
@@ -3619,7 +3600,7 @@ public class orderV2 extends javax.swing.JFrame {
     private void mangoslushcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mangoslushcheckActionPerformed
         // TODO add your handling code here:
 
-                if (mangoslushcheck.isSelected()) {
+        if (mangoslushcheck.isSelected()) {
             mangoslushqty.setEnabled(true);
             mangoslushqty.requestFocus();
             mangoslushqty.setText("");
@@ -3628,7 +3609,7 @@ public class orderV2 extends javax.swing.JFrame {
     }//GEN-LAST:event_mangoslushcheckActionPerformed
 
     private void mangoshakecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mangoshakecheckActionPerformed
-               if (mangoshakecheck.isSelected()) {
+        if (mangoshakecheck.isSelected()) {
             mangoshakeqty.setEnabled(true);
             mangoshakeqty.requestFocus();
             mangoshakeqty.setText("");
@@ -3720,7 +3701,7 @@ public class orderV2 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -3873,7 +3854,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
@@ -3934,7 +3914,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane30;
     private javax.swing.JScrollPane jScrollPane31;
-    private javax.swing.JScrollPane jScrollPane32;
     private javax.swing.JScrollPane jScrollPane33;
     private javax.swing.JScrollPane jScrollPane34;
     private javax.swing.JScrollPane jScrollPane35;
@@ -3992,9 +3971,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea parathaqty;
     private javax.swing.JComboBox<String> paymentSelection;
     private javax.swing.JButton resetButton;
-    private javax.swing.JCheckBox roticheck;
-    private javax.swing.JLabel rotiqty;
-    private javax.swing.JTextArea rotti;
     private javax.swing.JCheckBox russiansaladcheck;
     private javax.swing.JTextArea russiansaladqty;
     private javax.swing.JCheckBox sajjicheck;
