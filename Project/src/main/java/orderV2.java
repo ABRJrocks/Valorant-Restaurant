@@ -2347,7 +2347,6 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullqty.setEnabled(false);
         channyhalfqty.setEnabled(false);
         halwaplateqty.setEnabled(false);
-<<<<<<< HEAD
         
         
         //lunch 
@@ -2372,7 +2371,6 @@ public class orderV2 extends javax.swing.JFrame {
         khmeerirotiqty.setEnabled(false);
         rotiqty.setEnabled(false);
         
-=======
 
         //Fast Food
         zingerburgerqty.setEnabled(false);
@@ -2392,7 +2390,6 @@ public class orderV2 extends javax.swing.JFrame {
         strawberryslushqty.setEnabled(false);
         orangeslushqty.setEnabled(false);
 
->>>>>>> 04683a5db9d9b2e086700a3933e931e58e991786
         //=======================
 
         teaqty.setText("0");
@@ -3426,7 +3423,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea calzoneqty;
     private javax.swing.JTextArea change;
     private javax.swing.JCheckBox channyfullcheck;
-<<<<<<< HEAD
     private javax.swing.JCheckBox channyfullcheck4;
     private javax.swing.JTextArea channyfullqty;
     private javax.swing.JTextArea channyfullqty4;
@@ -3436,19 +3432,14 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea channyhalfqty4;
     private javax.swing.JCheckBox cheesenaancheck;
     private javax.swing.JTextArea cheesenaanqty;
-=======
     private javax.swing.JCheckBox channyfullcheck1;
     private javax.swing.JCheckBox channyfullcheck2;
-    private javax.swing.JTextArea channyfullqty;
     private javax.swing.JTextArea channyfullqty1;
     private javax.swing.JTextArea channyfullqty2;
-    private javax.swing.JCheckBox channyhalfcheck;
     private javax.swing.JCheckBox channyhalfcheck1;
     private javax.swing.JCheckBox channyhalfcheck2;
-    private javax.swing.JTextArea channyhalfqty;
     private javax.swing.JTextArea channyhalfqty1;
     private javax.swing.JTextArea channyhalfqty2;
->>>>>>> 04683a5db9d9b2e086700a3933e931e58e991786
     private javax.swing.JCheckBox chickenburgercheck;
     private javax.swing.JTextArea chickenburgerqty;
     private javax.swing.JCheckBox chickenchipscheck;
@@ -3477,7 +3468,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea fruitchaatqty;
     private javax.swing.JCheckBox fryeggcheck;
     private javax.swing.JTextArea fryeggqty;
-<<<<<<< HEAD
     private javax.swing.JTextArea fryeggqty4;
     private javax.swing.JCheckBox grilledsandwitchcheck;
     private javax.swing.JTextArea grilledsandwitchqty;
@@ -3491,20 +3481,14 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JCheckBox halwapuricheck4;
     private javax.swing.JTextArea halwapuriqty;
     private javax.swing.JTextArea halwapuriqty4;
-=======
-    private javax.swing.JCheckBox halwaplatecheck;
     private javax.swing.JCheckBox halwaplatecheck1;
     private javax.swing.JCheckBox halwaplatecheck2;
-    private javax.swing.JTextArea halwaplateqty;
     private javax.swing.JTextArea halwaplateqty1;
     private javax.swing.JTextArea halwaplateqty2;
-    private javax.swing.JCheckBox halwapuricheck;
     private javax.swing.JCheckBox halwapuricheck1;
     private javax.swing.JCheckBox halwapuricheck2;
-    private javax.swing.JTextArea halwapuriqty;
     private javax.swing.JTextArea halwapuriqty1;
     private javax.swing.JTextArea halwapuriqty2;
->>>>>>> 04683a5db9d9b2e086700a3933e931e58e991786
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -3639,7 +3623,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea mangoslushqty;
     private javax.swing.JTextArea moneyInput;
     private javax.swing.JCheckBox naancheck;
-<<<<<<< HEAD
     private javax.swing.JCheckBox naancheck4;
     private javax.swing.JTextArea naanqty;
     private javax.swing.JTextArea naanqty4;
@@ -3655,31 +3638,22 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JCheckBox parathacheck4;
     private javax.swing.JTextArea parathaqty;
     private javax.swing.JTextArea parathaqty4;
-=======
     private javax.swing.JCheckBox naancheck1;
     private javax.swing.JCheckBox naancheck2;
-    private javax.swing.JTextArea naanqty;
     private javax.swing.JTextArea naanqty1;
     private javax.swing.JTextArea naanqty2;
-    private javax.swing.JCheckBox niharicheck;
     private javax.swing.JCheckBox niharicheck1;
     private javax.swing.JCheckBox niharicheck2;
-    private javax.swing.JTextArea nihariqty;
     private javax.swing.JTextArea nihariqty1;
     private javax.swing.JTextArea nihariqty2;
-    private javax.swing.JCheckBox ommlettecheck;
     private javax.swing.JCheckBox ommlettecheck2;
-    private javax.swing.JTextArea ommletteqty;
     private javax.swing.JTextArea ommletteqty2;
     private javax.swing.JCheckBox orangeslushcheck;
     private javax.swing.JTextArea orangeslushqty;
-    private javax.swing.JCheckBox parathacheck;
     private javax.swing.JCheckBox parathacheck1;
     private javax.swing.JCheckBox parathacheck2;
-    private javax.swing.JTextArea parathaqty;
     private javax.swing.JTextArea parathaqty1;
     private javax.swing.JTextArea parathaqty2;
->>>>>>> 04683a5db9d9b2e086700a3933e931e58e991786
     private javax.swing.JComboBox<String> paymentSelection;
     private javax.swing.JButton resetButton;
     private javax.swing.JCheckBox roticheck;
