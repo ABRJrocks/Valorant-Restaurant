@@ -429,7 +429,7 @@ public class orderV2 extends javax.swing.JFrame {
 
         jPanel2.add(bevragesMenuSelectPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 300, 45));
 
-        jLabel62.setIcon(new javax.swing.ImageIcon("E:\\RJ Data\\BSCS\\2nd Semester\\OOP\\Semester Project\\Project Files\\Project\\src\\main\\java\\Images\\images_Billin_Menu.png")); // NOI18N
+        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/netbeansvisualapp/images_Billin_Menu.png"))); // NOI18N
         jPanel2.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 200, 120));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 800));
