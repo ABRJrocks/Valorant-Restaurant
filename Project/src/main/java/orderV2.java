@@ -85,33 +85,33 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         lunchMenu = new javax.swing.JPanel();
         biryanicheck = new javax.swing.JCheckBox();
-        parathacheck1 = new javax.swing.JCheckBox();
-        naancheck1 = new javax.swing.JCheckBox();
-        halwapuricheck1 = new javax.swing.JCheckBox();
-        karhaifullcheck = new javax.swing.JCheckBox();
-        halwaplatecheck1 = new javax.swing.JCheckBox();
-        niharicheck1 = new javax.swing.JCheckBox();
+        samosacheck = new javax.swing.JCheckBox();
+        sandwichcheck = new javax.swing.JCheckBox();
+        dahibhallycheck = new javax.swing.JCheckBox();
+        chickenrollcheck = new javax.swing.JCheckBox();
+        freshsaladcheck = new javax.swing.JCheckBox();
+        russiansaladcheck = new javax.swing.JCheckBox();
         jScrollPane20 = new javax.swing.JScrollPane();
         biryaniqty = new javax.swing.JTextArea();
         jScrollPane21 = new javax.swing.JScrollPane();
-        parathaqty1 = new javax.swing.JTextArea();
+        samosaqty = new javax.swing.JTextArea();
         jScrollPane22 = new javax.swing.JScrollPane();
-        karhaifullqty = new javax.swing.JTextArea();
+        chickenrollqty = new javax.swing.JTextArea();
         jScrollPane23 = new javax.swing.JScrollPane();
-        halwaplateqty1 = new javax.swing.JTextArea();
+        freshsaladqty = new javax.swing.JTextArea();
         jScrollPane24 = new javax.swing.JScrollPane();
-        naanqty1 = new javax.swing.JTextArea();
+        sandwichqty = new javax.swing.JTextArea();
         jScrollPane25 = new javax.swing.JScrollPane();
-        halwapuriqty1 = new javax.swing.JTextArea();
+        dahibhallyqty = new javax.swing.JTextArea();
         jScrollPane26 = new javax.swing.JScrollPane();
-        nihariqty1 = new javax.swing.JTextArea();
+        russiansaladqty = new javax.swing.JTextArea();
         jTextField12 = new javax.swing.JTextField();
         jScrollPane27 = new javax.swing.JScrollPane();
-        channyhalfqty1 = new javax.swing.JTextArea();
-        channyhalfcheck1 = new javax.swing.JCheckBox();
+        macandcheeseqty = new javax.swing.JTextArea();
+        macandcheesecheck = new javax.swing.JCheckBox();
         jScrollPane28 = new javax.swing.JScrollPane();
-        channyfullqty1 = new javax.swing.JTextArea();
-        channyfullcheck1 = new javax.swing.JCheckBox();
+        fruitchaatqty = new javax.swing.JTextArea();
+        fruitchaatcheck = new javax.swing.JCheckBox();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
@@ -123,34 +123,34 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel34 = new javax.swing.JLabel();
         dinnerMenu = new javax.swing.JPanel();
         malaiboticheck = new javax.swing.JCheckBox();
-        parathacheck2 = new javax.swing.JCheckBox();
-        naancheck2 = new javax.swing.JCheckBox();
-        halwapuricheck2 = new javax.swing.JCheckBox();
-        ommlettecheck2 = new javax.swing.JCheckBox();
-        halwaplatecheck2 = new javax.swing.JCheckBox();
-        niharicheck2 = new javax.swing.JCheckBox();
+        sajjicheck = new javax.swing.JCheckBox();
+        tawachickencheck = new javax.swing.JCheckBox();
+        haleemcheck = new javax.swing.JCheckBox();
+        seekhkababcheck = new javax.swing.JCheckBox();
+        roticheck = new javax.swing.JCheckBox();
+        khmeeriroticheck = new javax.swing.JCheckBox();
         jScrollPane29 = new javax.swing.JScrollPane();
         malaibotiqty = new javax.swing.JTextArea();
         jScrollPane30 = new javax.swing.JScrollPane();
-        parathaqty2 = new javax.swing.JTextArea();
+        sajjiqty = new javax.swing.JTextArea();
         jScrollPane31 = new javax.swing.JScrollPane();
-        ommletteqty2 = new javax.swing.JTextArea();
+        seekhkababqty = new javax.swing.JTextArea();
         jScrollPane32 = new javax.swing.JScrollPane();
-        halwaplateqty2 = new javax.swing.JTextArea();
+        rotti = new javax.swing.JTextArea();
         jScrollPane33 = new javax.swing.JScrollPane();
-        naanqty2 = new javax.swing.JTextArea();
+        tawachickenqty = new javax.swing.JTextArea();
         jScrollPane34 = new javax.swing.JScrollPane();
-        halwapuriqty2 = new javax.swing.JTextArea();
+        haleemqty = new javax.swing.JTextArea();
         jScrollPane35 = new javax.swing.JScrollPane();
-        nihariqty2 = new javax.swing.JTextArea();
+        khmeerirotiqty = new javax.swing.JTextArea();
         jTextField13 = new javax.swing.JTextField();
         jScrollPane36 = new javax.swing.JScrollPane();
-        channyhalfqty2 = new javax.swing.JTextArea();
-        channyhalfcheck2 = new javax.swing.JCheckBox();
+        cheesenaanqty = new javax.swing.JTextArea();
+        cheesenaancheck = new javax.swing.JCheckBox();
         jScrollPane37 = new javax.swing.JScrollPane();
-        channyfullqty2 = new javax.swing.JTextArea();
-        channyfullcheck2 = new javax.swing.JCheckBox();
-        jLabel35 = new javax.swing.JLabel();
+        chickenkarhaiqty = new javax.swing.JTextArea();
+        chickenkarhaicheck = new javax.swing.JCheckBox();
+        rotiqty = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
@@ -739,54 +739,54 @@ public class orderV2 extends javax.swing.JFrame {
         });
         lunchMenu.add(biryanicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
 
-        parathacheck1.setBackground(new java.awt.Color(102, 8, 219));
-        parathacheck1.addActionListener(new java.awt.event.ActionListener() {
+        samosacheck.setBackground(new java.awt.Color(102, 8, 219));
+        samosacheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                parathacheck1ActionPerformed(evt);
+                samosacheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(parathacheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
+        lunchMenu.add(samosacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
 
-        naancheck1.setBackground(new java.awt.Color(102, 8, 219));
-        naancheck1.addActionListener(new java.awt.event.ActionListener() {
+        sandwichcheck.setBackground(new java.awt.Color(102, 8, 219));
+        sandwichcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                naancheck1ActionPerformed(evt);
+                sandwichcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(naancheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        lunchMenu.add(sandwichcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
 
-        halwapuricheck1.setBackground(new java.awt.Color(102, 8, 219));
-        halwapuricheck1.addActionListener(new java.awt.event.ActionListener() {
+        dahibhallycheck.setBackground(new java.awt.Color(102, 8, 219));
+        dahibhallycheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                halwapuricheck1ActionPerformed(evt);
+                dahibhallycheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(halwapuricheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
+        lunchMenu.add(dahibhallycheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
 
-        karhaifullcheck.setBackground(new java.awt.Color(102, 8, 219));
-        karhaifullcheck.addActionListener(new java.awt.event.ActionListener() {
+        chickenrollcheck.setBackground(new java.awt.Color(102, 8, 219));
+        chickenrollcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                karhaifullcheckActionPerformed(evt);
+                chickenrollcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(karhaifullcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
+        lunchMenu.add(chickenrollcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
 
-        halwaplatecheck1.setBackground(new java.awt.Color(102, 8, 219));
-        halwaplatecheck1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        halwaplatecheck1.addActionListener(new java.awt.event.ActionListener() {
+        freshsaladcheck.setBackground(new java.awt.Color(102, 8, 219));
+        freshsaladcheck.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        freshsaladcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                halwaplatecheck1ActionPerformed(evt);
+                freshsaladcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(halwaplatecheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
+        lunchMenu.add(freshsaladcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
 
-        niharicheck1.setBackground(new java.awt.Color(102, 8, 219));
-        niharicheck1.addActionListener(new java.awt.event.ActionListener() {
+        russiansaladcheck.setBackground(new java.awt.Color(102, 8, 219));
+        russiansaladcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                niharicheck1ActionPerformed(evt);
+                russiansaladcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(niharicheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
+        lunchMenu.add(russiansaladcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
 
         jScrollPane20.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane20.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -808,102 +808,102 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane21.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane21.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        parathaqty1.setColumns(20);
-        parathaqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        parathaqty1.setRows(5);
-        parathaqty1.setText("0");
-        parathaqty1.setEnabled(false);
-        parathaqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        samosaqty.setColumns(20);
+        samosaqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        samosaqty.setRows(5);
+        samosaqty.setText("0");
+        samosaqty.setEnabled(false);
+        samosaqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                parathaqty1KeyTyped(evt);
+                samosaqtyKeyTyped(evt);
             }
         });
-        jScrollPane21.setViewportView(parathaqty1);
+        jScrollPane21.setViewportView(samosaqty);
 
         lunchMenu.add(jScrollPane21, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 93, 31));
 
         jScrollPane22.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane22.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        karhaifullqty.setColumns(20);
-        karhaifullqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        karhaifullqty.setRows(5);
-        karhaifullqty.setText("0");
-        karhaifullqty.setEnabled(false);
-        karhaifullqty.addKeyListener(new java.awt.event.KeyAdapter() {
+        chickenrollqty.setColumns(20);
+        chickenrollqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        chickenrollqty.setRows(5);
+        chickenrollqty.setText("0");
+        chickenrollqty.setEnabled(false);
+        chickenrollqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                karhaifullqtyKeyTyped(evt);
+                chickenrollqtyKeyTyped(evt);
             }
         });
-        jScrollPane22.setViewportView(karhaifullqty);
+        jScrollPane22.setViewportView(chickenrollqty);
 
         lunchMenu.add(jScrollPane22, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 93, 31));
 
         jScrollPane23.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane23.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        halwaplateqty1.setColumns(20);
-        halwaplateqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        halwaplateqty1.setRows(5);
-        halwaplateqty1.setText("0");
-        halwaplateqty1.setEnabled(false);
-        halwaplateqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        freshsaladqty.setColumns(20);
+        freshsaladqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        freshsaladqty.setRows(5);
+        freshsaladqty.setText("0");
+        freshsaladqty.setEnabled(false);
+        freshsaladqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                halwaplateqty1KeyTyped(evt);
+                freshsaladqtyKeyTyped(evt);
             }
         });
-        jScrollPane23.setViewportView(halwaplateqty1);
+        jScrollPane23.setViewportView(freshsaladqty);
 
         lunchMenu.add(jScrollPane23, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 650, 93, 31));
 
         jScrollPane24.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane24.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        naanqty1.setColumns(20);
-        naanqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        naanqty1.setRows(5);
-        naanqty1.setText("0");
-        naanqty1.setEnabled(false);
-        naanqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        sandwichqty.setColumns(20);
+        sandwichqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        sandwichqty.setRows(5);
+        sandwichqty.setText("0");
+        sandwichqty.setEnabled(false);
+        sandwichqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                naanqty1KeyTyped(evt);
+                sandwichqtyKeyTyped(evt);
             }
         });
-        jScrollPane24.setViewportView(naanqty1);
+        jScrollPane24.setViewportView(sandwichqty);
 
         lunchMenu.add(jScrollPane24, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 93, 31));
 
         jScrollPane25.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane25.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        halwapuriqty1.setColumns(20);
-        halwapuriqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        halwapuriqty1.setRows(5);
-        halwapuriqty1.setText("0");
-        halwapuriqty1.setEnabled(false);
-        halwapuriqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        dahibhallyqty.setColumns(20);
+        dahibhallyqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        dahibhallyqty.setRows(5);
+        dahibhallyqty.setText("0");
+        dahibhallyqty.setEnabled(false);
+        dahibhallyqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                halwapuriqty1KeyTyped(evt);
+                dahibhallyqtyKeyTyped(evt);
             }
         });
-        jScrollPane25.setViewportView(halwapuriqty1);
+        jScrollPane25.setViewportView(dahibhallyqty);
 
         lunchMenu.add(jScrollPane25, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 93, 31));
 
         jScrollPane26.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane26.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        nihariqty1.setColumns(20);
-        nihariqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        nihariqty1.setRows(5);
-        nihariqty1.setText("0");
-        nihariqty1.setEnabled(false);
-        nihariqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        russiansaladqty.setColumns(20);
+        russiansaladqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        russiansaladqty.setRows(5);
+        russiansaladqty.setText("0");
+        russiansaladqty.setEnabled(false);
+        russiansaladqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                nihariqty1KeyTyped(evt);
+                russiansaladqtyKeyTyped(evt);
             }
         });
-        jScrollPane26.setViewportView(nihariqty1);
+        jScrollPane26.setViewportView(russiansaladqty);
 
         lunchMenu.add(jScrollPane26, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, 93, 31));
 
@@ -923,56 +923,56 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane27.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane27.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        channyhalfqty1.setColumns(20);
-        channyhalfqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        channyhalfqty1.setRows(5);
-        channyhalfqty1.setText("0");
-        channyhalfqty1.setEnabled(false);
-        channyhalfqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        macandcheeseqty.setColumns(20);
+        macandcheeseqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        macandcheeseqty.setRows(5);
+        macandcheeseqty.setText("0");
+        macandcheeseqty.setEnabled(false);
+        macandcheeseqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                channyhalfqty1KeyTyped(evt);
+                macandcheeseqtyKeyTyped(evt);
             }
         });
-        jScrollPane27.setViewportView(channyhalfqty1);
+        jScrollPane27.setViewportView(macandcheeseqty);
 
         lunchMenu.add(jScrollPane27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, 93, 31));
 
-        channyhalfcheck1.setBackground(new java.awt.Color(102, 8, 219));
-        channyhalfcheck1.addActionListener(new java.awt.event.ActionListener() {
+        macandcheesecheck.setBackground(new java.awt.Color(102, 8, 219));
+        macandcheesecheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                channyhalfcheck1ActionPerformed(evt);
+                macandcheesecheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(channyhalfcheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
+        lunchMenu.add(macandcheesecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
 
         jScrollPane28.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane28.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        channyfullqty1.setColumns(20);
-        channyfullqty1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        channyfullqty1.setRows(5);
-        channyfullqty1.setText("0");
-        channyfullqty1.setEnabled(false);
-        channyfullqty1.addKeyListener(new java.awt.event.KeyAdapter() {
+        fruitchaatqty.setColumns(20);
+        fruitchaatqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        fruitchaatqty.setRows(5);
+        fruitchaatqty.setText("0");
+        fruitchaatqty.setEnabled(false);
+        fruitchaatqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                channyfullqty1KeyTyped(evt);
+                fruitchaatqtyKeyTyped(evt);
             }
         });
-        jScrollPane28.setViewportView(channyfullqty1);
+        jScrollPane28.setViewportView(fruitchaatqty);
 
         lunchMenu.add(jScrollPane28, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 93, 31));
 
-        channyfullcheck1.setBackground(new java.awt.Color(102, 8, 219));
-        channyfullcheck1.addActionListener(new java.awt.event.ActionListener() {
+        fruitchaatcheck.setBackground(new java.awt.Color(102, 8, 219));
+        fruitchaatcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                channyfullcheck1ActionPerformed(evt);
+                fruitchaatcheckActionPerformed(evt);
             }
         });
-        lunchMenu.add(channyfullcheck1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
+        lunchMenu.add(fruitchaatcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 21)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setText("HALWA PLATE");
+        jLabel26.setText("FRESH SALAD");
         lunchMenu.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 170, 60));
 
         jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
@@ -992,23 +992,23 @@ public class orderV2 extends javax.swing.JFrame {
 
         jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setText("HALWA PURI");
+        jLabel30.setText("DAHI BHALLY");
         lunchMenu.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 160, 70));
 
         jLabel31.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setText("CHANNY(full)");
+        jLabel31.setText("FRUIT CHAAT");
         lunchMenu.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 40));
 
-        jLabel32.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel32.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setText("CHANNY(half)");
+        jLabel32.setText("MAC & CHEESE");
         lunchMenu.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 520, 160, 40));
 
-        jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel33.setText("NIHARI");
-        lunchMenu.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 90, 40));
+        jLabel33.setText("RUSSAIN SALAD");
+        lunchMenu.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 160, 40));
 
         jLabel34.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
@@ -1030,54 +1030,54 @@ public class orderV2 extends javax.swing.JFrame {
         });
         dinnerMenu.add(malaiboticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 30));
 
-        parathacheck2.setBackground(new java.awt.Color(102, 8, 219));
-        parathacheck2.addActionListener(new java.awt.event.ActionListener() {
+        sajjicheck.setBackground(new java.awt.Color(102, 8, 219));
+        sajjicheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                parathacheck2ActionPerformed(evt);
+                sajjicheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(parathacheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
+        dinnerMenu.add(sajjicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, 30));
 
-        naancheck2.setBackground(new java.awt.Color(102, 8, 219));
-        naancheck2.addActionListener(new java.awt.event.ActionListener() {
+        tawachickencheck.setBackground(new java.awt.Color(102, 8, 219));
+        tawachickencheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                naancheck2ActionPerformed(evt);
+                tawachickencheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(naancheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        dinnerMenu.add(tawachickencheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
 
-        halwapuricheck2.setBackground(new java.awt.Color(102, 8, 219));
-        halwapuricheck2.addActionListener(new java.awt.event.ActionListener() {
+        haleemcheck.setBackground(new java.awt.Color(102, 8, 219));
+        haleemcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                halwapuricheck2ActionPerformed(evt);
+                haleemcheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(halwapuricheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
+        dinnerMenu.add(haleemcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, 30));
 
-        ommlettecheck2.setBackground(new java.awt.Color(102, 8, 219));
-        ommlettecheck2.addActionListener(new java.awt.event.ActionListener() {
+        seekhkababcheck.setBackground(new java.awt.Color(102, 8, 219));
+        seekhkababcheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ommlettecheck2ActionPerformed(evt);
+                seekhkababcheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(ommlettecheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
+        dinnerMenu.add(seekhkababcheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
 
-        halwaplatecheck2.setBackground(new java.awt.Color(102, 8, 219));
-        halwaplatecheck2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        halwaplatecheck2.addActionListener(new java.awt.event.ActionListener() {
+        roticheck.setBackground(new java.awt.Color(102, 8, 219));
+        roticheck.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        roticheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                halwaplatecheck2ActionPerformed(evt);
+                roticheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(halwaplatecheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
+        dinnerMenu.add(roticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, 20));
 
-        niharicheck2.setBackground(new java.awt.Color(102, 8, 219));
-        niharicheck2.addActionListener(new java.awt.event.ActionListener() {
+        khmeeriroticheck.setBackground(new java.awt.Color(102, 8, 219));
+        khmeeriroticheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                niharicheck2ActionPerformed(evt);
+                khmeeriroticheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(niharicheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
+        dinnerMenu.add(khmeeriroticheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, 20));
 
         jScrollPane29.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane29.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -1099,102 +1099,102 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane30.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane30.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        parathaqty2.setColumns(20);
-        parathaqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        parathaqty2.setRows(5);
-        parathaqty2.setText("0");
-        parathaqty2.setEnabled(false);
-        parathaqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        sajjiqty.setColumns(20);
+        sajjiqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        sajjiqty.setRows(5);
+        sajjiqty.setText("0");
+        sajjiqty.setEnabled(false);
+        sajjiqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                parathaqty2KeyTyped(evt);
+                sajjiqtyKeyTyped(evt);
             }
         });
-        jScrollPane30.setViewportView(parathaqty2);
+        jScrollPane30.setViewportView(sajjiqty);
 
         dinnerMenu.add(jScrollPane30, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 93, 31));
 
         jScrollPane31.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane31.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        ommletteqty2.setColumns(20);
-        ommletteqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        ommletteqty2.setRows(5);
-        ommletteqty2.setText("0");
-        ommletteqty2.setEnabled(false);
-        ommletteqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        seekhkababqty.setColumns(20);
+        seekhkababqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        seekhkababqty.setRows(5);
+        seekhkababqty.setText("0");
+        seekhkababqty.setEnabled(false);
+        seekhkababqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                ommletteqty2KeyTyped(evt);
+                seekhkababqtyKeyTyped(evt);
             }
         });
-        jScrollPane31.setViewportView(ommletteqty2);
+        jScrollPane31.setViewportView(seekhkababqty);
 
         dinnerMenu.add(jScrollPane31, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 93, 31));
 
         jScrollPane32.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane32.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        halwaplateqty2.setColumns(20);
-        halwaplateqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        halwaplateqty2.setRows(5);
-        halwaplateqty2.setText("0");
-        halwaplateqty2.setEnabled(false);
-        halwaplateqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        rotti.setColumns(20);
+        rotti.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        rotti.setRows(5);
+        rotti.setText("0");
+        rotti.setEnabled(false);
+        rotti.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                halwaplateqty2KeyTyped(evt);
+                rottiKeyTyped(evt);
             }
         });
-        jScrollPane32.setViewportView(halwaplateqty2);
+        jScrollPane32.setViewportView(rotti);
 
         dinnerMenu.add(jScrollPane32, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 650, 93, 31));
 
         jScrollPane33.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane33.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        naanqty2.setColumns(20);
-        naanqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        naanqty2.setRows(5);
-        naanqty2.setText("0");
-        naanqty2.setEnabled(false);
-        naanqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        tawachickenqty.setColumns(20);
+        tawachickenqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        tawachickenqty.setRows(5);
+        tawachickenqty.setText("0");
+        tawachickenqty.setEnabled(false);
+        tawachickenqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                naanqty2KeyTyped(evt);
+                tawachickenqtyKeyTyped(evt);
             }
         });
-        jScrollPane33.setViewportView(naanqty2);
+        jScrollPane33.setViewportView(tawachickenqty);
 
         dinnerMenu.add(jScrollPane33, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 93, 31));
 
         jScrollPane34.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane34.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        halwapuriqty2.setColumns(20);
-        halwapuriqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        halwapuriqty2.setRows(5);
-        halwapuriqty2.setText("0");
-        halwapuriqty2.setEnabled(false);
-        halwapuriqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        haleemqty.setColumns(20);
+        haleemqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        haleemqty.setRows(5);
+        haleemqty.setText("0");
+        haleemqty.setEnabled(false);
+        haleemqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                halwapuriqty2KeyTyped(evt);
+                haleemqtyKeyTyped(evt);
             }
         });
-        jScrollPane34.setViewportView(halwapuriqty2);
+        jScrollPane34.setViewportView(haleemqty);
 
         dinnerMenu.add(jScrollPane34, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 93, 31));
 
         jScrollPane35.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane35.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        nihariqty2.setColumns(20);
-        nihariqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        nihariqty2.setRows(5);
-        nihariqty2.setText("0");
-        nihariqty2.setEnabled(false);
-        nihariqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        khmeerirotiqty.setColumns(20);
+        khmeerirotiqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        khmeerirotiqty.setRows(5);
+        khmeerirotiqty.setText("0");
+        khmeerirotiqty.setEnabled(false);
+        khmeerirotiqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                nihariqty2KeyTyped(evt);
+                khmeerirotiqtyKeyTyped(evt);
             }
         });
-        jScrollPane35.setViewportView(nihariqty2);
+        jScrollPane35.setViewportView(khmeerirotiqty);
 
         dinnerMenu.add(jScrollPane35, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, 93, 31));
 
@@ -1214,96 +1214,96 @@ public class orderV2 extends javax.swing.JFrame {
         jScrollPane36.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane36.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        channyhalfqty2.setColumns(20);
-        channyhalfqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        channyhalfqty2.setRows(5);
-        channyhalfqty2.setText("0");
-        channyhalfqty2.setEnabled(false);
-        channyhalfqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        cheesenaanqty.setColumns(20);
+        cheesenaanqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        cheesenaanqty.setRows(5);
+        cheesenaanqty.setText("0");
+        cheesenaanqty.setEnabled(false);
+        cheesenaanqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                channyhalfqty2KeyTyped(evt);
+                cheesenaanqtyKeyTyped(evt);
             }
         });
-        jScrollPane36.setViewportView(channyhalfqty2);
+        jScrollPane36.setViewportView(cheesenaanqty);
 
         dinnerMenu.add(jScrollPane36, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, 93, 31));
 
-        channyhalfcheck2.setBackground(new java.awt.Color(102, 8, 219));
-        channyhalfcheck2.addActionListener(new java.awt.event.ActionListener() {
+        cheesenaancheck.setBackground(new java.awt.Color(102, 8, 219));
+        cheesenaancheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                channyhalfcheck2ActionPerformed(evt);
+                cheesenaancheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(channyhalfcheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
+        dinnerMenu.add(cheesenaancheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, -1, -1));
 
         jScrollPane37.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane37.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        channyfullqty2.setColumns(20);
-        channyfullqty2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        channyfullqty2.setRows(5);
-        channyfullqty2.setText("0");
-        channyfullqty2.setEnabled(false);
-        channyfullqty2.addKeyListener(new java.awt.event.KeyAdapter() {
+        chickenkarhaiqty.setColumns(20);
+        chickenkarhaiqty.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        chickenkarhaiqty.setRows(5);
+        chickenkarhaiqty.setText("0");
+        chickenkarhaiqty.setEnabled(false);
+        chickenkarhaiqty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                channyfullqty2KeyTyped(evt);
+                chickenkarhaiqtyKeyTyped(evt);
             }
         });
-        jScrollPane37.setViewportView(channyfullqty2);
+        jScrollPane37.setViewportView(chickenkarhaiqty);
 
         dinnerMenu.add(jScrollPane37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 93, 31));
 
-        channyfullcheck2.setBackground(new java.awt.Color(102, 8, 219));
-        channyfullcheck2.addActionListener(new java.awt.event.ActionListener() {
+        chickenkarhaicheck.setBackground(new java.awt.Color(102, 8, 219));
+        chickenkarhaicheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                channyfullcheck2ActionPerformed(evt);
+                chickenkarhaicheckActionPerformed(evt);
             }
         });
-        dinnerMenu.add(channyfullcheck2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
+        dinnerMenu.add(chickenkarhaicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
 
-        jLabel35.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 21)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel35.setText("HALWA PLATE");
-        dinnerMenu.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 170, 60));
+        rotiqty.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 21)); // NOI18N
+        rotiqty.setForeground(new java.awt.Color(255, 255, 255));
+        rotiqty.setText("ROTI");
+        dinnerMenu.add(rotiqty, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 60, 60));
 
-        jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel36.setText("OMMLETTE");
-        dinnerMenu.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 140, 30));
+        jLabel36.setText("SEEKH KABAB");
+        dinnerMenu.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 150, 30));
 
         jLabel37.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel37.setText("PARATHA");
-        dinnerMenu.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 140, 30));
+        jLabel37.setText("SAJJI");
+        dinnerMenu.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 80, 30));
 
-        jLabel38.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel38.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel38.setText("NAAN");
-        dinnerMenu.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 80, 40));
+        jLabel38.setText("TAWA CHICKEN");
+        dinnerMenu.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 160, 40));
 
         jLabel39.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel39.setText("HALWA PURI");
-        dinnerMenu.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 160, 70));
+        jLabel39.setText("HALEEM");
+        dinnerMenu.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 100, 70));
 
-        jLabel40.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel40.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 17)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel40.setText("CHANNY(full)");
-        dinnerMenu.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 160, 40));
+        jLabel40.setText("CHICKEN KARHAI");
+        dinnerMenu.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 170, 40));
 
-        jLabel41.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel41.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel41.setText("CHANNY(half)");
+        jLabel41.setText("CHEESE NAAN");
         dinnerMenu.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 520, 160, 40));
 
-        jLabel42.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 22)); // NOI18N
+        jLabel42.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel42.setText("NIHARI");
-        dinnerMenu.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 90, 40));
+        jLabel42.setText("KHMEERI ROTI");
+        dinnerMenu.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 140, 40));
 
-        jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel43.setText("Malai Boti");
+        jLabel43.setText("MALAI BOTI");
         dinnerMenu.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 130, 30));
 
         jPanel4.add(dinnerMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
@@ -2386,6 +2386,27 @@ public class orderV2 extends javax.swing.JFrame {
         halwaplateqty.setText(null);
         
         // Lunch
+        biryaniqty.setText(null);
+        chickenrollqty.setText(null);
+        samosaqty.setText(null);
+        sandwichqty.setText(null);
+        dahibhallyqty.setText(null);
+        fruitchaatqty.setText(null);
+        macandcheeseqty.setText(null);
+        russiansaladqty.setText(null);
+        freshsaladqty.setText(null);
+        
+        //Dinner
+        malaibotiqty.setText(null);
+        seekhkababqty.setText(null);
+        sajjiqty.setText(null);
+        tawachickenqty.setText(null);
+        haleemqty.setText(null);
+        chickenkarhaiqty.setText(null);
+        cheesenaanqty.setText(null);
+        khmeerirotiqty.setText(null);
+        rotiqty.setText(null);
+        
 
         //=====================
         teacheck.setSelected(false);
@@ -2403,6 +2424,30 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullcheck.setSelected(false);
         niharicheck.setSelected(false);
         halwaplatecheck.setSelected(false);
+        
+        
+        // Lunch
+        biryanicheck.setSelected(false);
+        chickenrollcheck.setSelected(false);
+        samosacheck.setSelected(false);
+        sandwichcheck.setSelected(false);
+        dahibhallycheck.setSelected(false);
+        fruitchaatcheck.setSelected(false);
+        macandcheesecheck.setSelected(false);
+        russiansaladcheck.setSelected(false);
+        freshsaladcheck.setSelected(false);
+        
+        //Dinner
+        malaiboticheck.setSelected(false);
+        seekhkababcheck.setSelected(false);
+        sajjicheck.setSelected(false);
+        tawachickencheck.setSelected(false);
+        haleemcheck.setSelected(false);
+        chickenkarhaicheck.setSelected(false);
+        cheesenaancheck.setSelected(false);
+        khmeeriroticheck.setSelected(false);
+        roticheck.setSelected(false);
+        
 
         //========================
         teaqty.setEnabled(false);
@@ -2420,6 +2465,30 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullqty.setEnabled(false);
         channyhalfqty.setEnabled(false);
         halwaplateqty.setEnabled(false);
+        
+        
+        //lunch 
+        biryaniqty.setEnabled(false);
+        chickenrollqty.setEnabled(false);
+        samosaqty.setEnabled(false);
+        sandwichqty.setEnabled(false);
+        dahibhallyqty.setEnabled(false);
+        fruitchaatqty.setEnabled(false);
+        macandcheeseqty.setEnabled(false);
+        russiansaladqty.setEnabled(false);
+        freshsaladqty.setEnabled(false);
+        
+        //Dinner 
+        malaibotiqty.setEnabled(false);
+        seekhkababqty.setEnabled(false);
+        sajjiqty.setEnabled(false);
+        tawachickenqty.setEnabled(false);
+        haleemqty.setEnabled(false);
+        chickenkarhaiqty.setEnabled(false);
+        cheesenaanqty.setEnabled(false);
+        khmeerirotiqty.setEnabled(false);
+        rotiqty.setEnabled(false);
+        
         //=======================
         teaqty.setText("0");
         coffeeqty.setText("0");
@@ -2437,6 +2506,29 @@ public class orderV2 extends javax.swing.JFrame {
         channyhalfqty.setText("0");
         nihariqty.setText("0");
         halwaplateqty.setText("0");
+        
+        //lunch
+        biryaniqty.setText("0");
+        chickenrollqty.setText("0");
+        samosaqty.setText("0");
+        sandwichqty.setText("0");
+        dahibhallyqty.setText("0");
+        fruitchaatqty.setText("0");
+        macandcheeseqty.setText("0");
+        russiansaladqty.setText("0");
+        freshsaladqty.setText("0");
+        
+        //Dinner
+        malaibotiqty.setText("0");
+        seekhkababqty.setText("0");
+        sajjiqty.setText("0");
+        tawachickenqty.setText("0");
+        haleemqty.setText("0");
+        chickenkarhaiqty.setText("0");
+        cheesenaanqty.setText("0");
+        khmeerirotiqty.setText("0");
+        rotiqty.setText("0");
+        
 
         //********************************
         //********************************
@@ -2752,155 +2844,377 @@ public class orderV2 extends javax.swing.JFrame {
 
     private void biryanicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biryanicheckActionPerformed
         // TODO add your handling code here:
+         if (biryanicheck.isSelected())
+        {
+            biryaniqty.setEnabled(true);
+            biryaniqty.requestFocus();
+            biryaniqty.setText("");
+        }
     }//GEN-LAST:event_biryanicheckActionPerformed
 
-    private void parathacheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parathacheck1ActionPerformed
+    private void samosacheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_samosacheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_parathacheck1ActionPerformed
+        if (samosacheck.isSelected())
+        {
+            samosaqty.setEnabled(true);
+            samosaqty.requestFocus();
+            samosaqty.setText("");
+        }
+    }//GEN-LAST:event_samosacheckActionPerformed
 
-    private void naancheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_naancheck1ActionPerformed
+    private void sandwichcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sandwichcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_naancheck1ActionPerformed
+        if (sandwichcheck.isSelected())
+        {
+            sandwichqty.setEnabled(true);
+            sandwichqty.requestFocus();
+            sandwichqty.setText("");
+        }
+    }//GEN-LAST:event_sandwichcheckActionPerformed
 
-    private void halwapuricheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwapuricheck1ActionPerformed
+    private void dahibhallycheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dahibhallycheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwapuricheck1ActionPerformed
+         if (dahibhallycheck.isSelected())
+        {
+            dahibhallyqty.setEnabled(true);
+            dahibhallyqty.requestFocus();
+            dahibhallyqty.setText("");
+        }
+    }//GEN-LAST:event_dahibhallycheckActionPerformed
 
-    private void karhaifullcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_karhaifullcheckActionPerformed
+    private void chickenrollcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenrollcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_karhaifullcheckActionPerformed
+        if (chickenrollcheck.isSelected())
+        {
+            chickenrollqty.setEnabled(true);
+            chickenrollqty.requestFocus();
+            chickenrollqty.setText("");
+        }
+    }//GEN-LAST:event_chickenrollcheckActionPerformed
 
-    private void halwaplatecheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwaplatecheck1ActionPerformed
+    private void freshsaladcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_freshsaladcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwaplatecheck1ActionPerformed
+         if (freshsaladcheck.isSelected())
+        {
+            freshsaladqty.setEnabled(true);
+            freshsaladqty.requestFocus();
+            freshsaladqty.setText("");
+        }
+        
+    }//GEN-LAST:event_freshsaladcheckActionPerformed
 
-    private void niharicheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_niharicheck1ActionPerformed
+    private void russiansaladcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_russiansaladcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_niharicheck1ActionPerformed
+         if (russiansaladcheck.isSelected())
+        {
+            russiansaladqty.setEnabled(true);
+            russiansaladqty.requestFocus();
+            russiansaladqty.setText("");
+        }
+        
+    }//GEN-LAST:event_russiansaladcheckActionPerformed
 
     private void biryaniqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_biryaniqtyKeyTyped
         // TODO add your handling code here:
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
     }//GEN-LAST:event_biryaniqtyKeyTyped
 
-    private void parathaqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_parathaqty1KeyTyped
+    private void samosaqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_samosaqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_parathaqty1KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_samosaqtyKeyTyped
 
-    private void karhaifullqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_karhaifullqtyKeyTyped
+    private void chickenrollqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenrollqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_karhaifullqtyKeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_chickenrollqtyKeyTyped
 
-    private void halwaplateqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_halwaplateqty1KeyTyped
+    private void freshsaladqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_freshsaladqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwaplateqty1KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_freshsaladqtyKeyTyped
 
-    private void naanqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_naanqty1KeyTyped
+    private void sandwichqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sandwichqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_naanqty1KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_sandwichqtyKeyTyped
 
-    private void halwapuriqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_halwapuriqty1KeyTyped
+    private void dahibhallyqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_dahibhallyqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwapuriqty1KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_dahibhallyqtyKeyTyped
 
-    private void nihariqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nihariqty1KeyTyped
+    private void russiansaladqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_russiansaladqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_nihariqty1KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_russiansaladqtyKeyTyped
 
     private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField12ActionPerformed
 
-    private void channyhalfqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_channyhalfqty1KeyTyped
+    private void macandcheeseqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_macandcheeseqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyhalfqty1KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_macandcheeseqtyKeyTyped
 
-    private void channyhalfcheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_channyhalfcheck1ActionPerformed
+    private void macandcheesecheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_macandcheesecheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyhalfcheck1ActionPerformed
+         if (macandcheesecheck.isSelected())
+        {
+            macandcheeseqty.setEnabled(true);
+            macandcheeseqty.requestFocus();
+            macandcheeseqty.setText("");
+        }
+        
+    }//GEN-LAST:event_macandcheesecheckActionPerformed
 
-    private void channyfullqty1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_channyfullqty1KeyTyped
+    private void fruitchaatqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fruitchaatqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyfullqty1KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_fruitchaatqtyKeyTyped
 
-    private void channyfullcheck1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_channyfullcheck1ActionPerformed
+    private void fruitchaatcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fruitchaatcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyfullcheck1ActionPerformed
+        if (fruitchaatcheck.isSelected())
+        {
+            fruitchaatqty.setEnabled(true);
+            fruitchaatqty.requestFocus();
+            fruitchaatqty.setText("");
+        }
+        
+    }//GEN-LAST:event_fruitchaatcheckActionPerformed
 
     private void malaiboticheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_malaiboticheckActionPerformed
         // TODO add your handling code here:
+         if (malaiboticheck.isSelected())
+        {
+            malaibotiqty.setEnabled(true);
+            malaibotiqty.requestFocus();
+            malaibotiqty.setText("");
+        }
     }//GEN-LAST:event_malaiboticheckActionPerformed
 
-    private void parathacheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parathacheck2ActionPerformed
+    private void sajjicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sajjicheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_parathacheck2ActionPerformed
+         if (sajjicheck.isSelected())
+        {
+            sajjiqty.setEnabled(true);
+            sajjiqty.requestFocus();
+            sajjiqty.setText("");
+        }
+    }//GEN-LAST:event_sajjicheckActionPerformed
 
-    private void naancheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_naancheck2ActionPerformed
+    private void tawachickencheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tawachickencheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_naancheck2ActionPerformed
+         if (tawachickencheck.isSelected())
+        {
+            tawachickenqty.setEnabled(true);
+            tawachickenqty.requestFocus();
+            tawachickenqty.setText("");
+        }
+    }//GEN-LAST:event_tawachickencheckActionPerformed
 
-    private void halwapuricheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwapuricheck2ActionPerformed
+    private void haleemcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_haleemcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwapuricheck2ActionPerformed
+        if (haleemcheck.isSelected())
+        {
+            haleemqty.setEnabled(true);
+            haleemqty.requestFocus();
+            haleemqty.setText("");
+        }
+    }//GEN-LAST:event_haleemcheckActionPerformed
 
-    private void ommlettecheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ommlettecheck2ActionPerformed
+    private void seekhkababcheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seekhkababcheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ommlettecheck2ActionPerformed
+         if (seekhkababcheck.isSelected())
+        {
+            seekhkababqty.setEnabled(true);
+            seekhkababqty.requestFocus();
+            seekhkababqty.setText("");
+        }
+    }//GEN-LAST:event_seekhkababcheckActionPerformed
 
-    private void halwaplatecheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_halwaplatecheck2ActionPerformed
+    private void roticheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roticheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwaplatecheck2ActionPerformed
+        if (roticheck.isSelected())
+        {
+            rotti.setEnabled(true);
+            rotti.requestFocus();
+            rotti.setText("");
+        }
+    }//GEN-LAST:event_roticheckActionPerformed
 
-    private void niharicheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_niharicheck2ActionPerformed
+    private void khmeeriroticheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_khmeeriroticheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_niharicheck2ActionPerformed
+        if (khmeeriroticheck.isSelected())
+        {
+            khmeerirotiqty.setEnabled(true);
+            khmeerirotiqty.requestFocus();
+            khmeerirotiqty.setText("");
+        }
+    }//GEN-LAST:event_khmeeriroticheckActionPerformed
 
     private void malaibotiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_malaibotiqtyKeyTyped
         // TODO add your handling code here:
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+        
     }//GEN-LAST:event_malaibotiqtyKeyTyped
 
-    private void parathaqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_parathaqty2KeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_parathaqty2KeyTyped
+    private void sajjiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sajjiqtyKeyTyped
+        // TODO add your handling code here:\
+        char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_sajjiqtyKeyTyped
 
-    private void ommletteqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ommletteqty2KeyTyped
+    private void seekhkababqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_seekhkababqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_ommletteqty2KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_seekhkababqtyKeyTyped
 
-    private void halwaplateqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_halwaplateqty2KeyTyped
+    private void rottiKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rottiKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwaplateqty2KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+        
+    }//GEN-LAST:event_rottiKeyTyped
 
-    private void naanqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_naanqty2KeyTyped
+    private void tawachickenqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tawachickenqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_naanqty2KeyTyped
+        char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_tawachickenqtyKeyTyped
 
-    private void halwapuriqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_halwapuriqty2KeyTyped
+    private void haleemqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_haleemqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_halwapuriqty2KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_haleemqtyKeyTyped
 
-    private void nihariqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nihariqty2KeyTyped
+    private void khmeerirotiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_khmeerirotiqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_nihariqty2KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_khmeerirotiqtyKeyTyped
 
     private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField13ActionPerformed
 
-    private void channyhalfqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_channyhalfqty2KeyTyped
+    private void cheesenaanqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cheesenaanqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyhalfqty2KeyTyped
+         char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_cheesenaanqtyKeyTyped
 
-    private void channyhalfcheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_channyhalfcheck2ActionPerformed
+    private void cheesenaancheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheesenaancheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyhalfcheck2ActionPerformed
+        if (cheesenaancheck.isSelected())
+        {
+            cheesenaanqty.setEnabled(true);
+            cheesenaanqty.requestFocus();
+            cheesenaanqty.setText("");
+        }
+    }//GEN-LAST:event_cheesenaancheckActionPerformed
 
-    private void channyfullqty2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_channyfullqty2KeyTyped
+    private void chickenkarhaiqtyKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chickenkarhaiqtyKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyfullqty2KeyTyped
+        char numberVal = evt.getKeyChar();
+        if(!(Character.isDigit(numberVal))
+            ||(numberVal ==KeyEvent.VK_BACK_SPACE)
+            ||(numberVal ==KeyEvent.VK_DELETE))
+        evt.consume();
+        
+    }//GEN-LAST:event_chickenkarhaiqtyKeyTyped
 
-    private void channyfullcheck2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_channyfullcheck2ActionPerformed
+    private void chickenkarhaicheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenkarhaicheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_channyfullcheck2ActionPerformed
+        if (chickenkarhaicheck.isSelected())
+        {
+            chickenkarhaiqty.setEnabled(true);
+            chickenkarhaiqty.requestFocus();
+            chickenkarhaiqty.setText("");
+        }
+    }//GEN-LAST:event_chickenkarhaicheckActionPerformed
 
     private void chickenburgercheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chickenburgercheckActionPerformed
         // TODO add your handling code here:
@@ -3104,56 +3418,54 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextArea calzoneqty;
     private javax.swing.JTextArea change;
     private javax.swing.JCheckBox channyfullcheck;
-    private javax.swing.JCheckBox channyfullcheck1;
-    private javax.swing.JCheckBox channyfullcheck2;
     private javax.swing.JCheckBox channyfullcheck4;
     private javax.swing.JTextArea channyfullqty;
-    private javax.swing.JTextArea channyfullqty1;
-    private javax.swing.JTextArea channyfullqty2;
     private javax.swing.JTextArea channyfullqty4;
     private javax.swing.JCheckBox channyhalfcheck;
-    private javax.swing.JCheckBox channyhalfcheck1;
-    private javax.swing.JCheckBox channyhalfcheck2;
     private javax.swing.JCheckBox channyhalfcheck4;
     private javax.swing.JTextArea channyhalfqty;
-    private javax.swing.JTextArea channyhalfqty1;
-    private javax.swing.JTextArea channyhalfqty2;
     private javax.swing.JTextArea channyhalfqty4;
+    private javax.swing.JCheckBox cheesenaancheck;
+    private javax.swing.JTextArea cheesenaanqty;
     private javax.swing.JCheckBox chickenburgercheck;
     private javax.swing.JTextArea chickenburgerqty;
     private javax.swing.JCheckBox chickenchipscheck;
     private javax.swing.JTextArea chickenchipsqty;
+    private javax.swing.JCheckBox chickenkarhaicheck;
+    private javax.swing.JTextArea chickenkarhaiqty;
+    private javax.swing.JCheckBox chickenrollcheck;
+    private javax.swing.JTextArea chickenrollqty;
     private javax.swing.JCheckBox chickenshwarmacheck;
     private javax.swing.JTextArea chickenshwarmaqty;
     private javax.swing.JCheckBox coffeecheck;
     private javax.swing.JTextArea coffeeqty;
     private javax.swing.JCheckBox colacheck;
     private javax.swing.JTextArea colaqty;
+    private javax.swing.JCheckBox dahibhallycheck;
+    private javax.swing.JTextArea dahibhallyqty;
     private javax.swing.JPanel dinnerMenu;
     private javax.swing.JPanel dinnerMenuSelectPanel;
     private javax.swing.JPanel fastfoodMenu;
     private javax.swing.JPanel fastfoodMenuSelectPanel;
+    private javax.swing.JCheckBox freshsaladcheck;
+    private javax.swing.JTextArea freshsaladqty;
+    private javax.swing.JCheckBox fruitchaatcheck;
+    private javax.swing.JTextArea fruitchaatqty;
     private javax.swing.JCheckBox fryeggcheck;
     private javax.swing.JCheckBox fryeggcheck4;
     private javax.swing.JTextArea fryeggqty;
     private javax.swing.JTextArea fryeggqty4;
     private javax.swing.JCheckBox grilledsandwitchcheck;
     private javax.swing.JTextArea grilledsandwitchqty;
+    private javax.swing.JCheckBox haleemcheck;
+    private javax.swing.JTextArea haleemqty;
     private javax.swing.JCheckBox halwaplatecheck;
-    private javax.swing.JCheckBox halwaplatecheck1;
-    private javax.swing.JCheckBox halwaplatecheck2;
     private javax.swing.JCheckBox halwaplatecheck4;
     private javax.swing.JTextArea halwaplateqty;
-    private javax.swing.JTextArea halwaplateqty1;
-    private javax.swing.JTextArea halwaplateqty2;
     private javax.swing.JTextArea halwaplateqty4;
     private javax.swing.JCheckBox halwapuricheck;
-    private javax.swing.JCheckBox halwapuricheck1;
-    private javax.swing.JCheckBox halwapuricheck2;
     private javax.swing.JCheckBox halwapuricheck4;
     private javax.swing.JTextArea halwapuriqty;
-    private javax.swing.JTextArea halwapuriqty1;
-    private javax.swing.JTextArea halwapuriqty2;
     private javax.swing.JTextArea halwapuriqty4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -3183,7 +3495,6 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
@@ -3282,52 +3593,55 @@ public class orderV2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField21;
-    private javax.swing.JCheckBox karhaifullcheck;
-    private javax.swing.JTextArea karhaifullqty;
+    private javax.swing.JCheckBox khmeeriroticheck;
+    private javax.swing.JTextArea khmeerirotiqty;
     private javax.swing.JCheckBox lassicheck;
     private javax.swing.JTextArea lassiqty;
     private javax.swing.JCheckBox loadedfriescheck;
     private javax.swing.JTextArea loadedfriesqty;
     private javax.swing.JPanel lunchMenu;
     private javax.swing.JPanel lunchMenuSelectPanel;
+    private javax.swing.JCheckBox macandcheesecheck;
+    private javax.swing.JTextArea macandcheeseqty;
     private javax.swing.JCheckBox malaiboticheck;
     private javax.swing.JTextArea malaibotiqty;
     private javax.swing.JTextArea moneyInput;
     private javax.swing.JCheckBox naancheck;
-    private javax.swing.JCheckBox naancheck1;
-    private javax.swing.JCheckBox naancheck2;
     private javax.swing.JCheckBox naancheck4;
     private javax.swing.JTextArea naanqty;
-    private javax.swing.JTextArea naanqty1;
-    private javax.swing.JTextArea naanqty2;
     private javax.swing.JTextArea naanqty4;
     private javax.swing.JCheckBox niharicheck;
-    private javax.swing.JCheckBox niharicheck1;
-    private javax.swing.JCheckBox niharicheck2;
     private javax.swing.JCheckBox niharicheck4;
     private javax.swing.JTextArea nihariqty;
-    private javax.swing.JTextArea nihariqty1;
-    private javax.swing.JTextArea nihariqty2;
     private javax.swing.JTextArea nihariqty4;
     private javax.swing.JCheckBox ommlettecheck;
-    private javax.swing.JCheckBox ommlettecheck2;
     private javax.swing.JCheckBox ommlettecheck4;
     private javax.swing.JTextArea ommletteqty;
-    private javax.swing.JTextArea ommletteqty2;
     private javax.swing.JTextArea ommletteqty4;
     private javax.swing.JCheckBox parathacheck;
-    private javax.swing.JCheckBox parathacheck1;
-    private javax.swing.JCheckBox parathacheck2;
     private javax.swing.JCheckBox parathacheck4;
     private javax.swing.JTextArea parathaqty;
-    private javax.swing.JTextArea parathaqty1;
-    private javax.swing.JTextArea parathaqty2;
     private javax.swing.JTextArea parathaqty4;
     private javax.swing.JComboBox<String> paymentSelection;
     private javax.swing.JButton resetButton;
+    private javax.swing.JCheckBox roticheck;
+    private javax.swing.JLabel rotiqty;
+    private javax.swing.JTextArea rotti;
+    private javax.swing.JCheckBox russiansaladcheck;
+    private javax.swing.JTextArea russiansaladqty;
+    private javax.swing.JCheckBox sajjicheck;
+    private javax.swing.JTextArea sajjiqty;
+    private javax.swing.JCheckBox samosacheck;
+    private javax.swing.JTextArea samosaqty;
+    private javax.swing.JCheckBox sandwichcheck;
+    private javax.swing.JTextArea sandwichqty;
+    private javax.swing.JCheckBox seekhkababcheck;
+    private javax.swing.JTextArea seekhkababqty;
     private javax.swing.JCheckBox spritecheck;
     private javax.swing.JTextArea spriteqty;
     private javax.swing.JTextArea subTotal;
+    private javax.swing.JCheckBox tawachickencheck;
+    private javax.swing.JTextArea tawachickenqty;
     private javax.swing.JTextArea tax;
     private javax.swing.JCheckBox teacheck;
     private javax.swing.JTextArea teaqty;
