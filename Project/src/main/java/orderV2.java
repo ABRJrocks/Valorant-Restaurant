@@ -20,7 +20,7 @@ public class orderV2 extends javax.swing.JFrame {
     //breakfast
     int fryegg = 60;
     int ommlette = 60;
-    int paratha = 50;
+    int paratha = 40;
     int naan = 15;
     int halwapuri = 30;
     int channyfull = 120;
@@ -29,7 +29,7 @@ public class orderV2 extends javax.swing.JFrame {
     int halwaplate = 150;
     //lunch
     int biryani = 200;
-    int chicken_roll = 50;
+    int chickenroll = 50;
     int samosa = 30;
     int sandwich = 150;
     int dahibhally = 80;
@@ -64,7 +64,7 @@ public class orderV2 extends javax.swing.JFrame {
     int lassi = 100;
     int cola = 30;
     int sprite = 30;
-    int chocalateshake = 200;
+    int chocklateshake = 200;
     int mangoshake = 150;
     int bananashake = 150;
     int mangoslush = 60;
@@ -2033,7 +2033,7 @@ public class orderV2 extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
-        Billing.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 274, 52));
+        Billing.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 274, 52));
 
         jScrollPane11.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane11.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2052,7 +2052,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane11.setViewportView(teaqty);
 
-        Billing.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 93, 31));
+        Billing.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 93, 31));
 
         teacheck.setBackground(new java.awt.Color(102, 8, 219));
         teacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2060,7 +2060,7 @@ public class orderV2 extends javax.swing.JFrame {
                 teacheckActionPerformed(evt);
             }
         });
-        Billing.add(teacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, 52));
+        Billing.add(teacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, 52));
 
         coffeecheck.setBackground(new java.awt.Color(102, 8, 219));
         coffeecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2068,7 +2068,7 @@ public class orderV2 extends javax.swing.JFrame {
                 coffeecheckActionPerformed(evt);
             }
         });
-        Billing.add(coffeecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, -1, 20));
+        Billing.add(coffeecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, 20));
 
         jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2087,7 +2087,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane8.setViewportView(coffeeqty);
 
-        Billing.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 93, 31));
+        Billing.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 93, 31));
 
         jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane9.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2106,7 +2106,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane9.setViewportView(lassiqty);
 
-        Billing.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 93, 31));
+        Billing.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 93, 31));
 
         lassicheck.setBackground(new java.awt.Color(102, 8, 219));
         lassicheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2114,7 +2114,7 @@ public class orderV2 extends javax.swing.JFrame {
                 lassicheckActionPerformed(evt);
             }
         });
-        Billing.add(lassicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, 20));
+        Billing.add(lassicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, 20));
 
         colacheck.setBackground(new java.awt.Color(102, 8, 219));
         colacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2122,7 +2122,7 @@ public class orderV2 extends javax.swing.JFrame {
                 colacheckActionPerformed(evt);
             }
         });
-        Billing.add(colacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 20));
+        Billing.add(colacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, -1, 20));
 
         jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2141,7 +2141,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane10.setViewportView(colaqty);
 
-        Billing.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 93, 31));
+        Billing.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 93, 31));
 
         paymentSelection.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         paymentSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Debit Card", "Master Card", "" }));
@@ -2151,7 +2151,7 @@ public class orderV2 extends javax.swing.JFrame {
                 paymentSelectionActionPerformed(evt);
             }
         });
-        Billing.add(paymentSelection, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 490, 115, 34));
+        Billing.add(paymentSelection, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 500, 115, 34));
 
         resetButton.setBackground(new java.awt.Color(255, 255, 255));
         resetButton.setFont(new java.awt.Font("Clarendon BT", 0, 18)); // NOI18N
@@ -2162,7 +2162,7 @@ public class orderV2 extends javax.swing.JFrame {
                 resetButtonActionPerformed(evt);
             }
         });
-        Billing.add(resetButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 630, 130, 44));
+        Billing.add(resetButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 640, 130, 44));
 
         totalButton.setBackground(new java.awt.Color(255, 255, 255));
         totalButton.setFont(new java.awt.Font("Clarendon BT", 0, 18)); // NOI18N
@@ -2173,7 +2173,7 @@ public class orderV2 extends javax.swing.JFrame {
                 totalButtonActionPerformed(evt);
             }
         });
-        Billing.add(totalButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 630, 115, 44));
+        Billing.add(totalButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 640, 115, 44));
 
         jPanel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -2204,7 +2204,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane13.setViewportView(moneyInputlabel);
 
-        Billing.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 550, 115, 30));
+        Billing.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 560, 115, 30));
 
         jScrollPane14.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane14.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2220,13 +2220,13 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane14.setViewportView(totallabel);
 
-        Billing.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, 120, 30));
+        Billing.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 580, 120, 30));
 
         jTextField21.setEditable(false);
         jTextField21.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
         jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField21.setText("TOTAL");
-        Billing.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 400, 40));
+        Billing.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 400, 40));
 
         jScrollPane17.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane17.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2242,7 +2242,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane17.setViewportView(changelabel);
 
-        Billing.add(jScrollPane17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 120, 30));
+        Billing.add(jScrollPane17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, 120, 30));
 
         jScrollPane18.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane18.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2258,7 +2258,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane18.setViewportView(taxlabel);
 
-        Billing.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 120, 30));
+        Billing.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 120, 30));
 
         jScrollPane19.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane19.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2274,7 +2274,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane19.setViewportView(subTotallabel);
 
-        Billing.add(jScrollPane19, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 530, 120, 30));
+        Billing.add(jScrollPane19, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 120, 30));
 
         jScrollPane12.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane12.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2295,7 +2295,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane12.setViewportView(spriteqty);
 
-        Billing.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 93, 31));
+        Billing.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, 93, 31));
 
         spritecheck.setBackground(new java.awt.Color(102, 8, 219));
         spritecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2303,82 +2303,82 @@ public class orderV2 extends javax.swing.JFrame {
                 spritecheckActionPerformed(evt);
             }
         });
-        Billing.add(spritecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, 20));
+        Billing.add(spritecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, 20));
 
         jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("SPRITE");
-        Billing.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 110, 40));
+        Billing.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 110, 40));
 
         jLabel17.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Total");
-        Billing.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, 70, 40));
+        Billing.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, 70, 40));
 
         jLabel18.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("COFFEE");
-        Billing.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 110, 40));
+        Billing.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 110, 40));
 
         jLabel19.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("LASSI");
-        Billing.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 110, 40));
+        Billing.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 110, 40));
 
         jLabel20.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("COLA");
-        Billing.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 110, 40));
+        Billing.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 110, 40));
 
         jLabel21.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("TEA");
-        Billing.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 110, 40));
+        Billing.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 110, 40));
 
         jLabel22.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Payment Method");
-        Billing.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 150, 40));
+        Billing.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 150, 40));
 
         jLabel23.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("Change");
-        Billing.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, 70, 40));
+        Billing.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 70, 40));
 
         jLabel24.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("Tax");
-        Billing.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 70, 40));
+        Billing.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 70, 40));
 
         jLabel25.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("Sub Total");
-        Billing.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 530, 90, 40));
+        Billing.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 540, 90, 40));
 
         jLabel99.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel99.setForeground(new java.awt.Color(255, 255, 255));
         jLabel99.setText("60 Rs");
-        Billing.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 60, 30));
+        Billing.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 60, 30));
 
         jLabel100.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel100.setForeground(new java.awt.Color(255, 255, 255));
         jLabel100.setText("150 Rs");
-        Billing.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 60, 30));
+        Billing.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 60, 30));
 
         jLabel101.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel101.setForeground(new java.awt.Color(255, 255, 255));
         jLabel101.setText("100 Rs");
-        Billing.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 60, 30));
+        Billing.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 60, 30));
 
         jLabel102.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel102.setForeground(new java.awt.Color(255, 255, 255));
         jLabel102.setText("30 Rs");
-        Billing.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 60, 30));
+        Billing.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 60, 30));
 
         jLabel103.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel103.setForeground(new java.awt.Color(255, 255, 255));
         jLabel103.setText("30 Rs");
-        Billing.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 60, 30));
+        Billing.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 60, 30));
 
         jPanel4.add(Billing, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 520, 820));
 
@@ -2512,64 +2512,19 @@ public class orderV2 extends javax.swing.JFrame {
         lassiqty.setText(null);
         colaqty.setText(null);
         spriteqty.setText(null);
-        
-        
+
         changelabel.setText(null);
         taxlabel.setText(null);
         subTotallabel.setText(null);
         totallabel.setText(null);
         moneyInputlabel.setText(null);
-        
-        tax = 0.0; subtotal = 0.0; change = 0.0; cost = 0.0;  total = 0.0;
 
-        // Breakfast
-        fryeggqty.setText(null);
-        ommletteqty.setText(null);
-        parathaqty.setText(null);
-        naanqty.setText(null);
-        halwapuriqty.setText(null);
-        channyfullqty.setText(null);
-        channyhalfqty.setText(null);
-        nihariqty.setText(null);
-        halwaplateqty.setText(null);
+        tax = 0.0;
+        subtotal = 0.0;
+        change = 0.0;
+        cost = 0.0;
+        total = 0.0;
 
-        // Lunch
-        biryaniqty.setText(null);
-        chickenrollqty.setText(null);
-        samosaqty.setText(null);
-        sandwichqty.setText(null);
-        dahibhallyqty.setText(null);
-        fruitchaatqty.setText(null);
-        macandcheeseqty.setText(null);
-        russiansaladqty.setText(null);
-        freshsaladqty.setText(null);
-
-        //Dinner
-        malaibotiqty.setText(null);
-        seekhkababqty.setText(null);
-        sajjiqty.setText(null);
-        tawachickenqty.setText(null);
-        haleemqty.setText(null);
-        chickenkarhaiqty.setText(null);
-        cheesenaanqty.setText(null);
-        khmeerirotiqty.setText(null);
-
-        // Fast Food
-        chickenburgerqty.setText(null);
-        zingerburgerqty.setText(null);
-        chickenshwarmaqty.setText(null);
-        zingershwarmaqty.setText(null);
-        valopizzaqty.setText(null);
-        calzoneqty.setText(null);
-        chickenchipsqty.setText(null);
-
-        // Beverages
-        chocklateshakeqty.setText(null);
-        mangoshakeqty.setText(null);
-        bananashakeqty.setText(null);
-        mangoslushqty.setText(null);
-        strawberryslushqty.setText(null);
-        orangeslushqty.setText(null);
 
         //=====================
         teacheck.setSelected(false);
@@ -2748,50 +2703,96 @@ public class orderV2 extends javax.swing.JFrame {
     private void totalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalButtonActionPerformed
         // TODO add your handling code here:
 
-        calCost[0] = Double.parseDouble(fryeggqty.getText());
-        calCost[1] = Double.parseDouble(ommletteqty.getText());
-        calCost[2] = Double.parseDouble(parathaqty.getText());
-        calCost[3] = Double.parseDouble(naanqty.getText());
-        calCost[4] = Double.parseDouble(halwapuriqty.getText());
-        calCost[5] = Double.parseDouble(channyfullqty.getText());
-        calCost[6] = Double.parseDouble(channyhalfqty.getText());
-        calCost[7] = Double.parseDouble(nihariqty.getText());
-        calCost[8] = Double.parseDouble(halwaplateqty.getText());
-        calCost[9] = Double.parseDouble(biryaniqty.getText());
-        calCost[10] = Double.parseDouble(chickenrollqty.getText());
-        calCost[11] = Double.parseDouble(samosaqty.getText());
-        calCost[12] = Double.parseDouble(sandwichqty.getText());
-        calCost[13] = Double.parseDouble(dahibhallyqty.getText());
-        calCost[14] = Double.parseDouble(fruitchaatqty.getText());
-        calCost[15] = Double.parseDouble(macandcheeseqty.getText());
-        calCost[16] = Double.parseDouble(russiansaladqty.getText());
-        calCost[17] = Double.parseDouble(freshsaladqty.getText());
-        calCost[18] = Double.parseDouble(malaibotiqty.getText());
-        calCost[19] = Double.parseDouble(seekhkababqty.getText());
-        calCost[20] = Double.parseDouble(sajjiqty.getText());
-        calCost[21] = Double.parseDouble(tawachickenqty.getText());
-        calCost[22] = Double.parseDouble(haleemqty.getText());
-        calCost[23] = Double.parseDouble(chickenkarhaiqty.getText());
-        calCost[24] = Double.parseDouble(cheesenaanqty.getText());
-        calCost[25] = Double.parseDouble(khmeerirotiqty.getText());
-        calCost[26] = Double.parseDouble(teaqty.getText());
-        calCost[27] = Double.parseDouble(coffeeqty.getText());
-        calCost[28] = Double.parseDouble(lassiqty.getText());
-        calCost[29] = Double.parseDouble(colaqty.getText());
-        calCost[30] = Double.parseDouble(spriteqty.getText());
-        calCost[31] = Double.parseDouble(chickenburgerqty.getText());
-        calCost[32] = Double.parseDouble(zingerburgerqty.getText());
-        calCost[33] = Double.parseDouble(chickenshwarmaqty.getText());
-        calCost[34] = Double.parseDouble(zingershwarmaqty.getText());
-        calCost[35] = Double.parseDouble(valopizzaqty.getText());
-        calCost[36] = Double.parseDouble(calzoneqty.getText());
-        calCost[37] = Double.parseDouble(chickenchipsqty.getText());
-        calCost[38] = Double.parseDouble(mangoshakeqty.getText());
-        calCost[39] = Double.parseDouble(bananashakeqty.getText());
-        calCost[40] = Double.parseDouble(chocklateshakeqty.getText());
-        calCost[41] = Double.parseDouble(mangoslushqty.getText());
-        calCost[42] = Double.parseDouble(strawberryslushqty.getText());
-        calCost[43] = Double.parseDouble(orangeslushqty.getText());
+        Double qty1 = Double.parseDouble(fryeggqty.getText());
+        Double qty2 = Double.parseDouble(ommletteqty.getText());
+        Double qty3 = Double.parseDouble(parathaqty.getText());
+        Double qty4 = Double.parseDouble(naanqty.getText());
+        Double qty5 = Double.parseDouble(halwapuriqty.getText());
+        Double qty6 = Double.parseDouble(channyfullqty.getText());
+        Double qty7 = Double.parseDouble(channyhalfqty.getText());
+        Double qty8 = Double.parseDouble(nihariqty.getText());
+        Double qty9 = Double.parseDouble(halwaplateqty.getText());
+        Double qty10 = Double.parseDouble(biryaniqty.getText());
+        Double qty11 = Double.parseDouble(chickenrollqty.getText());
+        Double qty12 = Double.parseDouble(samosaqty.getText());
+        Double qty13 = Double.parseDouble(sandwichqty.getText());
+        Double qty14 = Double.parseDouble(dahibhallyqty.getText());
+        Double qty15 = Double.parseDouble(fruitchaatqty.getText());
+        Double qty16 = Double.parseDouble(macandcheeseqty.getText());
+        Double qty17 = Double.parseDouble(russiansaladqty.getText());
+        Double qty18 = Double.parseDouble(freshsaladqty.getText());
+        Double qty19 = Double.parseDouble(malaibotiqty.getText());
+        Double qty20 = Double.parseDouble(seekhkababqty.getText());
+        Double qty21 = Double.parseDouble(sajjiqty.getText());
+        Double qty22 = Double.parseDouble(tawachickenqty.getText());
+        Double qty23 = Double.parseDouble(haleemqty.getText());
+        Double qty24 = Double.parseDouble(chickenkarhaiqty.getText());
+        Double qty25 = Double.parseDouble(cheesenaanqty.getText());
+        Double qty26 = Double.parseDouble(khmeerirotiqty.getText());
+        Double qty27 = Double.parseDouble(teaqty.getText());
+        Double qty28 = Double.parseDouble(coffeeqty.getText());
+        Double qty29 = Double.parseDouble(lassiqty.getText());
+        Double qty30 = Double.parseDouble(colaqty.getText());
+        Double qty31 = Double.parseDouble(spriteqty.getText());
+        Double qty32 = Double.parseDouble(chickenburgerqty.getText());
+        Double qty33 = Double.parseDouble(zingerburgerqty.getText());
+        Double qty34 = Double.parseDouble(chickenshwarmaqty.getText());
+        Double qty35 = Double.parseDouble(zingershwarmaqty.getText());
+        Double qty36 = Double.parseDouble(valopizzaqty.getText());
+        Double qty37 = Double.parseDouble(calzoneqty.getText());
+        Double qty38 = Double.parseDouble(chickenchipsqty.getText());
+        Double qty39 = Double.parseDouble(mangoshakeqty.getText());
+        Double qty40 = Double.parseDouble(bananashakeqty.getText());
+        Double qty41 = Double.parseDouble(chocklateshakeqty.getText());
+        Double qty42 = Double.parseDouble(mangoslushqty.getText());
+        Double qty43 = Double.parseDouble(strawberryslushqty.getText());
+        Double qty44 = Double.parseDouble(orangeslushqty.getText());
+
+        // Multiplying Quantity with Price
+        calCost[0] =  fryegg * qty1;
+        calCost[1] = ommlette * qty2; 
+        calCost[2] = paratha * qty3;
+        calCost[3] = naan * qty4;
+        calCost[4] = halwapuri * qty5;
+        calCost[5] = channyfull * qty6;
+        calCost[6] = channyhalf * qty7;
+        calCost[7] = nihari * qty8;
+        calCost[8] = halwaplate * qty9;
+        calCost[9] = biryani * qty10;
+        calCost[10] = chickenroll * qty11;
+        calCost[11] = samosa * qty12;
+        calCost[12] = sandwich * qty13;
+        calCost[13] = dahibhally * qty14;
+        calCost[14] = fruitchaat * qty15;
+        calCost[15] = macandcheese * qty16;
+        calCost[16] = russiansalad * qty17;
+        calCost[17] = freshsalad * qty18;
+        calCost[18] = malaiboti * qty19;
+        calCost[19] = seekhkabab * qty20;
+        calCost[20] = sajji * qty21;
+        calCost[21] = tawachicken * qty22;
+        calCost[22] = haleem * qty23;
+        calCost[23] = chickenkarhai * qty24;
+        calCost[24] = cheesenaan * qty25;
+        calCost[25] = khmeeriroti * qty26;
+        calCost[26] = tea * qty27;
+        calCost[27] = coffee * qty28;
+        calCost[28] = lassi * qty29;
+        calCost[29] = cola * qty30;
+        calCost[30] = sprite * qty31;
+        calCost[31] = chickenburger * qty32;
+        calCost[32] = zingerburger * qty33;
+        calCost[33] = chickenshwarma * qty34;
+        calCost[34] = zingershwarma * qty35;
+        calCost[35] = valopizza * qty36;
+        calCost[36] = calzone * qty37;
+        calCost[37] = chickenchips * qty38;
+        calCost[38] = mangoshake * qty39;
+        calCost[39] = bananashake * qty40;
+        calCost[40] = chocklateshake * qty41;
+        calCost[41] = mangoslush * qty42;
+        calCost[42] = strawberryslush * qty43;
+        calCost[43] = orangeslush * qty44;
 
         Double tax_rate = 0.07;
         change = Double.parseDouble(moneyInputlabel.getText());
@@ -2802,7 +2803,7 @@ public class orderV2 extends javax.swing.JFrame {
                 subtotal += calCost[i];
             }
             if (change >= subtotal) {
-                String addedAmmount = String.format("Rs%.2f", subtotal);
+                String addedAmmount = String.format("Rs %.2f", subtotal);
                 subTotallabel.setText(addedAmmount);
 
                 tax = (subtotal * tax_rate);
@@ -2831,7 +2832,7 @@ public class orderV2 extends javax.swing.JFrame {
             taxlabel.setText(totalTax);
             String totalBill = String.format("Rs %.2f", subtotal + tax);
             totallabel.setText(totalBill);
-            
+
         }
 
 
