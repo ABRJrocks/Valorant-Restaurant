@@ -3,6 +3,7 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.IntStream;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /*
@@ -10,11 +11,11 @@ import javax.swing.JPanel;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  * @author ABC
  */
 public class orderV2 extends javax.swing.JFrame {
+
     //price list
     //breakfast
     int fryegg = 60;
@@ -47,9 +48,7 @@ public class orderV2 extends javax.swing.JFrame {
     int khmeeriroti = 20;
     int roti = 10;
 
-
     // Price list
-
     // Fast food
     int chickenburger = 200;
     int zingerburger = 260;
@@ -74,7 +73,6 @@ public class orderV2 extends javax.swing.JFrame {
 
     Double tax = 0.0, total = 0.0, subtotal = 0.0, change = 0.0, cost = 0.0;
     Double[] calCost = new Double[45];
-
 
     /**
      * Creates new form orderV2
@@ -2035,7 +2033,7 @@ public class orderV2 extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
-        Billing.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 274, 52));
+        Billing.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 274, 52));
 
         jScrollPane11.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane11.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2054,7 +2052,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane11.setViewportView(teaqty);
 
-        Billing.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 93, 31));
+        Billing.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 93, 31));
 
         teacheck.setBackground(new java.awt.Color(102, 8, 219));
         teacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2062,7 +2060,7 @@ public class orderV2 extends javax.swing.JFrame {
                 teacheckActionPerformed(evt);
             }
         });
-        Billing.add(teacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, 52));
+        Billing.add(teacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, 52));
 
         coffeecheck.setBackground(new java.awt.Color(102, 8, 219));
         coffeecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2070,7 +2068,7 @@ public class orderV2 extends javax.swing.JFrame {
                 coffeecheckActionPerformed(evt);
             }
         });
-        Billing.add(coffeecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, 20));
+        Billing.add(coffeecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, -1, 20));
 
         jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2089,7 +2087,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane8.setViewportView(coffeeqty);
 
-        Billing.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 93, 31));
+        Billing.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 93, 31));
 
         jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane9.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2108,7 +2106,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane9.setViewportView(lassiqty);
 
-        Billing.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, 93, 31));
+        Billing.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 93, 31));
 
         lassicheck.setBackground(new java.awt.Color(102, 8, 219));
         lassicheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2116,7 +2114,7 @@ public class orderV2 extends javax.swing.JFrame {
                 lassicheckActionPerformed(evt);
             }
         });
-        Billing.add(lassicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, 20));
+        Billing.add(lassicheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, 20));
 
         colacheck.setBackground(new java.awt.Color(102, 8, 219));
         colacheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2124,7 +2122,7 @@ public class orderV2 extends javax.swing.JFrame {
                 colacheckActionPerformed(evt);
             }
         });
-        Billing.add(colacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, 20));
+        Billing.add(colacheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 20));
 
         jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2143,7 +2141,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane10.setViewportView(colaqty);
 
-        Billing.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 93, 31));
+        Billing.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 93, 31));
 
         paymentSelection.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         paymentSelection.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Debit Card", "Master Card", "" }));
@@ -2198,6 +2196,7 @@ public class orderV2 extends javax.swing.JFrame {
         moneyInputlabel.setColumns(20);
         moneyInputlabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         moneyInputlabel.setRows(5);
+        moneyInputlabel.setText("0");
         moneyInputlabel.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 moneyInputlabelKeyTyped(evt);
@@ -2205,7 +2204,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane13.setViewportView(moneyInputlabel);
 
-        Billing.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 550, 115, 40));
+        Billing.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 550, 115, 30));
 
         jScrollPane14.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane14.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -2296,7 +2295,7 @@ public class orderV2 extends javax.swing.JFrame {
         });
         jScrollPane12.setViewportView(spriteqty);
 
-        Billing.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 93, 31));
+        Billing.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 93, 31));
 
         spritecheck.setBackground(new java.awt.Color(102, 8, 219));
         spritecheck.addActionListener(new java.awt.event.ActionListener() {
@@ -2304,12 +2303,12 @@ public class orderV2 extends javax.swing.JFrame {
                 spritecheckActionPerformed(evt);
             }
         });
-        Billing.add(spritecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, -1, 20));
+        Billing.add(spritecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, 20));
 
         jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("SPRITE");
-        Billing.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 110, 40));
+        Billing.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 110, 40));
 
         jLabel17.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
@@ -2319,22 +2318,22 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("COFFEE");
-        Billing.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 110, 40));
+        Billing.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 110, 40));
 
         jLabel19.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("LASSI");
-        Billing.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 110, 40));
+        Billing.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 110, 40));
 
         jLabel20.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("COLA");
-        Billing.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, 110, 40));
+        Billing.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 110, 40));
 
         jLabel21.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("TEA");
-        Billing.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 110, 40));
+        Billing.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 110, 40));
 
         jLabel22.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
@@ -2359,27 +2358,27 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel99.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel99.setForeground(new java.awt.Color(255, 255, 255));
         jLabel99.setText("60 Rs");
-        Billing.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 60, 30));
+        Billing.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 60, 30));
 
         jLabel100.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel100.setForeground(new java.awt.Color(255, 255, 255));
         jLabel100.setText("150 Rs");
-        Billing.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 60, 30));
+        Billing.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 60, 30));
 
         jLabel101.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel101.setForeground(new java.awt.Color(255, 255, 255));
         jLabel101.setText("100 Rs");
-        Billing.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 60, 30));
+        Billing.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 60, 30));
 
         jLabel102.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel102.setForeground(new java.awt.Color(255, 255, 255));
         jLabel102.setText("30 Rs");
-        Billing.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 60, 30));
+        Billing.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 60, 30));
 
         jLabel103.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel103.setForeground(new java.awt.Color(255, 255, 255));
         jLabel103.setText("30 Rs");
-        Billing.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 250, 60, 30));
+        Billing.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 60, 30));
 
         jPanel4.add(Billing, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 520, 820));
 
@@ -2513,11 +2512,15 @@ public class orderV2 extends javax.swing.JFrame {
         lassiqty.setText(null);
         colaqty.setText(null);
         spriteqty.setText(null);
+        
+        
         changelabel.setText(null);
         taxlabel.setText(null);
         subTotallabel.setText(null);
         totallabel.setText(null);
         moneyInputlabel.setText(null);
+        
+        tax = 0.0; subtotal = 0.0; change = 0.0; cost = 0.0;  total = 0.0;
 
         // Breakfast
         fryeggqty.setText(null);
@@ -2551,7 +2554,6 @@ public class orderV2 extends javax.swing.JFrame {
         cheesenaanqty.setText(null);
         khmeerirotiqty.setText(null);
 
-
         // Fast Food
         chickenburgerqty.setText(null);
         zingerburgerqty.setText(null);
@@ -2562,14 +2564,12 @@ public class orderV2 extends javax.swing.JFrame {
         chickenchipsqty.setText(null);
 
         // Beverages
-
         chocklateshakeqty.setText(null);
         mangoshakeqty.setText(null);
         bananashakeqty.setText(null);
         mangoslushqty.setText(null);
         strawberryslushqty.setText(null);
         orangeslushqty.setText(null);
-
 
         //=====================
         teacheck.setSelected(false);
@@ -2587,7 +2587,6 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullcheck.setSelected(false);
         niharicheck.setSelected(false);
         halwaplatecheck.setSelected(false);
-
 
         // Lunch
         biryanicheck.setSelected(false);
@@ -2610,7 +2609,6 @@ public class orderV2 extends javax.swing.JFrame {
         cheesenaancheck.setSelected(false);
         khmeeriroticheck.setSelected(false);
 
-
         // Fast Food
         zingerburgercheck.setSelected(false);
         chickenburgercheck.setSelected(false);
@@ -2629,7 +2627,6 @@ public class orderV2 extends javax.swing.JFrame {
         orangeslushcheck.setSelected(false);
 
         //========================
-
         teaqty.setEnabled(false);
         coffeeqty.setEnabled(false);
         lassiqty.setEnabled(false);
@@ -2645,7 +2642,6 @@ public class orderV2 extends javax.swing.JFrame {
         channyfullqty.setEnabled(false);
         channyhalfqty.setEnabled(false);
         halwaplateqty.setEnabled(false);
-
 
         //lunch 
         biryaniqty.setEnabled(false);
@@ -2668,7 +2664,6 @@ public class orderV2 extends javax.swing.JFrame {
         cheesenaanqty.setEnabled(false);
         khmeerirotiqty.setEnabled(false);
 
-
         //Fast Food
         zingerburgerqty.setEnabled(false);
         chickenburgerqty.setEnabled(false);
@@ -2687,7 +2682,6 @@ public class orderV2 extends javax.swing.JFrame {
         orangeslushqty.setEnabled(false);
 
         //=======================
-
         teaqty.setText("0");
         coffeeqty.setText("0");
         lassiqty.setText("0");
@@ -2726,7 +2720,6 @@ public class orderV2 extends javax.swing.JFrame {
         cheesenaanqty.setText("0");
         khmeerirotiqty.setText("0");
 
-
         // Fast Food
         zingerburgerqty.setText("0");
         chickenburgerqty.setText("0");
@@ -2735,9 +2728,9 @@ public class orderV2 extends javax.swing.JFrame {
         valopizzaqty.setText("0");
         calzoneqty.setText("0");
         chickenchipsqty.setText("0");
+        moneyInputlabel.setText("0");
 
         // Beverages
-
         chocklateshakeqty.setText("0");
         mangoshakeqty.setText("0");
         bananashakeqty.setText("0");
@@ -2800,14 +2793,12 @@ public class orderV2 extends javax.swing.JFrame {
         calCost[42] = Double.parseDouble(strawberryslushqty.getText());
         calCost[43] = Double.parseDouble(orangeslushqty.getText());
 
-        Double tax_rate = 0.17;
+        Double tax_rate = 0.07;
         change = Double.parseDouble(moneyInputlabel.getText());
 
-        String paymentMethod = (String)paymentSelection.getSelectedItem();
-        if (paymentMethod == "Cash")
-        {
-            for (int i = 0; i < 44; i++)
-            {
+        String paymentMethod = (String) paymentSelection.getSelectedItem();
+        if (paymentMethod == "Cash") {
+            for (int i = 0; i < 44; i++) {
                 subtotal += calCost[i];
             }
             if (change >= subtotal) {
@@ -2821,17 +2812,16 @@ public class orderV2 extends javax.swing.JFrame {
                 String totalBill = String.format("Rs %.2f", total);
                 totallabel.setText(totalBill);
 
-                String changeReturned = String.format("Rs %.2f", change- total);
+                String changeReturned = String.format("Rs %.2f", change - total);
                 changelabel.setText(changeReturned);
-            }
-        }
-        else
-        {
-            for (int i = 0; i < 44; i++)
-            {
-                subtotal += calCost[i];
+            } else {
+                JOptionPane.showMessageDialog(null, "Please Enter Enough Cash", "Valorant Resturant", JOptionPane.OK_OPTION);
             }
 
+        } else if (paymentMethod == "Debit Card" || paymentMethod == "Master Card") {
+            for (int i = 0; i < 44; i++) {
+                subtotal += calCost[i];
+            }
 
             String addedAmmount = String.format("Rs%.2f", subtotal);
             subTotallabel.setText(addedAmmount);
@@ -2841,9 +2831,8 @@ public class orderV2 extends javax.swing.JFrame {
             taxlabel.setText(totalTax);
             String totalBill = String.format("Rs %.2f", subtotal + tax);
             totallabel.setText(totalBill);
+            
         }
-
-
 
 
     }//GEN-LAST:event_totalButtonActionPerformed
@@ -3219,8 +3208,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_biryaniqtyKeyTyped
 
@@ -3229,8 +3219,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_samosaqtyKeyTyped
 
@@ -3239,8 +3230,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_chickenrollqtyKeyTyped
 
@@ -3249,8 +3241,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_freshsaladqtyKeyTyped
 
@@ -3259,8 +3252,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_sandwichqtyKeyTyped
 
@@ -3269,8 +3263,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_dahibhallyqtyKeyTyped
 
@@ -3279,8 +3274,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_russiansaladqtyKeyTyped
 
@@ -3293,8 +3289,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_macandcheeseqtyKeyTyped
 
@@ -3313,8 +3310,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_fruitchaatqtyKeyTyped
 
@@ -3387,8 +3385,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
 
     }//GEN-LAST:event_malaibotiqtyKeyTyped
@@ -3398,8 +3397,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_sajjiqtyKeyTyped
 
@@ -3408,8 +3408,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_seekhkababqtyKeyTyped
 
@@ -3418,8 +3419,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_tawachickenqtyKeyTyped
 
@@ -3428,8 +3430,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_haleemqtyKeyTyped
 
@@ -3438,8 +3441,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_khmeerirotiqtyKeyTyped
 
@@ -3452,8 +3456,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_cheesenaanqtyKeyTyped
 
@@ -3471,8 +3476,9 @@ public class orderV2 extends javax.swing.JFrame {
         char numberVal = evt.getKeyChar();
         if (!(Character.isDigit(numberVal))
                 || (numberVal == KeyEvent.VK_BACK_SPACE)
-                || (numberVal == KeyEvent.VK_DELETE))
+                || (numberVal == KeyEvent.VK_DELETE)) {
             evt.consume();
+        }
 
     }//GEN-LAST:event_chickenkarhaiqtyKeyTyped
 
