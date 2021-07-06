@@ -40,6 +40,7 @@ public class MainMenu extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon("E:\\RJ Data\\BSCS\\2nd Semester\\OOP\\Semester Project\\Project Files\\Valorant-Restaurant\\Project\\src\\main\\java\\Images\\valorantFinal_adobespark.png")); // NOI18N
+        jLabel2.setToolTipText("");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 620, 315));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -75,13 +76,14 @@ public class MainMenu extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void placeOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placeOrderActionPerformed
 
                     setVisible(false);
-                    orderV2 window = new orderV2();
-                    window.setVisible(true);
+                    orderV2 orderWindow = new orderV2();
+                    orderWindow.setVisible(true);
 
        
      // TODO add your handling code here:

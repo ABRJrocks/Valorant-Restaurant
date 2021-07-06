@@ -1,8 +1,6 @@
 
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.IntStream;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -364,7 +362,6 @@ public class orderV2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setMinimumSize(new java.awt.Dimension(1100, 800));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 153));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -511,12 +508,11 @@ public class orderV2 extends javax.swing.JFrame {
         );
 
         jPanel2.add(bevragesMenuSelectPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 300, 45));
+
+        jLabel62.setIcon(new javax.swing.ImageIcon("E:\\RJ Data\\BSCS\\2nd Semester\\OOP\\Semester Project\\Project Files\\Valorant-Restaurant\\Project\\src\\main\\java\\Images\\images_Billin_Menu.png")); // NOI18N
         jPanel2.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 200, 120));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 800));
-
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         breakfastMenu.setBackground(new java.awt.Color(102, 8, 219));
         breakfastMenu.setToolTipText("");
@@ -851,8 +847,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel67.setForeground(new java.awt.Color(255, 255, 255));
         jLabel67.setText("350 Rs");
         breakfastMenu.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 580, 70, 30));
-
-        jPanel4.add(breakfastMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
         lunchMenu.setBackground(new java.awt.Color(102, 8, 219));
         lunchMenu.setToolTipText("");
@@ -1197,8 +1191,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel69.setText(" 50 Rs");
         lunchMenu.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 70, 30));
 
-        jPanel4.add(lunchMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
-
         dinnerMenu.setBackground(new java.awt.Color(102, 8, 219));
         dinnerMenu.setToolTipText("");
         dinnerMenu.setPreferredSize(new java.awt.Dimension(400, 900));
@@ -1497,8 +1489,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel85.setText("20 Rs");
         dinnerMenu.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 70, 30));
 
-        jPanel4.add(dinnerMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
-
         fastfoodMenu.setBackground(new java.awt.Color(102, 8, 219));
         fastfoodMenu.setToolTipText("");
         fastfoodMenu.setPreferredSize(new java.awt.Dimension(400, 900));
@@ -1773,8 +1763,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel92.setText("200 Rs");
         fastfoodMenu.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 60, 30));
 
-        jPanel4.add(fastfoodMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
-
         beveragesMenu.setBackground(new java.awt.Color(102, 8, 219));
         beveragesMenu.setToolTipText("");
         beveragesMenu.setPreferredSize(new java.awt.Dimension(400, 900));
@@ -2014,8 +2002,6 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel98.setForeground(new java.awt.Color(255, 255, 255));
         jLabel98.setText("60 Rs");
         beveragesMenu.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 600, 60, 30));
-
-        jPanel4.add(beveragesMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 800));
 
         Billing.setBackground(new java.awt.Color(102, 8, 219));
         Billing.setToolTipText("");
@@ -2380,17 +2366,53 @@ public class orderV2 extends javax.swing.JFrame {
         jLabel103.setText("30 Rs");
         Billing.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 60, 30));
 
-        jPanel4.add(Billing, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 520, 820));
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(fastfoodMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lunchMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
+                    .addComponent(dinnerMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(beveragesMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(breakfastMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(Billing, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(fastfoodMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(lunchMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(dinnerMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(beveragesMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(breakfastMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGap(20, 20, 20))
+            .addComponent(Billing, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 900, 800));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2398,6 +2420,7 @@ public class orderV2 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void breakfastMenuSelectPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_breakfastMenuSelectPanelMouseClicked
@@ -2816,6 +2839,7 @@ public class orderV2 extends javax.swing.JFrame {
                 String changeReturned = String.format("Rs %.2f", change - total);
                 changelabel.setText(changeReturned);
             } else {
+                change = 0.0;
                 JOptionPane.showMessageDialog(null, "Please Enter Enough Cash", "Valorant Resturant", JOptionPane.OK_OPTION);
             }
 
